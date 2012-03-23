@@ -1,3 +1,11 @@
+# This Makefile is for use by the PORO Release Manager.
+#
+# requirements: Oort (http://code.google.com/p/owltools/wiki/OortIntro)
+#
+# To make a release, type 'make release' in this directory
+
+release: poro.obo
+
 poro.obo: poro-edit.ofn
 	ontology-release-runner $< --allow-overwrite --asserted --simple
 
