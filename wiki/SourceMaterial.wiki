@@ -1,0 +1,3 @@
+#summary Source material for PORO
+
+The primary source for the initial version was the PorTol thesaurus. This was refined to form a more ontological structure
