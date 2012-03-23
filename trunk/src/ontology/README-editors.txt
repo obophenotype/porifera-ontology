@@ -1,14 +1,14 @@
 These notes are for the editors of poro
 
-Editors Version:
+== Editors Version ==
 
 ** DO NOT EDIT poro.owl **
 
-The editors version is poro-edit.owl
+The editors version is poro-edit.ofn
 
 poro.owl is the release version
 
-ID Ranges:
+== ID Ranges ==
 
 These are stored in:
 
@@ -19,7 +19,7 @@ These are stored in:
 poro.obo and poro.owl are generated from eo-edit.owl via the Makefile.
 Note: for now you must manually set the versionIRI
 
-Release Manager notes:
+== Release Manager notes ==
 
 to release:
  $ svn copy -m "Creating release branch" https://porifera-ontology.googlecode.com/svn/trunk/src/ontology https://porifera-ontology.googlecode.com/svn/releases/YYYY-MM-DD
