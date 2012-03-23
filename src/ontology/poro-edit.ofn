@@ -4519,6 +4519,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000957> "pi
 SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000957> <http://purl.obolibrary.org/obo/PORO_0000449>)
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000959>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000959> "protein"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000959> <http://purl.obolibrary.org/obo/CHEBI_24431>)
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000960>))
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://palaeos.com/metazoa/glossary/glossaryO.html#silicatein") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000960> "enzyme which catalyzes the formation of silicate polymers")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000960> "silicatein"@en)
