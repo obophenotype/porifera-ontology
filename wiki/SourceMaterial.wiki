@@ -1,3 +1,9 @@
 #summary Source material for PORO
 
-The primary source for the initial version was the PorTol thesaurus. This was refined to form a more ontological structure
+The primary source for the initial version was the Portol thesaurus. This was refined to form a more ontological structure.
+
+We collected the information from:
+
+* http://www.portol.org/thesaurus/ThesaurusSearchResults.php?searchstr=
+
+And arranged it into a hierarchy using Protege4
