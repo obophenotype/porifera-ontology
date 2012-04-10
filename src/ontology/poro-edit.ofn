@@ -4589,7 +4589,7 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/PORO_0000939> owl:topObjectP
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PORO_0000946>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000946> "variant of"@en)
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/PORO_0002003>))
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002003> "has quality"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002003> "bearer of"@en)
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002202>))
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#shorthand> <http://purl.obolibrary.org/obo/RO_0002202> "develops_from"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/RO_0002202> "RO:0002202"^^xsd:string)
