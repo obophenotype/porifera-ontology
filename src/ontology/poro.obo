@@ -9,6 +9,9 @@ id: CARO:0000000
 name: anatomical entity
 namespace: sponge
 def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." [CARO:MAH]
+disjoint_from: GO:0008150 ! biological_process
+disjoint_from: PATO:0000001 ! quality
+disjoint_from: PORO:0000916 ! life cycle stage
 
 [Term]
 id: CARO:0000003
@@ -23,6 +26,7 @@ name: material anatomical entity
 namespace: sponge
 def: "Anatomical entity that has mass." [CARO:MAH]
 is_a: CARO:0000000 ! anatomical entity
+disjoint_from: PORO:0000019 ! immaterial anatomical entity
 
 [Term]
 id: CARO:0000011
@@ -519,7 +523,7 @@ creation_date: 2011-04-22T07:31:20Z
 id: PORO:0000039
 name: canal
 namespace: sponge
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: CARO:0000003 ! anatomical structure
 created_by: cjm
 creation_date: 2011-04-22T07:31:48Z
 
@@ -5262,6 +5266,18 @@ def: "enzyme in sponges, proposed to be involved in silica restructuring and mai
 is_a: PORO:0000959 ! protein
 
 [Term]
+id: PORO:0000963
+name: spiculogenesis
+is_a: GO:0008150 ! biological_process
+relationship: PORO:0000964 PORO:0000017 ! results in formation of spicule
+
+[Term]
+id: PORO:0000991
+name: cavity of canal
+is_a: PORO:0000019 ! immaterial anatomical entity
+relationship: PORO:0000939 PORO:0000039 ! surrounded by canal
+
+[Term]
 id: PORO:0002001
 name: acantho
 def: "has spines; applies only to spicules" []
@@ -5272,8 +5288,19 @@ id: PORO:0002002
 name: acanthostyle
 is_a: PORO:0000567 ! style
 intersection_of: PORO:0000567 ! style
-intersection_of: PORO:0002003 PORO:0002001 ! has quality acantho
-relationship: PORO:0002003 PORO:0002001 ! has quality acantho
+intersection_of: has_part PORO:0002004 ! spine
+relationship: has_part PORO:0002004 ! spine
+
+[Term]
+id: PORO:0002004
+name: spine
+is_a: CARO:0000040 ! acellular anatomical structure
+
+[Term]
+id: PORO:0002005
+name: verticillated acanthostyle
+comment: Editor's note: logical definition still to be added
+is_a: PORO:0002002 ! acanthostyle
 
 [Term]
 id: UBERON:0000990
@@ -5290,11 +5317,9 @@ namespace: sponge
 def: "a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." [Wikipedia:Larva]
 is_a: CARO:0000012 ! multi-cellular organism
 
-[Term]
-id: http://purl.obolibrary.org/obo/PORO0000963
-name: spiculogenesis
-is_a: GO:0008150 ! biological_process
-relationship: http://purl.obolibrary.org/obo/PORO0000964 PORO:0000017 ! spicule
+[Typedef]
+id: BFO:0000053
+name: bearer of
 
 [Typedef]
 id: PORO:0000939
@@ -5305,8 +5330,8 @@ id: PORO:0000946
 name: variant of
 
 [Typedef]
-id: PORO:0002003
-name: has quality
+id: PORO:0000964
+name: results in formation of
 
 [Typedef]
 id: capable_of
@@ -5345,10 +5370,6 @@ synonym: "protrudes from" RELATED []
 [Typedef]
 id: has_part
 name: has part
-
-[Typedef]
-id: http://purl.obolibrary.org/obo/PORO0000964
-name: results in formation of
 
 [Typedef]
 id: part_of
