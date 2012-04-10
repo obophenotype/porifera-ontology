@@ -18,7 +18,7 @@ These are stored in:
 
 === Setting ID ranges in Protege ===
 
-http://code.google.com/p/porifera-ontology/source/browse/trunk/src/docs/images/editor-id-ranges.jpg
+http://porifera-ontology.googlecode.com/svn/trunk/src/docs/images/editor-id-ranges.jpg
 
 == Derived Files ==
 
