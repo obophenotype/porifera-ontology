@@ -70,6 +70,25 @@ def: "Anatomical structure consisting of at least two non-overlapping organs, mu
 is_a: CARO:0000003 ! anatomical structure
 
 [Term]
+id: CHEBI:24431
+name: chemical entity
+
+[Term]
+id: CHEBI:3311
+name: calcium carbonate
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:46719
+name: calcite
+is_a: CHEBI:3311 ! calcium carbonate
+
+[Term]
+id: CHEBI:52239
+name: aragonite
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
 id: CL:0000017
 name: spermatocyte
 namespace: cell
@@ -101,7 +120,7 @@ alt_id: GO:0050876
 def: "The production by an organism of new individuals that contain some portion of their genetic material inherited from that organism." [GOC:go_curators, GOC:isa_complete, ISBN:0198506732]
 synonym: "reproductive physiological process" EXACT []
 xref: Wikipedia:Reproduction
-is_a: GO:0008150 ! biological_process
+is_a: GO:0022414 ! reproductive process
 
 [Term]
 id: GO:0006909
@@ -125,7 +144,6 @@ xref: Wikipedia:Biological_process
 
 [Term]
 id: GO:0019861
-name: flagellum
 name: flagellum
 is_a: PORO:0000923 ! cell component
 relationship: part_of CARO:0000013 ! cell
@@ -430,9 +448,9 @@ namespace: sponge
 def: "A spicule composed largely of calcite having a radiate form, the number of rays being either two (diactine), three (triactine), or four (tetractine)." []
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: composed_of PORO:0000950 ! calcium carbonate
+intersection_of: composed_of CHEBI:3311 ! calcium carbonate
 disjoint_from: PORO:0000031 ! siliceous spicule
-relationship: composed_of PORO:0000950 ! calcium carbonate
+relationship: composed_of CHEBI:3311 ! calcium carbonate
 created_by: cjm
 creation_date: 2011-04-22T07:20:56Z
 
@@ -465,8 +483,8 @@ namespace: sponge
 is_a: CARO:0000040 ! acellular anatomical structure
 is_a: PORO:0000532 ! skeleton
 intersection_of: PORO:0000532 ! skeleton
-intersection_of: composed_of PORO:0000950 ! calcium carbonate
-relationship: composed_of PORO:0000950 ! calcium carbonate
+intersection_of: composed_of CHEBI:3311 ! calcium carbonate
+relationship: composed_of CHEBI:3311 ! calcium carbonate
 created_by: cjm
 creation_date: 2011-04-22T07:22:22Z
 
@@ -1102,6 +1120,7 @@ name: axial filament
 namespace: sponge
 def: "The organic core around which a siliceous spicule is organized." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+relationship: part_of PORO:0000031 ! siliceous spicule
 
 [Term]
 id: PORO:0000160
@@ -1159,6 +1178,9 @@ name: basalia
 namespace: sponge
 def: "Spicules protruding from lower sponge surface; sometimes called root spicules, anchors, barbed basalia; in some species, forming a root tuft" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+synonym: "anchor" RELATED []
+synonym: "barbed basalia" RELATED []
+synonym: "root spicule" RELATED []
 is_a: PORO:0000017 ! spicule
 
 [Term]
@@ -1623,6 +1645,7 @@ name: columnar
 namespace: sponge
 def: "Shape of solid, erect cylinder (Petrosia capsa)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000225
@@ -1859,6 +1882,7 @@ name: dermalia
 namespace: sponge
 def: "Spicules of the external sponge surface. See AUTODERMALIA, HYPODERMALIA" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+is_a: PORO:0000017 ! spicule
 
 [Term]
 id: PORO:0000253
@@ -1905,7 +1929,7 @@ def: "Reduced triaene with two clads" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae. Editors note: we use the variant_of relation here to avoid inconsistency
 is_a: PORO:0000587 ! tetractine
 relationship: has_part PORO:0000206 {cardinality="2"} ! clad
-relationship: PORO:0000946 PORO:0000601 ! triaene
+relationship: PORO:0000946 PORO:0000601 ! variant of triaene
 
 [Term]
 id: PORO:0000258
@@ -2069,6 +2093,7 @@ name: drepanocome
 namespace: sponge
 def: "Hexaster with sickle-like terminations (genus Dictyaulus)" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+is_a: PORO:0000343 ! hexaster
 
 [Term]
 id: PORO:0000278
@@ -2282,6 +2307,7 @@ name: facial plane
 namespace: sponge
 def: "The plane passing through tips of the three rays of a triactine or of a basal triradiate system of a tetractine." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
+is_a: PORO:0000019 ! immaterial anatomical entity
 relationship: part_of PORO:0000017 ! spicule
 
 [Term]
@@ -2534,6 +2560,7 @@ name: globular
 namespace: sponge
 def: "Ball shaped, spherical (Tethya aurantium)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000333
@@ -2541,6 +2568,7 @@ name: glutinous
 namespace: sponge
 def: "Sticky (Reniera mucosa)." [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000334
@@ -2715,6 +2743,7 @@ name: infundibuliform
 namespace: sponge
 def: "Funnel shaped (Callyspongia plicifera)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000355
@@ -2952,6 +2981,7 @@ name: lychnisca
 namespace: sponge
 def: "Dictyonal hexactin framework formed by lychnises" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+relationship: has_part PORO:0000384 ! lychnisc
 
 [Term]
 id: PORO:0000386
@@ -3149,7 +3179,7 @@ def: "Reduced triaene with only one clad" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: PORO:0000587 ! tetractine
 relationship: has_part PORO:0000206 {cardinality="1"} ! clad
-relationship: PORO:0000946 PORO:0000601 ! triaene
+relationship: PORO:0000946 PORO:0000601 ! variant of triaene
 
 [Term]
 id: PORO:0000412
@@ -3157,7 +3187,7 @@ name: monaxon
 namespace: sponge
 def: "Linear, nonradiate spicule, or a spicule type not having more than two rays along one axis." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
-is_a: PORO:0000017 ! spicule
+is_a: PORO:0000098 ! megasclere
 
 [Term]
 id: PORO:0000413
@@ -3288,6 +3318,7 @@ name: ovate
 namespace: sponge
 def: "Egg shaped, ellipsoid (Cinachyrella)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000430
@@ -3350,6 +3381,7 @@ name: palmate
 namespace: sponge
 def: "Hand shaped (Isodictya palmata)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000437
@@ -4208,6 +4240,7 @@ name: spiculation
 namespace: sponge
 def: "General term for spicule complement." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000547
@@ -4897,6 +4930,7 @@ name: vesicular
 namespace: sponge
 def: "Hollow, bladder-like (Inflatella belli)." [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000051 ! morphology
 
 [Term]
 id: PORO:0000631
@@ -5186,11 +5220,6 @@ name: monaxial desma
 is_a: PORO:0000253 ! desma
 
 [Term]
-id: PORO:0000950
-name: calcium carbonate
-is_a: PORO:0000952 ! chemical entity
-
-[Term]
 id: PORO:0000951
 name: choanosomal spicule
 is_a: PORO:0000017 ! spicule
@@ -5199,13 +5228,9 @@ intersection_of: part_of PORO:0000203 ! choanosome
 relationship: part_of PORO:0000203 ! choanosome
 
 [Term]
-id: PORO:0000952
-name: chemical entity
-
-[Term]
 id: PORO:0000953
 name: biogenic silica
-is_a: PORO:0000952 ! chemical entity
+is_a: CHEBI:24431 ! chemical entity
 
 [Term]
 id: PORO:0000954
@@ -5220,13 +5245,9 @@ def: "A pentact with large spines on the non-planar ray[WP]" []
 is_a: PORO:0000449 ! pentactin
 
 [Term]
-id: PORO:0000958
-name: aragonite
-is_a: PORO:0000952 ! chemical entity
-
-[Term]
 id: PORO:0000959
 name: protein
+is_a: CHEBI:24431 ! chemical entity
 
 [Term]
 id: PORO:0000960
@@ -5239,11 +5260,6 @@ id: PORO:0000961
 name: silicase
 def: "enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen" [http://palaeos.com/metazoa/glossary/glossaryO.html#silicase]
 is_a: PORO:0000959 ! protein
-
-[Term]
-id: PORO:0000962
-name: calcite
-is_a: PORO:0000950 ! calcium carbonate
 
 [Term]
 id: UBERON:0000990
@@ -5259,6 +5275,12 @@ name: larva
 namespace: sponge
 def: "a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." [Wikipedia:Larva]
 is_a: CARO:0000012 ! multi-cellular organism
+
+[Term]
+id: http://purl.obolibrary.org/obo/PORO0000963
+name: spiculogenesis
+is_a: GO:0008150 ! biological_process
+relationship: http://purl.obolibrary.org/obo/PORO0000964 PORO:0000017 ! spicule
 
 [Typedef]
 id: PORO:0000939
@@ -5305,6 +5327,10 @@ synonym: "protrudes from" RELATED []
 [Typedef]
 id: has_part
 name: has part
+
+[Typedef]
+id: http://purl.obolibrary.org/obo/PORO0000964
+name: results in formation of
 
 [Typedef]
 id: part_of
