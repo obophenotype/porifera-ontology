@@ -6,6 +6,8 @@
 
 release: poro.obo
 
+# all release files are derived from the editors version.
+# we use the default Oort setup (hermit as reasoner)
 poro.obo: poro-edit.ofn
 	ontology-release-runner $< --allow-overwrite --asserted --simple
 

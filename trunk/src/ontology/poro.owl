@@ -138,10 +138,28 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PORO0000964 -->
+    <!-- http://purl.obolibrary.org/obo/BFO_0000053 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PORO0000964">
-        <rdfs:label xml:lang="en">results in formation of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000053">
+        <rdfs:label xml:lang="en">bearer of</rdfs:label>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000000"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -163,10 +181,10 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PORO_0002003 -->
+    <!-- http://purl.obolibrary.org/obo/PORO_0000964 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PORO_0002003">
-        <rdfs:label xml:lang="en">has quality</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PORO_0000964">
+        <rdfs:label xml:lang="en">results in formation of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -181,12 +199,12 @@
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">develops_from</oboInOwl:shorthand>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -297,6 +315,9 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">anatomical entity</rdfs:label>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PORO_0000916"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000000</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -333,6 +354,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">material anatomical entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that has mass.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARO:0000006</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -713,21 +735,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PORO0000963 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO0000963">
-        <rdfs:label xml:lang="en">spiculogenesis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO0000964"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PORO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000000">
@@ -896,14 +903,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#secretes"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000016"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#secretes"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T06:54:11Z</oboInOwl:creation_date>
@@ -1115,12 +1122,6 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastal cavity</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000020"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrium</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000020"/>
@@ -1128,6 +1129,12 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cloaca</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000020"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastal cavity</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000020"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -1512,7 +1519,7 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000039">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:31:48Z</oboInOwl:creation_date>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PORO:0000039</oboInOwl:id>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
@@ -1618,14 +1625,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000023"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:38:18Z</oboInOwl:creation_date>
@@ -1844,16 +1851,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prefix meaning spined, as in acanthostyle or acanthomicrorhabd</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000101"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:cjm</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echinate</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000101"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prefix meaning spined, as in acanthostyle or acanthomicrorhabd</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000101"/>
     </owl:Axiom>
     
 
@@ -2225,16 +2232,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reticulate</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracts, lines, or fibers are interconnected</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reticulate</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -2932,20 +2939,20 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule/skeleton</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral spicule/skeleton</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral spicule/skeleton</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules surrounding the atrium.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
@@ -2958,10 +2965,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules surrounding the atrium.</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule/skeleton</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -3091,14 +3098,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bark</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000457"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000457"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture of the Skeleton of Demospongiae</rdfs:comment>
@@ -3584,15 +3591,15 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#adjacent_to"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000045"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#adjacent_to"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000045"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcareous Spicules and Calcareous Spicule Skeleton</rdfs:comment>
@@ -3906,10 +3913,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predominantly radiate, occasionally confused arrangement of megascleres including triaenes with cladome outward, lacking spongin, and commonly with a cortex.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrophorid</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000204"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">choristid</owl:annotatedTarget>
@@ -3918,10 +3925,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">astrophorid</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predominantly radiate, occasionally confused arrangement of megascleres including triaenes with cladome outward, lacking spongin, and commonly with a cortex.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000204"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -4491,10 +4498,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See OXEA.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abruptly pointed</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000230"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conical</owl:annotatedTarget>
@@ -4503,10 +4510,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abruptly pointed</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See OXEA.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000230"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -4807,14 +4814,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000905"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000905"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spongin layer covering the surface or a part of the surface of a sponge.</obo:IAO_0000115>
@@ -5081,15 +5088,15 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000587"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000946"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000946"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PORO:0000257</oboInOwl:id>
@@ -5839,16 +5846,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equal</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000293"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See OXEA.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000293"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">equal</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000293"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -6080,14 +6087,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000499"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000499"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A column (strand, thread) of spongin forming a reticulate or dendritic skeleton, with or without indige nous spicules or foreign material.</obo:IAO_0000115>
@@ -7415,7 +7422,7 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000598"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000305"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -7425,7 +7432,7 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000305"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000598"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -8201,15 +8208,15 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000587"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000946"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000946"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PORO:0000411</oboInOwl:id>
@@ -8672,10 +8679,11 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One or both equivalent rays of a sagittal spicule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000434"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
@@ -8685,11 +8693,10 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One or both equivalent rays of a sagittal spicule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oral</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000434"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -8863,17 +8870,17 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilaterally symmetrical triactine or tetractine with unequal actines, having equal angles (120 degrees) between the basal rays when projected into a plane perpendicular to the optic axis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000442"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary sagittal spicule</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000442"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bilaterally symmetrical triactine or tetractine with unequal actines, having equal angles (120 degrees) between the basal rays when projected into a plane perpendicular to the optic axis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000442"/>
     </owl:Axiom>
     
 
@@ -9425,14 +9432,14 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000917"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000631"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000281"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000281"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000631"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized area of the ectosome with a cluster of ostia and an underlying inhalant cavity called the vestibule</obo:IAO_0000115>
@@ -11045,16 +11052,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stepped</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000556"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of a megasclere. See OXEA.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000556"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stepped</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000556"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -11481,16 +11488,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symmetrica</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See OXEA.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000577"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symmetrica</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000577"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See OXEA.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000577"/>
     </owl:Axiom>
     
 
@@ -11991,6 +11998,13 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000500"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -12002,13 +12016,6 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000500"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General term for a tetractinal megasclere having one unequal ray (termed rhabd) that is commonly much longer than the other three (termed clads, forming the cladome).</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PORO:0000601</oboInOwl:id>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
@@ -12017,16 +12024,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasExactSynonym>triaene megasclere</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triaene</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General term for a tetractinal megasclere having one unequal ray (termed rhabd) that is commonly much longer than the other three (termed clads, forming the cladome).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triaene</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -12539,16 +12546,16 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal actine (ray)</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In sagittal spicules, the ray of a triactine or of a triradiate basal system of a tetractine lying in the plane of bilateral symmetry.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal actine (ray)</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -13382,8 +13389,8 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <obo:IAO_0000115>enzyme which catalyzes the formation of silicate polymers</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>enzyme which catalyzes the formation of silicate polymers</owl:annotatedTarget>
         <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicatein</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>enzyme which catalyzes the formation of silicate polymers</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000960"/>
     </owl:Axiom>
@@ -13398,11 +13405,41 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <obo:IAO_0000115>enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicase</oboInOwl:hasDbXref>
         <owl:annotatedTarget>enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicase</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000961"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PORO_0000963 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000963">
+        <rdfs:label xml:lang="en">spiculogenesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000964"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PORO_0000991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000991">
+        <rdfs:label xml:lang="en">cavity of canal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000939"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -13425,8 +13462,8 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000567"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0002003"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0002001"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0002004"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -13434,10 +13471,29 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000567"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0002003"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0002001"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0002004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PORO_0002004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0002004">
+        <rdfs:label xml:lang="en">spine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PORO_0002005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0002005">
+        <rdfs:label xml:lang="en">verticillated acanthostyle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0002002"/>
+        <rdfs:comment>Editor&#39;s note: logical definition still to be added</rdfs:comment>
     </owl:Class>
     
 
@@ -13490,6 +13546,37 @@ The mesohyl is composed of the following main elements: collagen, fibronectin-li
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/poro.owl">
         <oboInOwl:remark rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-04-10</oboInOwl:remark>
     </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+    </owl:Restriction>
 </rdf:RDF>
 
 
