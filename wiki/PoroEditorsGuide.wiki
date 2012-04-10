@@ -18,6 +18,8 @@ These are stored in:
 
 === Setting ID ranges in Protege ===
 
+Go to Preferences/New Entities and set as follows - CHANGE THE NUMBERS TO MATCH YOUR RANGE
+
 http://porifera-ontology.googlecode.com/svn/trunk/src/docs/images/editor-id-ranges.jpg
 
 == Derived Files ==
