@@ -16,7 +16,7 @@ These are stored in:
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
-[http://code.google.com/p/porifera-ontology/source/browse/trunk/src/docs/images/editor-id-ranges.jpg]
+http://code.google.com/p/porifera-ontology/source/browse/trunk/src/docs/images/editor-id-ranges.jpg
 
 poro.obo and poro.owl are generated from poro-edit.owl via the Makefile.
 
