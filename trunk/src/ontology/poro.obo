@@ -5262,6 +5262,20 @@ def: "enzyme in sponges, proposed to be involved in silica restructuring and mai
 is_a: PORO:0000959 ! protein
 
 [Term]
+id: PORO:0002001
+name: acantho
+def: "has spines; applies only to spicules" []
+is_a: PORO:0000101 ! spined
+
+[Term]
+id: PORO:0002002
+name: acanthostyle
+is_a: PORO:0000567 ! style
+intersection_of: PORO:0000567 ! style
+intersection_of: PORO:0002003 PORO:0002001 ! has quality acantho
+relationship: PORO:0002003 PORO:0002001 ! has quality acantho
+
+[Term]
 id: UBERON:0000990
 name: reproductive system
 namespace: uberon
@@ -5289,6 +5303,10 @@ name: surrounded by
 [Typedef]
 id: PORO:0000946
 name: variant of
+
+[Typedef]
+id: PORO:0002003
+name: has quality
 
 [Typedef]
 id: capable_of
