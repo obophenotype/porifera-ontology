@@ -16,7 +16,11 @@ These are stored in:
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
+=== Setting ID ranges in Protege ===
+
 http://code.google.com/p/porifera-ontology/source/browse/trunk/src/docs/images/editor-id-ranges.jpg
+
+== Derived Files ==
 
 poro.obo and poro.owl are generated from poro-edit.owl via the Makefile.
 
