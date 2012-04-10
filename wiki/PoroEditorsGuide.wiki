@@ -12,7 +12,7 @@ poro.owl is the release version
 
 These are stored in:
 
-  poro-idranges.owl
+ * [http://code.google.com/p/porifera-ontology/source/browse/trunk/src/ontology/poro-idranges.owl poro-idranges.owl]
 
 ** ONLY USE IDs WITHIN YOUR RANGE!! **
 
