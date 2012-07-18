@@ -7,6 +7,11 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/poro.owl>
 Annotation(<http://www.geneontology.org/formats/oboInOwl#remark> "Porifera Ontology"^^xsd:string)
+Annotation(<http://xmlns.com/foaf/0.1/homepage> "http://code.google.com/p/porifera-ontology/"^^xsd:anyURI)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Bob Thacker"^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/creator> "Chris Mungall"^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/title> "Porifera (sponge) ontology"^^xsd:string)
+Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology describing the anatomical structures and characteristics of Porifera (sponges)"^^xsd:string)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CARO_0000000>))
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:MAH"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CARO_0000000> "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species."^^xsd:string)
