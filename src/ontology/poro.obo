@@ -3,6 +3,11 @@ synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
 synonymtypedef: TRAIT "synonyms that refers to the corresponding trait" 
 remark: Porifera Ontology
 ontology: poro
+property_value: http://purl.org/dc/elements/1.1/creator "Bob Thacker" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "An ontology describing the anatomical structures and characteristics of Porifera (sponges)" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Porifera (sponge) ontology" xsd:string
+property_value: http://xmlns.com/foaf/0.1/homepage http://code.google.com/p/porifera-ontology/ xsd:anyURI
 
 [Term]
 id: CARO:0000000
