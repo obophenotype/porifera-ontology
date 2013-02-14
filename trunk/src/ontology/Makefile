@@ -12,7 +12,6 @@ release: poro.obo diff
 poro.obo: poro-edit.ofn
 	ontology-release-runner $< --allow-overwrite --asserted --simple
 
-
 obo2owl:
 	obolib-owl2obo poro-edit.owl -o poro-edit.obo
 
