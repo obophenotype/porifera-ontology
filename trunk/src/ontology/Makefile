@@ -42,4 +42,4 @@ diff: poro.obo
 # Minidiff: intra-release differences
 # TESTING: emailing self, will change to list
 minidiff: poro.obo
-	cd diffs  && touch poro-diff && rm poro-*diff* && make TGTS='html txt' SRC=../build/poro.obo && mail -s poro-diffs cjmungall@lbl.gov < poro-combined-diff.txt
+	cd diffs  && touch poro-diff && rm poro-*diff* && make TGTS='html txt' SRC=../poro.obo && mail -s poro-diffs cjmungall@lbl.gov < poro-combined-diff.txt
