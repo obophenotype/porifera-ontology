@@ -1,6 +1,8 @@
 format-version: 1.2
+data-version: 2012-07-17
 synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
-synonymtypedef: TRAIT "synonyms that refers to the corresponding trait" 
+synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
+remark: 2012-07-17
 remark: Porifera Ontology
 ontology: poro
 property_value: http://purl.org/dc/elements/1.1/creator "Bob Thacker" xsd:string
@@ -8,6 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/description "An ontology describing the anatomical structures and characteristics of Porifera (sponges)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Porifera (sponge) ontology" xsd:string
 property_value: http://xmlns.com/foaf/0.1/homepage http://code.google.com/p/porifera-ontology/ xsd:anyURI
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0000001>))\nObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/GO_0008150>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\n)
 
 [Term]
 id: CARO:0000000
@@ -1933,6 +1936,8 @@ namespace: sponge
 def: "A spicule composed of two actines" [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 is_a: PORO:0000017 ! spicule
+intersection_of: PORO:0000017 ! spicule
+intersection_of: has_part PORO:0000106 {cardinality="2"} ! actine ray
 relationship: has_part PORO:0000106 {cardinality="2"} ! actine ray
 
 [Term]
@@ -3192,6 +3197,8 @@ namespace: sponge
 def: "Reduced triaene with only one clad" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: PORO:0000587 ! tetractine
+intersection_of: PORO:0000587 ! tetractine
+intersection_of: has_part PORO:0000206 {cardinality="1"} ! clad
 relationship: has_part PORO:0000206 {cardinality="1"} ! clad
 relationship: PORO:0000946 PORO:0000601 ! variant of triaene
 
@@ -3511,6 +3518,8 @@ def: "Five-rayed spicule." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
 synonym: "pentact" EXACT [http://www.portol.org/thesaurus]
 is_a: PORO:0000017 ! spicule
+intersection_of: PORO:0000017 ! spicule
+intersection_of: has_part PORO:0000045 {cardinality="5"} ! spicule ray
 relationship: has_part PORO:0000045 {cardinality="5"} ! spicule ray
 
 [Term]
@@ -4323,7 +4332,6 @@ def: "Adjective referring to the extremities of a megasclere. See OXEA." [http:/
 comment: Spicules of Demospongiae
 synonym: "stepped" RELATED TRAIT []
 synonym: "telescoped" RELATED TRAIT []
-synonym: "telescoped" RELATED []
 is_a: PORO:0000098 ! megasclere
 
 [Term]
@@ -4579,6 +4587,8 @@ namespace: sponge
 def: "A spicule with four rays (in figure, sagittal tetractine at the top and regular tetractine at the bottom)." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 is_a: PORO:0000017 ! spicule
+intersection_of: PORO:0000017 ! spicule
+intersection_of: has_part PORO:0000045 {cardinality="4"} ! spicule ray
 relationship: has_part PORO:0000045 {cardinality="4"} ! spicule ray
 
 [Term]
@@ -4685,6 +4695,8 @@ namespace: sponge
 def: "A spicule with three rays." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 is_a: PORO:0000017 ! spicule
+intersection_of: PORO:0000017 ! spicule
+intersection_of: has_part PORO:0000106 {cardinality="3"} ! actine ray
 relationship: has_part PORO:0000106 {cardinality="3"} ! actine ray
 
 [Term]
@@ -4709,6 +4721,8 @@ def: "Spicule with three axes." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida. WP: Triaxons have three axes; in triods, each axis bears a similar ray; in pentacts, the triaxon has five rays, four of which lie in a single plane; and pinnules are pentacts with large spines on the non-planar ray - Eugenio Andri; Stefania Gerbaudo; Massimiliano Testa (2001).
 synonym: "triaxon" RELATED []
 is_a: PORO:0000017 ! spicule
+intersection_of: PORO:0000017 ! spicule
+intersection_of: has_part PORO:0000909 {cardinality="3"} ! ray axis
 relationship: has_part PORO:0000909 {cardinality="3"} ! ray axis
 
 [Term]
@@ -5308,6 +5322,16 @@ comment: Editor's note: logical definition still to be added
 is_a: PORO:0002002 ! acanthostyle
 
 [Term]
+id: PORO:0002027
+name: anisochela_I
+is_a: PORO:0000126 ! anisochela
+
+[Term]
+id: PORO:0002028
+name: anisochela_II
+is_a: PORO:0000126 ! anisochela
+
+[Term]
 id: UBERON:0000990
 name: reproductive system
 namespace: uberon
@@ -5362,9 +5386,9 @@ id: develops_from
 name: develops_from
 namespace: sponge
 xref: RO:0002202
+holds_over_chain: part_of develops_from
 is_transitive: true
 transitive_over: part_of ! part of
-holds_over_chain: part_of develops_from ! develops_from
 
 [Typedef]
 id: echinates
