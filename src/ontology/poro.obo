@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/description "An ontology describing the anatomical structures and characteristics of Porifera (sponges)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Porifera (sponge) ontology" xsd:string
 property_value: http://xmlns.com/foaf/0.1/homepage http://code.google.com/p/porifera-ontology/ xsd:anyURI
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0000001>))\nObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/GO_0008150>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000017> \"\")\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0000001>))\nObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/GO_0008150>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\n)
 
 [Term]
 id: CARO:0000000
@@ -328,11 +328,13 @@ creation_date: 2011-04-22T06:58:18Z
 id: PORO:0000017
 name: spicule
 namespace: sponge
-def: "A component of the mineral skeleton, typically composed of silica or calcium carbonate[portol]. A structural element that provides structural support and deter predators. Large spicules, visible to the naked eye are referred to as megascleres, while smaller, microscopic ones are termed microscleres. The meshing of many spicules serves as the sponge’s skeleton. Spicules are formed by sclerocytes, which are derived from archaeocytes. The sclerocyte begins with an organic filament, and adds silica to it. Spicules are generally elongated at a rate of 1-10 μm per hour. Once the spicule reaches a certain length it protrudes from the sclerocyte cell body, but remains within the cell’s membrane. On occasion, sclerocytes may begin a second spicule while the first is still in progress." [http://www.portol.org/thesaurus, Wikipedia:Sponge_spicule]
+def: "siliceous or calcareous entities that form the mineral skeleton of a sponge" []
 comment: located primarily in the mesohyl, but some project through the pinacoderm (Barnes).
 is_a: CARO:0000040 ! acellular anatomical structure
 relationship: part_of PORO:0000002 ! mesohyl
+relationship: part_of PORO:0002042 ! mineral skeleton
 relationship: secreted_by PORO:0000011 ! sclerocyte
+property_value: PORO:0000995 "A component of the mineral skeleton, typically composed of silica or calcium carbonate[portol]. A structural element that provides structural support and deter predators. Large spicules, visible to the naked eye are referred to as megascleres, while smaller, microscopic ones are termed microscleres. The meshing of many spicules serves as the sponge's skeleton. Spicules are formed by sclerocytes, which are derived from archaeocytes. The sclerocyte begins with an organic filament, and adds silica to it. Spicules are generally elongated at a rate of 1-10 μm per hour. Once the spicule reaches a certain length it protrudes from the sclerocyte cell body, but remains within the cell's membrane. On occasion, sclerocytes may begin a second spicule while the first is still in progress." xsd:string {xref="Wikipedia:Sponge_spicule", xref="http://www.portol.org/thesaurus"}
 created_by: cjm
 creation_date: 2011-04-22T06:59:28Z
 
@@ -414,6 +416,7 @@ id: PORO:0000025
 name: choanocyte-lined chamber
 namespace: sponge
 def: "Any cavity lined by choanocytes and located between inhalant and exhalant systems[portol]. either the choanocyte-lined radial canal in syconoid, or the choanocyte-lined filter chamber in leuconoid[cjm]." []
+synonym: "choanocyte chamber" EXACT []
 is_a: PORO:0000039 ! canal
 is_a: PORO:0000915 ! chamber
 created_by: cjm
@@ -654,9 +657,9 @@ is_a: PORO:0000017 ! spicule
 
 [Term]
 id: PORO:0000099
-name: primary skeleton
+name: obsolete primary skeleton
 namespace: sponge
-is_a: PORO:0000532 ! skeleton
+is_obsolete: true
 
 [Term]
 id: PORO:0000100
@@ -691,7 +694,7 @@ namespace: sponge
 def: "A megasclere echinating the primary skeleton. See ECHINATING SPICULE." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000098 ! megasclere
-relationship: echinates PORO:0000099 ! primary skeleton
+relationship: echinates PORO:0000202 ! choanosomal skeleton
 
 [Term]
 id: PORO:0000104
@@ -1476,10 +1479,10 @@ name: choanosomal skeleton
 namespace: sponge
 def: "Skeleton of the main body, supporting the canal system and responsible for the form of the sponge." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-synonym: "endosomal skeleton" RELATED []
-synonym: "main skeleton" RELATED []
-synonym: "primary skeleton" RELATED []
-synonym: "principal skeleton" RELATED []
+synonym: "endosomal skeleton" EXACT []
+synonym: "main skeleton" EXACT []
+synonym: "primary skeleton" EXACT []
+synonym: "principal skeleton" EXACT []
 is_a: PORO:0000532 ! skeleton
 
 [Term]
@@ -1488,6 +1491,7 @@ name: choanosome
 namespace: sponge
 def: "The internal region of a sponge, including the choanocyte chambers." [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
+synonym: "endosome" EXACT []
 is_a: PORO:0000938 ! organism subdivision
 
 [Term]
@@ -1933,10 +1937,11 @@ relationship: has_part PORO:0000045 {cardinality="2"} ! spicule ray
 id: PORO:0000256
 name: diactine
 namespace: sponge
-def: "A spicule composed of two actines" [http://www.portol.org/thesaurus]
+def: "Megasclere with two actines (two rays or two points)" [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
-is_a: PORO:0000017 ! spicule
-intersection_of: PORO:0000017 ! spicule
+synonym: "diact" EXACT []
+is_a: PORO:0000098 ! megasclere
+intersection_of: PORO:0000098 ! megasclere
 intersection_of: has_part PORO:0000106 {cardinality="2"} ! actine ray
 relationship: has_part PORO:0000106 {cardinality="2"} ! actine ray
 
@@ -2279,6 +2284,7 @@ comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
 synonym: "boring" RELATED []
 synonym: "burrowing" RELATED []
 synonym: "perforating" RELATED []
+is_a: PORO:0000921 ! relationship to substrate
 
 [Term]
 id: PORO:0000298
@@ -3356,7 +3362,6 @@ namespace: sponge
 def: "Monaxon (diactinal) spicule pointed at both ends (a-m in figure). Different types are distinguished by shape and tip morphology. Shape may be fusiform (a), angulate (b), centrotylote (c), curved (d), or flexuous (e). Tips may be acerate (f), asymmetrical (g), blunt (h), conical (i), hastate (j), mucronate (k), stepped (1), or symmetrical (m)." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: PORO:0000256 ! diactine
-is_a: PORO:0000412 ! monaxon
 disjoint_from: PORO:0000954 ! microstrongyle
 
 [Term]
@@ -3455,7 +3460,7 @@ namespace: sponge
 def: "Bilaterally symmetrical triactine or tetractine with unequal actines, having equal angles (120 degrees) between the basal rays when projected into a plane perpendicular to the optic axis." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 synonym: "secondary sagittal spicule" RELATED DEPRECATED [http://www.portol.org/thesaurus]
-is_a: PORO:0000017 ! spicule
+is_a: PORO:0000030 ! calcareous spicule
 
 [Term]
 id: PORO:0000443
@@ -4419,7 +4424,7 @@ name: style
 namespace: sponge
 def: "Monaxon spicule with one end pointed, the other (head or base) blunt" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae. NOTE: wp says megasclere
-is_a: PORO:0000412 ! monaxon
+is_a: PORO:0002043 ! monact
 
 [Term]
 id: PORO:0000568
@@ -5016,7 +5021,7 @@ is_a: PORO:0000532 ! skeleton
 id: PORO:0000902
 name: aster
 def: "stellate spicule where where 1-6 primary rays undergo terminal branching to form secondary rays (differs from definition used for desmosponges)" []
-is_a: PORO:0000017 ! spicule
+is_a: PORO:0000097 ! microsclere
 
 [Term]
 id: PORO:0000904
@@ -5113,7 +5118,7 @@ is_a: PORO:0000532 ! skeleton
 [Term]
 id: PORO:0000921
 name: relationship to substrate
-is_a: PATO:0000001 ! quality
+is_a: PORO:0002035 ! growth_form
 
 [Term]
 id: PORO:0000922
@@ -5323,13 +5328,82 @@ is_a: PORO:0002002 ! acanthostyle
 
 [Term]
 id: PORO:0002027
-name: anisochela_I
+name: anisochela I
 is_a: PORO:0000126 ! anisochela
 
 [Term]
 id: PORO:0002028
-name: anisochela_II
+name: anisochela II
 is_a: PORO:0000126 ! anisochela
+
+[Term]
+id: PORO:0002035
+name: growth_form
+synonym: "habit" BROAD []
+property_value: http://purl.org/dc/elements/1.1/description "shape of body form; habit" xsd:string
+
+[Term]
+id: PORO:0002036
+name: smooth
+def: "PATO_0000701\nA texture quality inhering in a bearer by virtue of the bearer's posessing a surface free of roughness or irregularities." []
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PORO:0002037
+name: obsolete endosome
+synonym: "choanosome" EXACT []
+is_obsolete: true
+
+[Term]
+id: PORO:0002038
+name: size class
+def: "number of size categories" []
+is_a: PATO:0000051 ! morphology
+
+[Term]
+id: PORO:0002039
+name: obsolete endosomal_skeleton
+is_obsolete: true
+
+[Term]
+id: PORO:0002040
+name: obsolete main_skeleton
+is_obsolete: true
+
+[Term]
+id: PORO:0002041
+name: obsolete principal skeleton
+is_obsolete: true
+
+[Term]
+id: PORO:0002042
+name: mineral skeleton
+is_a: CARO:0000040 ! acellular anatomical structure
+is_a: PORO:0000532 ! skeleton
+
+[Term]
+id: PORO:0002043
+name: monact
+def: "Megasclere with a single actine (one ray or one point)" []
+synonym: "monactine" EXACT []
+is_a: PORO:0000412 ! monaxon
+
+[Term]
+id: PORO:0002044
+name: obsolete diact
+def: "Megasclere with two actines (two rays or two points)" []
+is_obsolete: true
+
+[Term]
+id: PORO:0002045
+name: obsolete monactine
+is_obsolete: true
+
+[Term]
+id: PORO:0002046
+name: obsolete choanocyte chamber
+synonym: "PORO:0000025" EXACT []
+is_obsolete: true
 
 [Term]
 id: UBERON:0000990
