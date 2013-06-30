@@ -4091,6 +4091,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002041> <http://purl.obolibrary
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002042>))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002042> "mineral skeleton"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002042> <http://purl.obolibrary.org/obo/CARO_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002042> <http://purl.obolibrary.org/obo/PORO_0000532>)
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002043>))
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0002043> "Megasclere with a single actine (one ray or one point)")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PORO_0002043> "monactine")
