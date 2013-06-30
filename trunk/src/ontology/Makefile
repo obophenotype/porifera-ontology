@@ -21,8 +21,8 @@ poro-parse.obo: all.html
 porifera-taxonomy.obo:
 	blip ontol-query -r taxonomy -query "class(X,'Porifera'),(subclassRT(X,ID);subclassT(ID,X))" -to obo > $@
 
-porifera-taxonomy.owl: porifera.obo
-	owltools $< -o -f functional file://`pwd`/$@
+porifera-taxonomy.owl: porifera-taxonomy.obo
+	owltools $< -o file://`pwd`/$@
 
 poro-edit.rdf: poro-edit.owl
 	owltools $< -o file://`pwd`/$@
