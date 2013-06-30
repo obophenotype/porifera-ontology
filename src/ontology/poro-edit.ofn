@@ -4221,4 +4221,6 @@ SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <ht
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/BFO_0000050>) <http://purl.obolibrary.org/obo/RO_0002202>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/RO_0002202>) <http://purl.obolibrary.org/obo/RO_0002202>)
 SubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))
+ClassAssertion(ObjectSomeValuesFrom(<http://xmlns.com/foaf/0.1/depicts> <http://purl.obolibrary.org/obo/PORO_0002002>) <http://purl.obolibrary.org/obo/poro/images/acanthostyle.png>)
+ClassAssertion(ObjectSomeValuesFrom(<http://xmlns.com/foaf/0.1/depicts> <http://purl.obolibrary.org/obo/PORO_0002005>) <http://purl.obolibrary.org/obo/poro/images/verticiliate_acanthostyle.png>)
 )
