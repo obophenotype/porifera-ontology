@@ -6,7 +6,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/poro.owl>
-<http://purl.obolibrary.org/obo/poro/2012-07-17/poro.owl>
 Annotation(<http://www.geneontology.org/formats/oboInOwl#remark> "2012-07-17"^^xsd:string)
 Annotation(<http://purl.org/dc/elements/1.1/title> "Porifera (sponge) ontology"^^xsd:string)
 Annotation(<http://xmlns.com/foaf/0.1/homepage> "http://code.google.com/p/porifera-ontology/"^^xsd:anyURI)
