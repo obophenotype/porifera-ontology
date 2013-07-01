@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: 2012-07-17
+data-version: releases/2013-07-01
 synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
 synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
 remark: 2012-07-17
