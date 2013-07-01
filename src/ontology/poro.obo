@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/description "An ontology describing the anatomical structures and characteristics of Porifera (sponges)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Porifera (sponge) ontology" xsd:string
 property_value: http://xmlns.com/foaf/0.1/homepage http://code.google.com/p/porifera-ontology/ xsd:anyURI
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000017> \"\")\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0000001>))\nObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/GO_0008150>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000017> \"\")\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nObjectPropertyDomain(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(<http://purl.obolibrary.org/obo/PATO_0000001>))\nObjectPropertyRange(<http://purl.obolibrary.org/obo/BFO_0000053> ObjectComplementOf(ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000000> <http://purl.obolibrary.org/obo/CHEBI_24431> <http://purl.obolibrary.org/obo/GO_0008150>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>))\nEquivalentClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000001>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\n)
 
 [Term]
 id: CARO:0000000
@@ -1172,6 +1172,7 @@ name: bark
 namespace: sponge
 def: "The dense area of compacted spongin surrounding the central zone in pithed fibers" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
+is_a: CARO:0000054 ! anatomical group
 relationship: composed_of PORO:0000029 ! spongin
 relationship: part_of PORO:0000457 ! pithed fiber
 
@@ -1267,7 +1268,7 @@ name: brachyome
 namespace: sponge
 def: "Shortened arm of a trider." [http://www.portol.org/thesaurus]
 comment: Spicule Types of "Lithistids"
-relationship: part_of PORO:0000609 ! trider
+is_a: PORO:0000997 ! arm of trider
 
 [Term]
 id: PORO:0000175
@@ -1371,10 +1372,11 @@ is_a: PORO:0000017 ! spicule
 
 [Term]
 id: PORO:0000188
-name: center
+name: spicule center
 namespace: sponge
 def: "Point of union of the three rays of a triactine or of a basal triradiate system." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
+synonym: "center" BROAD []
 synonym: "centrum" RELATED []
 is_a: CARO:0000003 ! anatomical structure
 relationship: adjacent_to PORO:0000045 {cardinality="3"} ! spicule ray
@@ -1659,6 +1661,7 @@ name: column
 namespace: sponge
 def: "Radial skeletal element in stromatoporoids, with a greater degree of continuity and larger than PILLARS." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
+is_a: PORO:0000998 ! skeletal element of sponge
 
 [Term]
 id: PORO:0000224
@@ -2053,6 +2056,7 @@ name: diplodal
 namespace: sponge
 def: "Type of choanocyte chamber that connects with the inhalant canals through a canaliculum called the prosodus and with the excurrent canal through an apopyle extended by an aphodus" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
+is_a: PORO:0000025 ! choanocyte-lined chamber
 
 [Term]
 id: PORO:0000270
@@ -3541,6 +3545,7 @@ name: pillar
 namespace: sponge
 def: "Radial skeletal component, relatively short compared with COLUMN" [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
+is_a: PORO:0000998 ! skeletal element of sponge
 relationship: part_of PORO:0000532 ! skeleton
 
 [Term]
@@ -3599,6 +3604,7 @@ name: platy
 namespace: sponge
 def: "Thickly lamellate, usually in horizontal orientation." [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000461
@@ -3818,6 +3824,7 @@ namespace: sponge
 def: "One of a group of skeletal tubes - closely packed together, mostly hexagonal in shape and containing the live material - that resemble the calices or corallites of cnidarians." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
 synonym: "calyx" RELATED []
+is_a: PORO:0000998 ! skeletal element of sponge
 
 [Term]
 id: PORO:0000489
@@ -4369,6 +4376,7 @@ name: stoloniferous
 namespace: sponge
 def: "Condition in which distinct, massive parts of a sponge are interconnected by repent, rope-like structures (Haliclona tubifera)." [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000561
@@ -4753,6 +4761,7 @@ namespace: sponge
 def: "A bundle of raphids." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 synonym: "dragma" RELATED []
+is_a: PORO:0000095 ! arrangement of spicules
 relationship: composed_of PORO:0000494 ! raphide
 
 [Term]
@@ -4796,6 +4805,7 @@ name: triod
 namespace: sponge
 def: "Triact in which the rays are equal, straight, in one plane, and diverging at an angle of 120 degrees." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+is_a: PORO:0000600 ! triactine
 
 [Term]
 id: PORO:0000611
@@ -5088,6 +5098,7 @@ is_a: CARO:0000003 ! anatomical structure
 [Term]
 id: PORO:0000916
 name: life cycle stage
+comment: Replace with uberon class
 
 [Term]
 id: PORO:0000917
@@ -5302,6 +5313,18 @@ is_a: PORO:0000019 ! immaterial anatomical entity
 relationship: PORO:0000939 PORO:0000039 ! surrounded by canal
 
 [Term]
+id: PORO:0000997
+name: arm of trider
+is_a: CARO:0000003 ! anatomical structure
+relationship: part_of PORO:0000609 ! trider
+
+[Term]
+id: PORO:0000998
+name: skeletal element of sponge
+is_a: CARO:0000003 ! anatomical structure
+relationship: part_of PORO:0000532 ! skeleton
+
+[Term]
 id: PORO:0002001
 name: acantho
 def: "has spines; applies only to spicules" []
@@ -5473,6 +5496,7 @@ synonym: "protrudes from" RELATED []
 [Typedef]
 id: has_part
 name: has part
+comment: Note that we relax the transitivity constraint of this relation to allow us to make cardinality axioms. This is not very satisfactory, in future versions we may use a sub-relation such as has-component'
 
 [Typedef]
 id: part_of
