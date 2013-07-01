@@ -1,0 +1,8 @@
+== OBSOLETE TERMS AND SYNONYMS ==
+
+Anything from portol that says "to be rejected" is flagged with is_obsolete (deprecated), and consider/replaced_by links are added where possible.
+
+Where the portol description includes an alternate term with the string "to be rejected" we add a RELATED synonym in the category REJECTED
+
+
+
