@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2013-07-01
+data-version: releases/2014-01-03
 synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
 synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
 remark: 2012-07-17
@@ -214,7 +214,7 @@ namespace: sponge
 def: "gelatinous matrix within a sponge. It fills the space between the external pinacoderm and the internal choanoderm. The mesohyl resembles a type of connective tissue and contains several amoeboid cells such as amebocytes, as well as fibrils and skeletal elements. For hundreds of years, it has been largely accepted that sponges lack true tissue, but it is currently debated as to whether mesohyl and pinacoderm layers are in fact tissues.\n\nThe mesohyl is composed of the following main elements: collagen, fibronectin-like molecules, galectin, and a minor component, dermatopontin. These polypeptides form the extracellular matrix which provides the platform for specific cell adhesion as well as for signal transduction and cellular growth." [Wikipedia:Mesohyl]
 synonym: "mesenchyme" RELATED DEPRECATED []
 synonym: "mesoglea" RELATED []
-is_a: CARO:0000043 ! portion of tissue
+is_a: PORO:0000700 ! body layer
 relationship: adjacent_to PORO:0000043 ! pinacoderm
 relationship: adjacent_to PORO:0000200 ! choanoderm
 created_by: cjm
@@ -234,10 +234,10 @@ creation_date: 2011-04-22T06:47:33Z
 
 [Term]
 id: PORO:0000004
-name: epitheloid monolayer of cells
+name: obsolete epitheloid monolayer of cells
 namespace: sponge
 comment: Sponge cells adhere to form tissue-like layers, but a true epithelial cell layer, characterized by aligned cell polarity, belt-form junctions and underlying basal lamina, is thought to be a eumetazoan innovation. Amphimedon possesses all the main components of the Par, Crumbs and Discs Large (Dlg) complexes, a set of interacting proteins that are largely metazoan-specific and determine polarity in epithelial cells[http://www.nature.com/nature/journal/v466/n7307/full/nature09201.htm]
-is_a: CARO:0000043 ! portion of tissue
+is_obsolete: true
 created_by: cjm
 creation_date: 2011-04-22T06:50:20Z
 
@@ -406,17 +406,17 @@ namespace: sponge
 def: "a pore through which water is drawn from the outside into one of the saclike chambers formed by the evagination of the body wall." []
 comment: Compare: "Opening of an inhalant canal into a choanocyte chamber (pro in figure)." [http://www.portol.org/thesaurus]
 is_a: PORO:0000035 ! pore
-relationship: continuous_with PORO:0000025 ! choanocyte-lined chamber
+relationship: continuous_with PORO:0000025 ! choanocyte chamber
 relationship: part_of PORO:0000355 ! inhalant canal
 created_by: cjm
 creation_date: 2011-04-22T08:35:40Z
 
 [Term]
 id: PORO:0000025
-name: choanocyte-lined chamber
+name: choanocyte chamber
 namespace: sponge
 def: "Any cavity lined by choanocytes and located between inhalant and exhalant systems[portol]. either the choanocyte-lined radial canal in syconoid, or the choanocyte-lined filter chamber in leuconoid[cjm]." []
-synonym: "choanocyte chamber" EXACT []
+synonym: "choanocyte lined chamber" EXACT []
 is_a: PORO:0000039 ! canal
 is_a: PORO:0000915 ! chamber
 created_by: cjm
@@ -471,6 +471,7 @@ intersection_of: PORO:0000017 ! spicule
 intersection_of: composed_of CHEBI:3311 ! calcium carbonate
 disjoint_from: PORO:0000031 ! siliceous spicule
 relationship: composed_of CHEBI:3311 ! calcium carbonate
+relationship: composed_of CHEBI:46719 ! calcite
 created_by: cjm
 creation_date: 2011-04-22T07:20:56Z
 
@@ -531,7 +532,7 @@ name: dermal pore
 namespace: sponge
 comment: In syconoid sponge, water passes through dermal pores to the incurrent canal and through the prosopyle to the choanocyte-lined radial canal.
 is_a: PORO:0000035 ! pore
-relationship: continuous_with PORO:0000040 ! incurrent canal
+relationship: continuous_with PORO:0000355 ! inhalant canal
 created_by: cjm
 creation_date: 2011-04-22T07:31:20Z
 
@@ -545,10 +546,9 @@ creation_date: 2011-04-22T07:31:48Z
 
 [Term]
 id: PORO:0000040
-name: incurrent canal
+name: obsolete incurrent canal
 namespace: sponge
-is_a: PORO:0000039 ! canal
-relationship: continuous_with PORO:0000024 ! prosopyle
+is_obsolete: true
 created_by: cjm
 creation_date: 2011-04-22T07:31:56Z
 
@@ -565,9 +565,9 @@ creation_date: 2011-04-22T07:32:19Z
 
 [Term]
 id: PORO:0000042
-name: flagellated chamber
+name: obsolete flagellated chamber
 namespace: sponge
-is_a: PORO:0000915 ! chamber
+is_obsolete: true
 created_by: cjm
 creation_date: 2011-04-22T07:32:43Z
 
@@ -577,9 +577,9 @@ name: pinacoderm
 namespace: sponge
 def: "The pinacoderm is the outer most layer of cells (pinacocytes) in the phylum Porifera (sponges), similar to the epidermis in other organisms. The pinacocytes are on the external surface of the sponge body and characterized as an epithelial layer of flattened cells." [Wikipedia:Pinacoderm]
 comment: compare with: "Surface lined by pinacocytes (ex and en in figure)." [http://www.portol.org/thesaurus]
-is_a: PORO:0000004 ! epitheloid monolayer of cells
+is_a: PORO:0000700 ! body layer
 is_a: PORO:0000905 ! sponge surface
-relationship: composed_of PORO:0000023 ! pinacocyte
+relationship: lined_by PORO:0000023 ! pinacocyte
 created_by: cjm
 creation_date: 2011-04-22T07:33:24Z
 
@@ -652,7 +652,7 @@ disjoint_from: PORO:0000098 ! megasclere
 id: PORO:0000098
 name: megasclere
 namespace: sponge
-def: "A large spicules, visible to the naked eye." [Wikipedia:Sponge_spicule]
+def: "A large spicule, visible to the naked eye." [Wikipedia:Sponge_spicule]
 is_a: PORO:0000017 ! spicule
 
 [Term]
@@ -945,7 +945,7 @@ name: aphodal
 namespace: sponge
 def: "Type of choanocyte chamber that connects directly with the inhalant canals through prosopyles and with the exhalant canal through an apopyle extended by an aphodus. Only one chamber opens into one aphodus" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: PORO:0000025 ! choanocyte-lined chamber
+is_a: PORO:0000025 ! choanocyte chamber
 
 [Term]
 id: PORO:0000134
@@ -988,7 +988,9 @@ name: apopinacoderm
 namespace: sponge
 def: "Surface lined by apopinacocytes." [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: PORO:0000905 ! sponge surface
+is_a: PORO:0000286 ! endopinacoderm
+intersection_of: PORO:0000905 ! sponge surface
+intersection_of: lined_by PORO:0000137 ! apopinacocyte
 relationship: lined_by PORO:0000137 ! apopinacocyte
 
 [Term]
@@ -1463,7 +1465,7 @@ name: choanoderm
 namespace: sponge
 def: "Surface lined by choanocytes." [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: CARO:0000043 ! portion of tissue
+is_a: PORO:0000700 ! body layer
 relationship: has_part PORO:0000003 ! choanocyte
 
 [Term]
@@ -1642,7 +1644,7 @@ id: PORO:0000221
 name: collar body
 namespace: sponge
 def: "Anucleate choanocyte in hexactinellids." [http://www.portol.org/thesaurus]
-comment: Cytology
+comment: Editor note: consider using 'anucleate cell' from CL
 is_a: PORO:0000003 ! choanocyte
 relationship: develops_from PORO:0000196 ! choanoblast
 
@@ -2003,10 +2005,11 @@ is_a: PORO:0000253 ! desma
 
 [Term]
 id: PORO:0000263
-name: dictyonal skeleton (= dictyonine)
+name: dictyonal skeleton
 namespace: sponge
 def: "Three-dimensional network of fused, regular hexactins" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+synonym: "dictyonine" RELATED []
 is_a: PORO:0000532 ! skeleton
 
 [Term]
@@ -2056,7 +2059,7 @@ name: diplodal
 namespace: sponge
 def: "Type of choanocyte chamber that connects with the inhalant canals through a canaliculum called the prosodus and with the excurrent canal through an apopyle extended by an aphodus" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: PORO:0000025 ! choanocyte-lined chamber
+is_a: PORO:0000025 ! choanocyte chamber
 
 [Term]
 id: PORO:0000270
@@ -2127,7 +2130,7 @@ is_a: PORO:0000343 ! hexaster
 id: PORO:0000278
 name: echinating spicule
 namespace: sponge
-def: "Megasclere that protrudes from the spon gin plate, a fiber, or a spicule tract" [http://www.portol.org/thesaurus]
+def: "Megasclere that protrudes from the spongin plate, a fiber, or a spicule tract" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000098 ! megasclere
 
@@ -2196,7 +2199,9 @@ namespace: sponge
 def: "Surface lined by endopinacocytes." [http://www.portol.org/thesaurus]
 comment: Cytology
 is_a: PORO:0000905 ! sponge surface
-relationship: has_part PORO:0000285 ! endopinacocyte
+intersection_of: PORO:0000905 ! sponge surface
+intersection_of: lined_by PORO:0000285 ! endopinacocyte
+relationship: lined_by PORO:0000285 ! endopinacocyte
 
 [Term]
 id: PORO:0000287
@@ -2277,7 +2282,7 @@ name: eurypylous
 namespace: sponge
 def: "Type of choanocyte chamber that connects directly with the inhalant canals through prosopyles and with the excurrent canal through an apopyle. There is no special canal after the apopyle, and several chambers open into the same exhalant canal" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: PORO:0000025 ! choanocyte-lined chamber
+is_a: PORO:0000025 ! choanocyte chamber
 
 [Term]
 id: PORO:0000297
@@ -2296,6 +2301,7 @@ name: exhalant canal
 namespace: sponge
 def: "Any canal forming part of the exhalant system, lined by the apopinacoderm." [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
+synonym: "excurrent canal" RELATED []
 is_a: PORO:0000039 ! canal
 
 [Term]
@@ -2780,7 +2786,9 @@ name: inhalant canal
 namespace: sponge
 def: "Any canal forming part of the inhalant system and lined by the prosopinacoderm." [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
+synonym: "incurrent canal" RELATED []
 is_a: PORO:0000039 ! canal
+relationship: has_part PORO:0000482 ! prosopinacoderm
 
 [Term]
 id: PORO:0000356
@@ -3131,7 +3139,7 @@ name: microgranular cell
 namespace: sponge
 def: "A cell with cytoplasm filled with small dense granules" [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: PORO:0000000 ! sponge cell
+is_a: PORO:0000704 ! granular cell
 
 [Term]
 id: PORO:0000402
@@ -3783,8 +3791,10 @@ name: prosopinacoderm
 namespace: sponge
 def: "Surface lined by prosopinacocytes." [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: PORO:0000905 ! sponge surface
-relationship: composed_of PORO:0000481 ! prosopinacocyte
+is_a: PORO:0000286 ! endopinacoderm
+intersection_of: PORO:0000905 ! sponge surface
+intersection_of: lined_by PORO:0000481 ! prosopinacocyte
+relationship: lined_by PORO:0000481 ! prosopinacocyte
 
 [Term]
 id: PORO:0000484
@@ -4689,7 +4699,7 @@ is_a: CARO:0000043 ! portion of tissue
 id: PORO:0000598
 name: tract
 namespace: sponge
-def: "A column of aligned megascleres (figure shows two types of tract)." [http://www.portol.org/thesaurus]
+def: "A column of aligned megascleres." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000096 ! arrangement of megascleres
 
@@ -4879,6 +4889,7 @@ namespace: sponge
 def: "A style with a tyle (globular swelling) at the base" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: PORO:0000567 ! style
+relationship: has_part PORO:0000618 ! tyle
 
 [Term]
 id: PORO:0000620
@@ -5017,6 +5028,60 @@ def: "Mode of junction between siliceous and calcareous tetraradiates characteri
 comment: Calcareous Rigid Skeleton
 
 [Term]
+id: PORO:0000700
+name: body layer
+is_a: CARO:0000043 ! portion of tissue
+
+[Term]
+id: PORO:0000701
+name: spermatid
+is_a: CL:0000039 ! germ line cell
+relationship: develops_from PORO:0000025 ! choanocyte chamber
+
+[Term]
+id: PORO:0000702
+name: spongiocyte
+is_a: PORO:0000000 ! sponge cell
+
+[Term]
+id: PORO:0000703
+name: bromotyrosin
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: PORO:0000704
+name: granular cell
+is_a: PORO:0000000 ! sponge cell
+
+[Term]
+id: PORO:0000705
+name: membrane-bound inclusion
+is_a: PORO:0000923 ! cell component
+
+[Term]
+id: PORO:0000706
+name: large dense membrane-bound inclusion
+is_a: PORO:0000705 ! membrane-bound inclusion
+
+[Term]
+id: PORO:0000707
+name: large granular membrane-bound inclusion
+is_a: PORO:0000705 ! membrane-bound inclusion
+
+[Term]
+id: PORO:0000708
+name: small granular membrane-bound inclusion
+is_a: PORO:0000705 ! membrane-bound inclusion
+
+[Term]
+id: PORO:0000709
+name: exopinacoderm
+is_a: PORO:0000905 ! sponge surface
+intersection_of: PORO:0000905 ! sponge surface
+intersection_of: lined_by PORO:0000300 ! exopinacocyte
+relationship: lined_by PORO:0000300 ! exopinacocyte
+
+[Term]
 id: PORO:0000900
 name: reproductive body
 is_a: CARO:0000003 ! anatomical structure
@@ -5036,6 +5101,7 @@ is_a: PORO:0000097 ! microsclere
 [Term]
 id: PORO:0000904
 name: collagen fibril
+comment: Editor note: use GO or PRO
 is_a: CARO:0000040 ! acellular anatomical structure
 
 [Term]
@@ -5212,12 +5278,12 @@ is_a: PORO:0000910 ! plate
 [Term]
 id: PORO:0000936
 name: choanocyte-lined radial canal
-is_a: PORO:0000025 ! choanocyte-lined chamber
+is_a: PORO:0000025 ! choanocyte chamber
 
 [Term]
 id: PORO:0000937
 name: choanocyte-lined filter chamber
-is_a: PORO:0000025 ! choanocyte-lined chamber
+is_a: PORO:0000025 ! choanocyte chamber
 
 [Term]
 id: PORO:0000938
@@ -5497,6 +5563,10 @@ synonym: "protrudes from" RELATED []
 id: has_part
 name: has part
 comment: Note that we relax the transitivity constraint of this relation to allow us to make cardinality axioms. This is not very satisfactory, in future versions we may use a sub-relation such as has-component'
+
+[Typedef]
+id: lined_by
+is_a: has_part ! has part
 
 [Typedef]
 id: part_of
