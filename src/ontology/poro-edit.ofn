@@ -1270,7 +1270,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespac
 SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000220> <http://purl.obolibrary.org/obo/CARO_0000040>)
 SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000220> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/sponge#composed_of> <http://purl.obolibrary.org/obo/PORO_0000904>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000221>))
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PORO_0000221> "Cytology"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PORO_0000221> "Editor note: consider using 'anucleate cell' from CL")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/PORO_0000221> "sponge"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000221> "collar body"^^xsd:string)

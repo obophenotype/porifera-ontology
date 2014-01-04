@@ -30,6 +30,15 @@ poro-edit.rdf: poro-edit.owl
 np.txt: poro.obo
 	blip-findall -i $< "class(X),\+subclass(X,Y)" -select X -label > $@ && wc $@
 
+poro-parts.owl: poro-edit.ofn
+	owltools --use-catalog --create-ontology poro-parts $< --materialize-existentials -p BFO:0000050 --add-imports-from-supports -o $@
+
+# ----------------------------------------
+# Bridges
+# ----------------------------------------
+core.owl: poro.owl
+	owltools --use-catalog $< --extract-bridge-ontologies -x -d . -s poro --remove-imports-declarations -o core.owl
+
 # ----------------------------------------
 # Diffs
 # ----------------------------------------
