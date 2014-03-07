@@ -5,7 +5,8 @@ LAST = $(OBO)/$(ONT).obo
 OWLSRC = ../$(ONT).owl
 OWLLAST = $(OBO)/$(ONT).owl
 
-all: $(ONT)-obo-diff.html $(ONT)-def-diff.html $(ONT)-lastbuild.obo $(ONT)-combined-diff.txt $(ONT)-diff.md
+all: $(ONT)-obo-diff.html $(ONT)-def-diff.html $(ONT)-lastbuild.obo $(ONT)-combined-diff.txt 
+qll_release: all $(ONT)-diff.md
 
 $(ONT)-obo-diff.html: $(ONT)-lastbuild.obo $(SRC)
 	compare-obo-files.pl --config 'html/ontology_name=$(ONT)' --rss-path . -f1 $< -f2 $(SRC) -m html text rss -o $(ONT)-obo-diff && replace-amigo-urls-with-purls.pl $@
