@@ -1,0 +1,17 @@
+format-version: 1.2
+ontology: poro/imports/imports/pato_import
+
+[Term]
+id: PATO:0000001
+name: quality
+
+[Term]
+id: PATO:0000051
+name: morphology
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
+id: PATO:0001241
+name: physical object quality
+is_a: PATO:0000001 ! quality
+
