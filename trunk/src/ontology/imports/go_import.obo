@@ -1,0 +1,103 @@
+format-version: 1.2
+ontology: poro/imports/imports/go_import
+
+[Term]
+id: GO:0000003
+name: reproduction
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0006810
+name: transport
+is_a: GO:0051234 ! establishment of localization
+
+[Term]
+id: GO:0006897
+name: endocytosis
+is_a: GO:0016192 ! vesicle-mediated transport
+relationship: BFO:0000051 GO:0010324 ! membrane invagination
+
+[Term]
+id: GO:0006909
+name: phagocytosis
+is_a: GO:0006897 ! endocytosis
+is_a: GO:0044765 ! single-organism transport
+
+[Term]
+id: GO:0006911
+name: phagocytosis, engulfment
+is_a: GO:0010324 ! membrane invagination
+intersection_of: GO:0010324 ! membrane invagination
+intersection_of: BFO:0000050 GO:0006909 ! phagocytosis
+relationship: BFO:0000050 GO:0006909 ! phagocytosis
+
+[Term]
+id: GO:0008150
+name: biological_process
+
+[Term]
+id: GO:0010324
+name: membrane invagination
+is_a: GO:0061024 ! membrane organization
+
+[Term]
+id: GO:0016043
+name: cellular component organization
+is_a: GO:0071840 ! cellular component organization or biogenesis
+
+[Term]
+id: GO:0016192
+name: vesicle-mediated transport
+is_a: GO:0006810 ! transport
+
+[Term]
+id: GO:0019861
+name: flagellum
+
+[Term]
+id: GO:0022414
+name: reproductive process
+is_a: GO:0008150 ! biological_process
+relationship: BFO:0000050 GO:0000003 ! reproduction
+
+[Term]
+id: GO:0044699
+name: single-organism process
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0044765
+name: single-organism transport
+is_a: GO:0006810 ! transport
+is_a: GO:0044699 ! single-organism process
+
+[Term]
+id: GO:0051179
+name: localization
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051234
+name: establishment of localization
+is_a: GO:0008150 ! biological_process
+relationship: BFO:0000050 GO:0051179 ! localization
+
+[Term]
+id: GO:0061024
+name: membrane organization
+is_a: GO:0016043 ! cellular component organization
+
+[Term]
+id: GO:0071840
+name: cellular component organization or biogenesis
+is_a: GO:0008150 ! biological_process
+
+[Typedef]
+id: BFO:0000050
+is_transitive: true
+
+[Typedef]
+id: BFO:0000051
+is_transitive: true
+inverse_of: BFO:0000050
+
