@@ -7,6 +7,8 @@
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/go_import.owl" uri="imports/go_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/cl_import.owl" uri="imports/cl_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/caro_import.owl" uri="imports/caro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/caro_import.owl" uri="imports/caro_import.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/poro/imports/pato_import.owl" uri="imports/pato_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
     </group>

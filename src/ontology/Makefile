@@ -7,6 +7,8 @@
 build: poro.obo minidiff
 release: poro.obo diff
 
+USECAT= --use-catalog
+
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
 poro.obo: poro-edit.ofn
@@ -61,7 +63,7 @@ PORO_IMPORTS_BASE_URI = $(OBO)/poro/imports
 IMPORTS = pato uberon chebi pr go caro
 
 # Make this target to regenerate ALL
-all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS))
+all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
 
 KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 
@@ -81,6 +83,9 @@ mirror/pr.obo:
 mirror/pr.owl: mirror/pr.obo
 	owltools $< --remove-dangling --set-ontology-id $(OBO)/pr.owl -o $@
 .PRECIOUS: mirror/%.owl
+
+imports/%_import.obo: imports/%_import.owl
+	owltools $< -o -f obo $@
 
 # ----------------------------------------
 # Diffs
