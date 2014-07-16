@@ -71,11 +71,13 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 # We use the standard catalog, but rewrite the import to X to be a local mirror of ALL of X.
 # After extraction, we further reduce the ontology by creating a "mingraph" (removes all annotations except label) and by 
 imports/%_import.owl: poro-edit.owl mirror/%.owl
-	owltools  $(USECAT) --map-ontology-iri $(PORO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl  $< mirror/$*.owl --add-imports-from-supports --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(PORO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
+	owltools  $(USECAT) --map-ontology-iri $(PORO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl  $<  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(PORO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
-	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/$*.owl -o $@
+	owltools $(OBO)/$*.owl --remove-annotation-assertions -l --remove-dangling-annotations  --make-subset-by-properties -f $(KEEPRELS)  --set-ontology-id $(OBO)/$*.owl -o $@
+mirror/ro.owl:
+	wget $(OBO)/ro.owl -O $@
 mirror/uberon.owl:
 	owltools $(OBO)/uberon/basic.owl --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
 mirror/pr.obo:
@@ -93,7 +95,7 @@ imports/%_import.obo: imports/%_import.owl
 
 # 
 diff: poro.obo
-	cd diffs && touch poro-diff && rm poro-*diff* && make
+	cd diffs && touch poro-diff && rm poro-*diff* && make all_release
 
 # Minidiff: intra-release differences
 # TESTING: emailing self, will change to list
