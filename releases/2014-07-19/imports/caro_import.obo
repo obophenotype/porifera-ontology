@@ -1,0 +1,47 @@
+format-version: 1.2
+ontology: poro/imports/imports/caro_import
+
+[Term]
+id: CARO:0000000
+name: anatomical entity
+
+[Term]
+id: CARO:0000003
+name: anatomical structure
+is_a: CARO:0000006 ! material anatomical entity
+
+[Term]
+id: CARO:0000006
+name: material anatomical entity
+is_a: CARO:0000000 ! anatomical entity
+
+[Term]
+id: CARO:0000011
+name: anatomical system
+is_a: CARO:0000054 ! anatomical group
+
+[Term]
+id: CARO:0000012
+name: multi-cellular organism
+is_a: CARO:0000003 ! anatomical structure
+
+[Term]
+id: CARO:0000013
+name: cell
+is_a: CARO:0000003 ! anatomical structure
+
+[Term]
+id: CARO:0000040
+name: acellular anatomical structure
+is_a: CARO:0000003 ! anatomical structure
+
+[Term]
+id: CARO:0000043
+name: portion of tissue
+is_a: CARO:0000003 ! anatomical structure
+
+[Term]
+id: CARO:0000054
+name: anatomical group
+is_a: CARO:0000003 ! anatomical structure
+

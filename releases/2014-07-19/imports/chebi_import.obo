@@ -1,0 +1,178 @@
+format-version: 1.2
+ontology: poro/imports/imports/chebi_import
+
+[Term]
+id: CHEBI:22985
+name: calcium molecular entity
+is_a: CHEBI:33299 ! alkaline earth molecular entity
+
+[Term]
+id: CHEBI:23016
+name: carbonates
+is_a: CHEBI:36963 ! organooxygen compound
+
+[Term]
+id: CHEBI:23367
+name: molecular entity
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:24431
+name: chemical entity
+
+[Term]
+id: CHEBI:24866
+name: salt
+is_a: CHEBI:37577 ! heteroatomic molecular entity
+
+[Term]
+id: CHEBI:25806
+name: oxygen molecular entity
+is_a: CHEBI:33304 ! chalcogen molecular entity
+
+[Term]
+id: CHEBI:3311
+name: calcium carbonate
+is_a: CHEBI:35156 ! calcium salt
+is_a: CHEBI:46721 ! carbonate salt
+is_a: CHEBI:64708 ! one-carbon compound
+
+[Term]
+id: CHEBI:33285
+name: heteroorganic entity
+is_a: CHEBI:50860 ! organic molecular entity
+
+[Term]
+id: CHEBI:33299
+name: alkaline earth molecular entity
+is_a: CHEBI:33674 ! s-block molecular entity
+
+[Term]
+id: CHEBI:33304
+name: chalcogen molecular entity
+is_a: CHEBI:33675 ! p-block molecular entity
+
+[Term]
+id: CHEBI:33579
+name: main group molecular entity
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:33582
+name: carbon group molecular entity
+is_a: CHEBI:33675 ! p-block molecular entity
+
+[Term]
+id: CHEBI:33674
+name: s-block molecular entity
+is_a: CHEBI:33579 ! main group molecular entity
+
+[Term]
+id: CHEBI:33675
+name: p-block molecular entity
+is_a: CHEBI:33579 ! main group molecular entity
+
+[Term]
+id: CHEBI:35156
+name: calcium salt
+is_a: CHEBI:22985 ! calcium molecular entity
+is_a: CHEBI:36364 ! alkaline earth salt
+
+[Term]
+id: CHEBI:36357
+name: polyatomic entity
+is_a: CHEBI:23367 ! molecular entity
+
+[Term]
+id: CHEBI:36364
+name: alkaline earth salt
+is_a: CHEBI:24866 ! salt
+is_a: CHEBI:33299 ! alkaline earth molecular entity
+
+[Term]
+id: CHEBI:36962
+name: organochalcogen compound
+is_a: CHEBI:33285 ! heteroorganic entity
+is_a: CHEBI:33304 ! chalcogen molecular entity
+
+[Term]
+id: CHEBI:36963
+name: organooxygen compound
+is_a: CHEBI:25806 ! oxygen molecular entity
+is_a: CHEBI:36962 ! organochalcogen compound
+
+[Term]
+id: CHEBI:37577
+name: heteroatomic molecular entity
+is_a: CHEBI:36357 ! polyatomic entity
+
+[Term]
+id: CHEBI:46662
+name: mineral
+is_a: CHEBI:60004 ! mixture
+
+[Term]
+id: CHEBI:46719
+name: calcite
+is_a: CHEBI:3311 ! calcium carbonate
+is_a: CHEBI:46720 ! carbonate mineral
+
+[Term]
+id: CHEBI:46720
+name: carbonate mineral
+is_a: CHEBI:46662 ! mineral
+is_a: CHEBI:46721 ! carbonate salt
+
+[Term]
+id: CHEBI:46721
+name: carbonate salt
+is_a: CHEBI:23016 ! carbonates
+
+[Term]
+id: CHEBI:50860
+name: organic molecular entity
+is_a: CHEBI:33582 ! carbon group molecular entity
+
+[Term]
+id: CHEBI:52239
+name: aragonite
+is_a: CHEBI:3311 ! calcium carbonate
+is_a: CHEBI:46720 ! carbonate mineral
+
+[Term]
+id: CHEBI:59999
+name: chemical substance
+is_a: CHEBI:24431 ! chemical entity
+
+[Term]
+id: CHEBI:60004
+name: mixture
+is_a: CHEBI:59999 ! chemical substance
+
+[Term]
+id: CHEBI:64389
+name: biogenic silica
+is_a: CHEBI:64391 ! biogenic mineral
+is_a: CHEBI:64393 ! hydrated silica
+
+[Term]
+id: CHEBI:64391
+name: biogenic mineral
+is_a: CHEBI:46662 ! mineral
+is_a: CHEBI:64392 ! biogenic substance
+
+[Term]
+id: CHEBI:64392
+name: biogenic substance
+is_a: CHEBI:59999 ! chemical substance
+
+[Term]
+id: CHEBI:64393
+name: hydrated silica
+is_a: CHEBI:46662 ! mineral
+
+[Term]
+id: CHEBI:64708
+name: one-carbon compound
+is_a: CHEBI:50860 ! organic molecular entity
+
