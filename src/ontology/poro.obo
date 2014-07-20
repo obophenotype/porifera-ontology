@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2014-01-03
+data-version: releases/2014-07-19
 synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
 synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
 remark: 2012-07-17
@@ -210,7 +210,7 @@ creation_date: 2011-04-22T06:42:26Z
 id: PORO:0000002
 name: mesohyl
 namespace: sponge
-def: "gelatinous matrix within a sponge. It fills the space between the external pinacoderm and the internal choanoderm. The mesohyl resembles a type of connective tissue and contains several amoeboid cells such as amebocytes, as well as fibrils and skeletal elements. For hundreds of years, it has been largely accepted that sponges lack true tissue, but it is currently debated as to whether mesohyl and pinacoderm layers are in fact tissues.\n\nThe mesohyl is composed of the following main elements: collagen, fibronectin-like molecules, galectin, and a minor component, dermatopontin. These polypeptides form the extracellular matrix which provides the platform for specific cell adhesion as well as for signal transduction and cellular growth." [Wikipedia:Mesohyl]
+def: "An extracellular matrix enclosed by pinacoderm and choanoderm, the mesohyl is composed primarily of galectin, collagen, fibronectin-like molecules, dermatopontin, and other polypeptides. The mesohyl contains cells (microbial and eukaryotic) and skeletal elements (collagen, spongin, chitin, and/or minerals). (Boury-Esnault and Rützler 1997; Müller 2003)" []
 synonym: "mesenchyme" RELATED DEPRECATED []
 synonym: "mesoglea" RELATED []
 is_a: PORO:0000700 ! body layer
@@ -1944,7 +1944,7 @@ namespace: sponge
 def: "Megasclere with two actines (two rays or two points)" [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 synonym: "diact" EXACT []
-is_a: PORO:0000098 ! megasclere
+is_a: PORO:0000412 ! monaxonic megasclere
 intersection_of: PORO:0000098 ! megasclere
 intersection_of: RO:0002180 PORO:0000106 {cardinality="2"} ! actine ray
 relationship: RO:0002180 PORO:0000106 {cardinality="2"} ! actine ray
@@ -2554,11 +2554,12 @@ is_a: PORO:0000000 ! sponge cell
 
 [Term]
 id: PORO:0000328
-name: fusiform spicule
+name: obsolete fusiform spicule
 namespace: sponge
 def: "Shape of a monactin spicule, tapering regularly toward a point. See OXEA." [http://www.portol.org/thesaurus]
-comment: Spicules of Demospongiae. Editors note: merge with oxea?
-is_a: PORO:0000412 ! monaxon
+comment: Obsoleted as fusiform is better represented as a quality
+is_obsolete: true
+replaced_by: PORO:0001000
 
 [Term]
 id: PORO:0000329
@@ -3222,10 +3223,11 @@ relationship: RO:0002180 PORO:0000206 {cardinality="1"} ! clad
 
 [Term]
 id: PORO:0000412
-name: monaxon
+name: monaxonic megasclere
 namespace: sponge
 def: "Linear, nonradiate spicule, or a spicule type not having more than two rays along one axis." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+synonym: "monaxon" RELATED []
 is_a: PORO:0000098 ! megasclere
 
 [Term]
@@ -4442,7 +4444,7 @@ name: style
 namespace: sponge
 def: "Monaxon spicule with one end pointed, the other (head or base) blunt" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae. NOTE: wp says megasclere
-is_a: PORO:0002043 ! monact
+is_a: PORO:0002043 ! monactine
 
 [Term]
 id: PORO:0000568
@@ -4791,7 +4793,7 @@ name: trichox
 namespace: sponge
 def: "Thin, hair-like straight monaxon spicules present in general around the osculum or protruding from the cortex." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
-is_a: PORO:0000412 ! monaxon
+is_a: PORO:0000412 ! monaxonic megasclere
 
 [Term]
 id: PORO:0000608
@@ -5391,6 +5393,12 @@ is_a: CARO:0000003 ! anatomical structure
 relationship: BFO:0000050 PORO:0000532 ! skeleton
 
 [Term]
+id: PORO:0001000
+name: fusiform
+def: "Shape of a monactin spicule, tapering regularly toward an end." []
+is_a: PATO:0000051 ! morphology
+
+[Term]
 id: PORO:0002001
 name: acantho
 def: "has spines; applies only to spicules" []
@@ -5399,6 +5407,7 @@ is_a: PORO:0000101 ! spined
 [Term]
 id: PORO:0002002
 name: acanthostyle
+comment: Subtypes of acanthostyle other than verticillate acanthostyle have yet to be named
 is_a: PORO:0000567 ! style
 intersection_of: PORO:0000567 ! style
 intersection_of: BFO:0000051 PORO:0002004 ! spine
@@ -5411,7 +5420,7 @@ is_a: CARO:0000040 ! acellular anatomical structure
 
 [Term]
 id: PORO:0002005
-name: verticillated acanthostyle
+name: verticillate acanthostyle
 comment: Editor's note: logical definition still to be added
 is_a: PORO:0002002 ! acanthostyle
 
@@ -5472,10 +5481,10 @@ is_a: PORO:0000532 ! skeleton
 
 [Term]
 id: PORO:0002043
-name: monact
+name: monactine
 def: "Megasclere with a single actine (one ray or one point)" []
-synonym: "monactine" EXACT []
-is_a: PORO:0000412 ! monaxon
+synonym: "monact" EXACT []
+is_a: PORO:0000412 ! monaxonic megasclere
 
 [Term]
 id: PORO:0002044
