@@ -1,0 +1,50 @@
+These notes are for the editors of poro
+
+## Editors Version ##
+
+The editors version is poro-edit.ofn
+
+ DO NOT EDIT poro.owl 
+
+poro.owl is the release version
+
+## ID Ranges ##
+
+These are stored in:
+
+  * [poro-idranges.owl](http://code.google.com/p/porifera-ontology/source/browse/trunk/src/ontology/poro-idranges.owl)
+
+ ONLY USE IDs WITHIN YOUR RANGE!! 
+
+### Setting ID ranges in Protege ###
+
+Go to Preferences/New Entities and set as follows - CHANGE THE NUMBERS TO MATCH YOUR RANGE
+
+![http://porifera-ontology.googlecode.com/svn/trunk/src/docs/images/editor-id-ranges.jpg](http://porifera-ontology.googlecode.com/svn/trunk/src/docs/images/editor-id-ranges.jpg)
+
+## Derived Files ##
+
+poro.obo and poro.owl are generated from poro-edit.owl via the Makefile.
+
+Note: for now you must manually set the versionIRI
+
+## Subversion Guide ##
+
+### PC users ###
+
+  * http://mzaher.wordpress.com/2009/03/02/how-to-use-svn-with-google-code/
+
+## Release Manager notes ##
+
+to release:
+> $ svn copy -m "Creating release branch" https://porifera-ontology.googlecode.com/svn/trunk/src/ontology https://porifera-ontology.googlecode.com/svn/releases/YYYY-MM-DD
+
+Chris Mungall is the acting release manager for now, but this role should be taken over by someone in the RCN project
+
+## Jenkins Continuous Integration System ##
+
+Contact Chris Mungall for access to the Jenkins CI system
+
+See:
+
+  * http://build.berkeleybop.org/job/build-poro/
