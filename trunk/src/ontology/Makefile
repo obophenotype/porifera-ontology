@@ -11,8 +11,14 @@ USECAT= --use-catalog
 
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
-poro.obo: poro-edit.ofn
-	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple
+build/poro.owl: poro-edit.ofn
+	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple --outdir build
+
+build/%: build/poro.owl
+poro.owl: build/poro.owl
+	cp $< $@
+poro.obo: build/poro.owl
+	owltools $(USECAT) $< --merge-imports-closure -o -f obo --no-check $@
 
 obo2owl:
 	obolib-owl2obo poro-edit.owl -o poro-edit.obo
