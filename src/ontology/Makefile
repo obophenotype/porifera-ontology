@@ -4,7 +4,7 @@
 #
 # To make a release, type 'make release' in this directory
 
-build: poro.obo minidiff
+build: poro.obo poro.owl minidiff
 release: poro.obo diff
 
 USECAT= --use-catalog
@@ -17,11 +17,9 @@ build/poro.owl: poro-edit.ofn
 build/%: build/poro.owl
 poro.owl: build/poro.owl
 	cp $< $@
-poro.obo: build/poro.owl
+.PRECIOUS: poro.owl
+poro.obo: poro.owl
 	owltools $(USECAT) $< --merge-imports-closure -o -f obo --no-check $@
-
-obo2owl:
-	obolib-owl2obo poro-edit.owl -o poro-edit.obo
 
 poro-parse.obo: all.html
 	./parse.pl $< > $@
@@ -66,7 +64,7 @@ core.owl: poro.owl
 PORO_IMPORTS_BASE_URI = $(OBO)/poro/imports
 
 # Ontology dependencies
-IMPORTS = pato uberon chebi pr go caro
+IMPORTS = pato uberon chebi cl go
 
 # Make this target to regenerate ALL
 all_imports: $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, imports/%_import.obo,$(IMPORTS))
@@ -77,7 +75,11 @@ KEEPRELS = BFO:0000050 BFO:0000051 RO:0002202 immediate_transformation_of
 # We use the standard catalog, but rewrite the import to X to be a local mirror of ALL of X.
 # After extraction, we further reduce the ontology by creating a "mingraph" (removes all annotations except label) and by 
 imports/%_import.owl: poro-edit.owl mirror/%.owl
-	owltools  $(USECAT) --map-ontology-iri $(PORO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl  $<  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties $(KEEPRELS)  --set-ontology-id $(PORO_IMPORTS_BASE_URI)/$@ -o file://`pwd`/$@
+	owltools  $(USECAT) --map-ontology-iri $(PORO_IMPORTS_BASE_URI)/$*_import.owl mirror/$*.owl  $<  --extract-module -s $(OBO)/$*.owl -c --remove-axiom-annotations --make-subset-by-properties -f $(KEEPRELS)  --set-ontology-id $(OBO)/poro/$@ -o file://`pwd`/$@
+
+
+imports/ro_import.owl: poro-edit.owl mirror/ro.owl
+	owltools  $(USECAT) --map-ontology-iri $(PORO_IMPORTS_BASE_URI)/ro_import.owl mirror/ro.owl  $<  --extract-module -s $(OBO)/ro.owl -c --remove-axiom-annotations --set-ontology-id $(OBO)/poro/$@ -o file://`pwd`/$@
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.owl:
@@ -85,7 +87,7 @@ mirror/%.owl:
 mirror/ro.owl:
 	wget $(OBO)/ro.owl -O $@
 mirror/uberon.owl:
-	owltools $(OBO)/uberon/basic.owl --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations --make-subset-by-properties $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
+	owltools $(OBO)/uberon/basic.owl --remove-annotation-assertions -l -s -d --remove-axiom-annotations --remove-dangling-annotations --make-subset-by-properties -f $(KEEPRELS) --set-ontology-id $(OBO)/uberon.owl -o $@
 mirror/pr.obo:
 	wget $(OBO)/pr.obo -O $@.tmp && obo-grep.pl -r 'id: PR:' $@.tmp > $@
 mirror/pr.owl: mirror/pr.obo

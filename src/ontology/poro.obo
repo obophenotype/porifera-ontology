@@ -1,22 +1,20 @@
 format-version: 1.2
-data-version: releases/2015-03-14
+data-version: releases/2015-03-15
 synonymtypedef: DEPRECATED "synonyms that should no longer be used" RELATED
 synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
-remark: 2012-07-17
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/caro_import.owl>))) [Axioms: 26 Logical Axioms: 8]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/chebi_import.owl>))) [Axioms: 109 Logical Axioms: 43]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/cl_import.owl>))) [Axioms: 267 Logical Axioms: 85]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/pato_import.owl>))) [Axioms: 9 Logical Axioms: 2]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/ro_import.owl>))) [Axioms: 191 Logical Axioms: 19]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/imports/uberon_import.owl>))) [Axioms: 180 Logical Axioms: 47]
-remark: Porifera Ontology
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl>))) [Axioms: 105 Logical Axioms: 41]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/cl_import.owl>))) [Axioms: 235 Logical Axioms: 62]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/go_import.owl>))) [Axioms: 54 Logical Axioms: 20]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/pato_import.owl>))) [Axioms: 8 Logical Axioms: 2]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/ro_import.owl>))) [Axioms: 399 Logical Axioms: 88]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl>))) [Axioms: 102 Logical Axioms: 13]
 ontology: poro
 property_value: http://purl.org/dc/elements/1.1/creator "Bob Thacker" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "An ontology describing the anatomical structures and characteristics of Porifera (sponges)" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Porifera (sponge) ontology" xsd:string
 property_value: http://xmlns.com/foaf/0.1/homepage http://code.google.com/p/porifera-ontology/ xsd:anyURI
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000017> \"\")\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/CARO_0000013> <http://purl.obolibrary.org/obo/CARO_0000012>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/CARO_0000000>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>))\nEquivalentClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000001>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nAnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000017> \"\")\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000045> <http://purl.obolibrary.org/obo/PORO_0000106> <http://purl.obolibrary.org/obo/PORO_0000206> <http://purl.obolibrary.org/obo/PORO_0000500>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000117> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectIntersectionOf(ObjectExactCardinality(2 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/PORO_0000207>) <http://purl.obolibrary.org/obo/PORO_0000500>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)) <http://purl.obolibrary.org/obo/PORO_0000206>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002202> <http://purl.obolibrary.org/obo/PORO_0000017>) <http://purl.obolibrary.org/obo/PORO_0000601>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000221> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000924>)))\nEquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000261> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000941>) ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000459> <http://purl.obolibrary.org/obo/PORO_0000426>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000288> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000031> <http://purl.obolibrary.org/obo/PORO_0000030>))\nDisjointUnion(<http://purl.obolibrary.org/obo/PORO_0000344> <http://purl.obolibrary.org/obo/PORO_0000919> <http://purl.obolibrary.org/obo/PORO_0000918>)\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000305>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000370> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/PORO_0000598>)))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000410> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000468> <http://purl.obolibrary.org/obo/GO_0005623>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000455> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000449> <http://purl.obolibrary.org/obo/PORO_0000341>))\nSubClassOf(<http://purl.obolibrary.org/obo/PORO_0000569> ObjectUnionOf(<http://purl.obolibrary.org/obo/PORO_0000600> <http://purl.obolibrary.org/obo/PORO_0000587>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>))\nEquivalentClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000001>) ObjectUnionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>)))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000019>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000200>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\nSubClassOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/UBERON_0001062>))\nDisjointClasses(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000043>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/PORO_0000002>))\n)
 
 [Term]
 id: BFO:0000002
@@ -35,12 +33,6 @@ def: "A continuant that is a bearer of quality and realizable entity entities, i
 is_a: BFO:0000002 ! continuant
 
 [Term]
-id: BFO:0000005
-name: dependent continuant
-def: "A continuant  that is either dependent on one or other independent continuant  bearers or inheres in or is borne by other entities." []
-is_a: BFO:0000002 ! continuant
-
-[Term]
 id: BFO:0000015
 name: process
 def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
@@ -54,18 +46,14 @@ is_a: BFO:0000020 ! specifically dependent continuant
 [Term]
 id: BFO:0000020
 name: specifically dependent continuant
-def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
-is_a: BFO:0000005 ! dependent continuant
+def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
+is_a: BFO:0000002 ! continuant
 
 [Term]
 id: BFO:0000040
 name: material entity
 def: "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time." []
 is_a: BFO:0000004 ! independent continuant
-
-[Term]
-id: CARO:0000000
-name: anatomical entity
 
 [Term]
 id: CARO:0000003
@@ -77,38 +65,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
 id: CARO:0000006
 name: material anatomical entity
 is_a: BFO:0000040 ! material entity
-is_a: CARO:0000000 ! anatomical entity
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/caro.owl
-
-[Term]
-id: CARO:0000011
-name: anatomical system
-is_a: CARO:0000054 ! anatomical group
-
-[Term]
-id: CARO:0000012
-name: multi-cellular organism
-is_a: CARO:0000003 ! anatomical structure
-
-[Term]
-id: CARO:0000013
-name: cell
-is_a: CARO:0000003 ! anatomical structure
-
-[Term]
-id: CARO:0000040
-name: acellular anatomical structure
-is_a: CARO:0000003 ! anatomical structure
-
-[Term]
-id: CARO:0000043
-name: portion of tissue
-is_a: CARO:0000003 ! anatomical structure
-
-[Term]
-id: CARO:0000054
-name: anatomical group
-is_a: CARO:0000003 ! anatomical structure
 
 [Term]
 id: CHEBI:22985
@@ -243,12 +200,6 @@ name: organic molecular entity
 is_a: CHEBI:33582 ! carbon group molecular entity
 
 [Term]
-id: CHEBI:52239
-name: aragonite
-is_a: CHEBI:3311 ! calcium carbonate
-is_a: CHEBI:46720 ! carbonate mineral
-
-[Term]
 id: CHEBI:59999
 name: chemical substance
 is_a: CHEBI:24431 ! chemical entity
@@ -295,22 +246,6 @@ name: native cell
 is_a: CL:0000000 ! cell
 
 [Term]
-id: CL:0000015
-name: male germ cell
-is_a: CL:0000586 ! germ cell
-
-[Term]
-id: CL:0000017
-name: spermatocyte
-is_a: CL:0000015 ! male germ cell
-relationship: RO:0002202 CL:0000020 ! develops from spermatogonium
-
-[Term]
-id: CL:0000020
-name: spermatogonium
-is_a: CL:0000015 ! male germ cell
-
-[Term]
 id: CL:0000021
 name: female germ cell
 is_a: CL:0000586 ! germ cell
@@ -341,9 +276,19 @@ name: germ cell
 is_a: CL:0000039 ! germ line cell
 
 [Term]
-id: GO:0000003
-name: reproduction
-is_a: GO:0008150 ! biological_process
+id: GO:0005575
+name: cellular_component
+
+[Term]
+id: GO:0005623
+name: cell
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0005929
+name: cilium
+is_a: GO:0042995 ! cell projection
+is_a: GO:0043226 ! organelle
 
 [Term]
 id: GO:0006810
@@ -354,7 +299,6 @@ is_a: GO:0051234 ! establishment of localization
 id: GO:0006897
 name: endocytosis
 is_a: GO:0016192 ! vesicle-mediated transport
-relationship: BFO:0000051 GO:0010324 ! has part membrane invagination
 
 [Term]
 id: GO:0006909
@@ -366,9 +310,6 @@ is_a: GO:0044765 ! single-organism transport
 id: GO:0006911
 name: phagocytosis, engulfment
 is_a: GO:0010324 ! membrane invagination
-intersection_of: GO:0010324 ! membrane invagination
-intersection_of: BFO:0000050 GO:0006909 ! part_of phagocytosis
-relationship: BFO:0000050 GO:0006909 ! part_of phagocytosis
 
 [Term]
 id: GO:0008150
@@ -378,7 +319,7 @@ is_a: BFO:0000015 ! process
 [Term]
 id: GO:0010324
 name: membrane invagination
-is_a: GO:0044802 ! single-organism membrane organization
+is_a: GO:0061024 ! membrane organization
 
 [Term]
 id: GO:0016043
@@ -394,7 +335,52 @@ is_a: GO:0006810 ! transport
 id: GO:0022414
 name: reproductive process
 is_a: GO:0008150 ! biological_process
-relationship: BFO:0000050 GO:0000003 ! part_of reproduction
+
+[Term]
+id: GO:0030990
+name: intraciliary transport particle
+is_a: GO:0043234 ! protein complex
+
+[Term]
+id: GO:0032991
+name: macromolecular complex
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0042995
+name: cell projection
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0043226
+name: organelle
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0043234
+name: protein complex
+is_a: GO:0032991 ! macromolecular complex
+
+[Term]
+id: GO:0044422
+name: organelle part
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0044441
+name: ciliary part
+is_a: GO:0044422 ! organelle part
+is_a: GO:0044463 ! cell projection part
+
+[Term]
+id: GO:0044463
+name: cell projection part
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0044464
+name: cell part
+is_a: GO:0005575 ! cellular_component
 
 [Term]
 id: GO:0044699
@@ -406,12 +392,7 @@ id: GO:0044765
 name: single-organism transport
 is_a: GO:0006810 ! transport
 is_a: GO:0044699 ! single-organism process
-
-[Term]
-id: GO:0044802
-name: single-organism membrane organization
-is_a: GO:0044699 ! single-organism process
-is_a: GO:0061024 ! membrane organization
+is_a: GO:1902578 ! single-organism localization
 
 [Term]
 id: GO:0051179
@@ -421,8 +402,7 @@ is_a: GO:0008150 ! biological_process
 [Term]
 id: GO:0051234
 name: establishment of localization
-is_a: GO:0008150 ! biological_process
-relationship: BFO:0000050 GO:0051179 ! part_of localization
+is_a: GO:0051179 ! localization
 
 [Term]
 id: GO:0061024
@@ -433,6 +413,12 @@ is_a: GO:0016043 ! cellular component organization
 id: GO:0071840
 name: cellular component organization or biogenesis
 is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:1902578
+name: single-organism localization
+is_a: GO:0044699 ! single-organism process
+is_a: GO:0051179 ! localization
 
 [Term]
 id: PATO:0000001
@@ -455,8 +441,8 @@ is_a: PATO:0000001 ! quality
 id: PORO:0000000
 name: sponge cell
 namespace: sponge
-is_a: CARO:0000013 ! cell
-relationship: BFO:0000050 PORO:0000001 ! part_of sponge
+is_a: GO:0005623 ! cell
+relationship: BFO:0000050 PORO:0000001 ! part of sponge
 created_by: cjm
 creation_date: 2011-04-22T06:40:57Z
 
@@ -465,7 +451,7 @@ id: PORO:0000001
 name: sponge
 namespace: sponge
 def: "Sponge bodies consist of jelly-like mesohyl sandwiched between two thin layers of cells. While all animals have unspecialized cells that can transform into specialized cells, sponges are unique in having some specialized cells that can transform into other types, often migrating between the main cell layers and the mesohyl in the process. Sponges do not have nervous, digestive or circulatory systems. Instead, most rely on maintaining a constant water flow through their bodies to obtain food and oxygen and to remove wastes, and the shapes of their bodies are adapted to maximize the efficiency of the water flow. All are sessile aquatic animals and, although there are freshwater species, the great majority are marine (salt water) species, ranging from tidal zones to depths exceeding 8,800 metres (5.5 mi)" [Wikipedia:Sponge]
-is_a: CARO:0000012 ! multi-cellular organism
+is_a: UBERON:0000468 ! multicellular organism
 created_by: cjm
 creation_date: 2011-04-22T06:42:26Z
 
@@ -476,6 +462,7 @@ namespace: sponge
 def: "An extracellular matrix enclosed by pinacoderm and choanoderm, the mesohyl is composed primarily of galectin, collagen, fibronectin-like molecules, dermatopontin, and other polypeptides. The mesohyl contains cells (microbial and eukaryotic) and skeletal elements (collagen, spongin, chitin, and/or minerals). (Boury-Esnault and Rützler 1997; Müller 2003)" []
 synonym: "mesenchyme" RELATED DEPRECATED []
 synonym: "mesoglea" RELATED []
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000700 ! body layer
 relationship: RO:0002220 PORO:0000043 ! adjacent to pinacoderm
 relationship: RO:0002220 PORO:0000200 ! adjacent to choanoderm
@@ -490,7 +477,7 @@ def: "A cell that lines the interior of Asconoid, syconoid and leuconoid body ty
 comment: They bear more than a passing resemblance to Choanoflagellates, and demonstrate key steps in the evolution of animals. Scientist Nicole King helped to establish the distinction.[1] DNA sequencing indicates that multicellular choanoflagellates and poriferans are sister groups, both descended from the same eukaryotic clade. One can see modern choanoflagellates living in small colonies, illustrating the evolution of sponges by analogy. More complex animals, notably the cnidarians, possess cells whose structures are clearly derived from choanocytes, demonstrating their historical ties to phylum porifera.
 synonym: "collar cell" RELATED []
 is_a: PORO:0000914 ! flagellated cell
-relationship: BFO:0000050 PORO:0000022 ! part_of spongocoel lining
+relationship: BFO:0000050 PORO:0000022 ! part of spongocoel lining
 created_by: cjm
 creation_date: 2011-04-22T06:47:33Z
 
@@ -528,6 +515,7 @@ name: sclerocyte
 namespace: sponge
 def: "spicule secreting cells, found in sponges. They secrete calcareous or siliceous spicules which are found in the mesohyl layer of sponges. The sclerocytes produce spicules via formation of a cellular triad" [Wikipedia:Sclerocyte]
 comment: compare: "Cell involved in spicule secretion. In Demospon- ges, with intracellular secretion, sclerocytes are characterized by numerous mitochondria and the presence of spicule-axial filaments. In Calcarea, where secretion is extracellular, sclerocytes have septate junctions between them (sc in figure)." [http://www.portol.org/thesaurus]
+is_a: BFO:0000040 ! material entity
 is_a: PORO:0000012 ! secretory cell
 relationship: RO:0002202 PORO:0000016 ! develops from archaeocyte
 relationship: RO:0003000 PORO:0000017 ! produces spicule
@@ -547,6 +535,7 @@ id: PORO:0000013
 name: spongocyte
 namespace: sponge
 def: "In addition to or instead of sclerocytes, demosponges have spongocytes that secrete a form of collagen that polymerizes into spongin, a thick fibrous material that stiffens the mesohyl." []
+is_a: BFO:0000040 ! material entity
 is_a: PORO:0000012 ! secretory cell
 relationship: RO:0003000 PORO:0000029 ! produces spongin
 created_by: cjm
@@ -559,8 +548,8 @@ namespace: sponge
 def: "conduct signals and cause parts of the animal to contract. They are assumed to regulate the flow of water by increasing or decreasing the diameter of these openings to the aquiferous system." []
 synonym: "muscle cell" RELATED []
 is_a: PORO:0000000 ! sponge cell
-relationship: BFO:0000050 PORO:0000002 ! part_of mesohyl
-relationship: BFO:0000050 PORO:0000143 ! part_of aquiferous system
+relationship: BFO:0000050 PORO:0000002 ! part of mesohyl
+relationship: BFO:0000050 PORO:0000143 ! part of aquiferous system
 created_by: cjm
 creation_date: 2011-04-22T06:56:33Z
 
@@ -581,6 +570,7 @@ name: archaeocyte
 namespace: sponge
 def: "amoeba-like large cells with large nuclei that are totipotent. They also have important roles in feeding and in clearing debris that block the ostia." [ISBN:0030229073]
 synonym: "amoebocyte" RELATED []
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000000 ! sponge cell
 relationship: RO:0002215 GO:0006909 ! capable of phagocytosis
 created_by: cjm
@@ -592,9 +582,10 @@ name: spicule
 namespace: sponge
 def: "siliceous or calcareous entities that form the mineral skeleton of a sponge" []
 comment: located primarily in the mesohyl, but some project through the pinacoderm (Barnes).
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000002 ! part_of mesohyl
-relationship: BFO:0000050 PORO:0002042 ! part_of mineral skeleton
+is_a: BFO:0000040 ! material entity
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000002 ! part of mesohyl
+relationship: BFO:0000050 PORO:0002042 ! part of mineral skeleton
 relationship: RO:0003001 PORO:0000011 ! produced by sclerocyte
 property_value: PORO:0000995 "A component of the mineral skeleton, typically composed of silica or calcium carbonate[portol]. A structural element that provides structural support and deter predators. Large spicules, visible to the naked eye are referred to as megascleres, while smaller, microscopic ones are termed microscleres. The meshing of many spicules serves as the sponge's skeleton. Spicules are formed by sclerocytes, which are derived from archaeocytes. The sclerocyte begins with an organic filament, and adds silica to it. Spicules are generally elongated at a rate of 1-10 μm per hour. Once the spicule reaches a certain length it protrudes from the sclerocyte cell body, but remains within the cell's membrane. On occasion, sclerocytes may begin a second spicule while the first is still in progress." xsd:string {xref="Wikipedia:Sponge_spicule", xref="http://www.portol.org/thesaurus"}
 created_by: cjm
@@ -605,8 +596,9 @@ id: PORO:0000018
 name: osculum
 namespace: sponge
 def: "an excretory structure in the living sponge, a large opening to the outside through which the current of water exits after passing through the spongocoel. Wastes diffuse into the water and the water exits through the osculum at a velocity of nearly 8.4 cm/second, carrying away with it the sponge's wastes. The size of the osculum is regulated by the myocyte. Its size, in turn, determines the amount of water flowing through the sponge." [Wikipedia:Osculum]
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000019 ! immaterial anatomical entity
-relationship: continuous_with PORO:0000020 ! spongeocoel
+relationship: RO:0002150 PORO:0000020 ! continuous with spongeocoel
 created_by: cjm
 creation_date: 2011-04-22T07:03:32Z
 
@@ -614,7 +606,7 @@ creation_date: 2011-04-22T07:03:32Z
 id: PORO:0000019
 name: immaterial anatomical entity
 namespace: sponge
-is_a: CARO:0000000 ! anatomical entity
+is_a: UBERON:0001062 ! anatomical entity
 created_by: cjm
 creation_date: 2011-04-22T07:04:50Z
 
@@ -647,7 +639,8 @@ creation_date: 2011-04-22T07:07:50Z
 id: PORO:0000022
 name: spongocoel lining
 namespace: sponge
-relationship: BFO:0000050 PORO:0000020 ! part_of spongeocoel
+is_a: CARO:0000006 ! material anatomical entity
+relationship: BFO:0000050 PORO:0000020 ! part of spongeocoel
 created_by: cjm
 creation_date: 2011-04-22T07:09:08Z
 
@@ -657,7 +650,7 @@ name: pinacocyte
 namespace: sponge
 def: "flat cells found on the outermost layer of sponges. They can expand and contract to slightly alter the size of the sponge, and can also produce collagen. Delimits the sponge from the external milieu and always only in a layer one-cell deep" [http://www.portol.org/thesaurus, Wikipedia:Pinacocyte]
 is_a: PORO:0000000 ! sponge cell
-relationship: BFO:0000050 PORO:0000043 ! part_of pinacoderm
+relationship: BFO:0000050 PORO:0000043 ! part of pinacoderm
 created_by: cjm
 creation_date: 2011-04-22T07:11:56Z
 
@@ -667,9 +660,10 @@ name: prosopyle
 namespace: sponge
 def: "a pore through which water is drawn from the outside into one of the saclike chambers formed by the evagination of the body wall." []
 comment: Compare: "Opening of an inhalant canal into a choanocyte chamber (pro in figure)." [http://www.portol.org/thesaurus]
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000035 ! pore
-relationship: BFO:0000050 PORO:0000355 ! part_of inhalant canal
-relationship: continuous_with PORO:0000025 ! choanocyte chamber
+relationship: BFO:0000050 PORO:0000355 ! part of inhalant canal
+relationship: RO:0002150 PORO:0000025 ! continuous with choanocyte chamber
 created_by: cjm
 creation_date: 2011-04-22T08:35:40Z
 
@@ -717,8 +711,9 @@ name: spongin
 namespace: sponge
 def: "Skeletal substance in Demospongiae made up of collagen microfibrils of ~10 fim diameter[portol]. a modified type of collagen protein, forms the fibrous skeleton of most organisms among the phylum Porifera, the sponges. Spongin gives a sponge its flexibility. True spongin is found only in members of the class Demospongiae" [http://www.portol.org/thesaurus, Wikipedia:Spongin]
 synonym: "collagen" RELATED []
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000532 ! part_of skeleton
+is_a: BFO:0000040 ! material entity
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000532 ! part of skeleton
 relationship: RO:0003001 PORO:0000013 ! produced by spongocyte
 created_by: cjm
 creation_date: 2011-04-22T07:17:56Z
@@ -730,10 +725,10 @@ namespace: sponge
 def: "A spicule composed largely of calcite having a radiate form, the number of rays being either two (diactine), three (triactine), or four (tetractine)." []
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: composed_of CHEBI:3311 ! calcium carbonate
+intersection_of: RO:0002473 CHEBI:3311 ! composed primarily of calcium carbonate
 disjoint_from: PORO:0000031 ! siliceous spicule
-relationship: composed_of CHEBI:3311 ! calcium carbonate
-relationship: composed_of CHEBI:46719 ! calcite
+relationship: RO:0002473 CHEBI:3311 ! composed primarily of calcium carbonate
+relationship: RO:0002473 CHEBI:46719 ! composed primarily of calcite
 created_by: cjm
 creation_date: 2011-04-22T07:20:56Z
 
@@ -754,8 +749,8 @@ name: spongin spicule
 namespace: sponge
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: composed_of PORO:0000029 ! spongin
-relationship: composed_of PORO:0000029 ! spongin
+intersection_of: RO:0002473 PORO:0000029 ! composed primarily of spongin
+relationship: RO:0002473 PORO:0000029 ! composed primarily of spongin
 created_by: cjm
 creation_date: 2011-04-22T07:21:16Z
 
@@ -763,11 +758,11 @@ creation_date: 2011-04-22T07:21:16Z
 id: PORO:0000033
 name: calcium carbonate exoskeleton
 namespace: sponge
-is_a: CARO:0000040 ! acellular anatomical structure
 is_a: PORO:0000532 ! skeleton
+is_a: UBERON:0000476 ! acellular anatomical structure
 intersection_of: PORO:0000532 ! skeleton
-intersection_of: composed_of CHEBI:3311 ! calcium carbonate
-relationship: composed_of CHEBI:3311 ! calcium carbonate
+intersection_of: RO:0002473 CHEBI:3311 ! composed primarily of calcium carbonate
+relationship: RO:0002473 CHEBI:3311 ! composed primarily of calcium carbonate
 created_by: cjm
 creation_date: 2011-04-22T07:22:22Z
 
@@ -776,7 +771,7 @@ id: PORO:0000034
 name: trab
 namespace: sponge
 def: "A trab is structural element within a sponge formed by the fusion of dendroclones. In the Anthaspidellidae, when spicules (usually dendroclones) connect at their tips to form a ladder-like structure, trabs may be formed.[1] Oxeas are sometimes employed in the central rod.[1][2] Trabs have a feather-like structure, or may form rods.[1][3] Trabs are usually regularly spaced, usually at sub-millimetric intervals.[1] Further dendroclones may interconnect adjacent trabs, forming ladder-like structures" [Wikipedia:Trab]
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: UBERON:0000476 ! acellular anatomical structure
 created_by: cjm
 creation_date: 2011-04-22T07:25:52Z
 
@@ -793,8 +788,9 @@ id: PORO:0000038
 name: dermal pore
 namespace: sponge
 comment: In syconoid sponge, water passes through dermal pores to the incurrent canal and through the prosopyle to the choanocyte-lined radial canal.
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000035 ! pore
-relationship: continuous_with PORO:0000355 ! inhalant canal
+relationship: RO:0002150 PORO:0000355 ! continuous with inhalant canal
 created_by: cjm
 creation_date: 2011-04-22T07:31:20Z
 
@@ -850,8 +846,9 @@ id: PORO:0000044
 name: porocyte
 namespace: sponge
 def: "cell that surrounds a pore (ostium). In an asconoid sponge, water enters the sponge through the porocytes, passes directly to the choanocyte-lined spongocoel, and then out of the sponge through the osculum." [http://www.portol.org/thesaurus, UBERON:cjm]
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000000 ! sponge cell
-relationship: BFO:0000050 PORO:0000043 ! part_of pinacoderm
+relationship: BFO:0000050 PORO:0000043 ! part of pinacoderm
 relationship: RO:0002202 PORO:0000023 ! develops from pinacocyte
 created_by: cjm
 creation_date: 2011-04-22T07:38:18Z
@@ -860,8 +857,8 @@ creation_date: 2011-04-22T07:38:18Z
 id: PORO:0000045
 name: spicule ray
 namespace: sponge
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000017 ! part_of spicule
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000017 ! part of spicule
 created_by: cjm
 creation_date: 2011-04-22T08:23:20Z
 
@@ -880,26 +877,26 @@ name: crystal
 namespace: sponge
 synonym: "silicate crystal" RELATED []
 synonym: "spicule crystal" RELATED []
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000017 ! part_of spicule
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000017 ! part of spicule
 
 [Term]
 id: PORO:0000095
 name: arrangement of spicules
 namespace: sponge
-is_a: CARO:0000054 ! anatomical group
-intersection_of: CARO:0000054 ! anatomical group
-intersection_of: composed_of PORO:0000017 ! spicule
-relationship: composed_of PORO:0000017 ! spicule
+is_a: UBERON:0000480 ! anatomical group
+intersection_of: UBERON:0000480 ! anatomical group
+intersection_of: RO:0002473 PORO:0000017 ! composed primarily of spicule
+relationship: RO:0002473 PORO:0000017 ! composed primarily of spicule
 
 [Term]
 id: PORO:0000096
 name: arrangement of megascleres
 namespace: sponge
 is_a: PORO:0000095 ! arrangement of spicules
-intersection_of: CARO:0000054 ! anatomical group
-intersection_of: composed_of PORO:0000098 ! megasclere
-relationship: composed_of PORO:0000098 ! megasclere
+intersection_of: UBERON:0000480 ! anatomical group
+intersection_of: RO:0002473 PORO:0000098 ! composed primarily of megasclere
+relationship: RO:0002473 PORO:0000098 ! composed primarily of megasclere
 
 [Term]
 id: PORO:0000097
@@ -1008,7 +1005,7 @@ namespace: sponge
 def: "One of the thin, wing-like or spatulate structures in each recurved portion of a chela. The anterior ala is the one facing the shaft; others are lateral alae. See CHELA." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000192 ! part_of chela
+relationship: BFO:0000050 PORO:0000192 ! part of chela
 
 [Term]
 id: PORO:0000110
@@ -1183,7 +1180,7 @@ namespace: sponge
 def: "An euaster with tuberculate, denticulate, or spined, sometimes digitate, expansions at the ray tips (Chondrilla grandis)" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: PORO:0000295 ! euaster
-relationship: BFO:0000050 PORO:0000045 ! part_of spicule ray
+relationship: BFO:0000050 PORO:0000045 ! part of spicule ray
 
 [Term]
 id: PORO:0000131
@@ -1241,8 +1238,8 @@ def: "Endopinacocyte lining the exhalant canal (ai in figure)." [http://www.port
 comment: Cytology
 is_a: PORO:0000285 ! endopinacocyte
 intersection_of: PORO:0000285 ! endopinacocyte
-intersection_of: BFO:0000050 PORO:0000298 ! part_of exhalant canal
-relationship: BFO:0000050 PORO:0000298 ! part_of exhalant canal
+intersection_of: BFO:0000050 PORO:0000298 ! part of exhalant canal
+relationship: BFO:0000050 PORO:0000298 ! part of exhalant canal
 
 [Term]
 id: PORO:0000138
@@ -1269,6 +1266,7 @@ name: apopylar cell
 namespace: sponge
 def: "Cell surrounding the apopyle and located between the choanocytes and the apopinacocytes (ay in figure)." [http://www.portol.org/thesaurus]
 comment: Cytology
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000000 ! sponge cell
 intersection_of: PORO:0000000 ! sponge cell
 intersection_of: RO:0002221 PORO:0000046 ! surrounds apopyle
@@ -1288,7 +1286,7 @@ name: aquiferous system
 namespace: sponge
 def: "The entire water-conducting system between the ostia and the oscula, which comprises the inhalant system, choanocyte chambers, and the exhalant system" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: CARO:0000011 ! anatomical system
+is_a: UBERON:0000467 ! anatomical system
 
 [Term]
 id: PORO:0000144
@@ -1404,7 +1402,8 @@ name: axial filament
 namespace: sponge
 def: "The organic core around which a siliceous spicule is organized." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
-relationship: BFO:0000050 PORO:0000031 ! part_of siliceous spicule
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000031 ! part of siliceous spicule
 
 [Term]
 id: PORO:0000160
@@ -1436,9 +1435,9 @@ name: bark
 namespace: sponge
 def: "The dense area of compacted spongin surrounding the central zone in pithed fibers" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: CARO:0000054 ! anatomical group
-relationship: BFO:0000050 PORO:0000457 ! part_of pithed fiber
-relationship: composed_of PORO:0000029 ! spongin
+is_a: UBERON:0000480 ! anatomical group
+relationship: BFO:0000050 PORO:0000457 ! part of pithed fiber
+relationship: RO:0002473 PORO:0000029 ! composed primarily of spongin
 
 [Term]
 id: PORO:0000164
@@ -1455,7 +1454,8 @@ name: basal triradiate system
 namespace: sponge
 def: "The three rays of a tetractine that correspond to those of a triactine" [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
-relationship: BFO:0000050 PORO:0000587 ! part_of tetractine
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000587 ! part of tetractine
 
 [Term]
 id: PORO:0000166
@@ -1623,7 +1623,7 @@ namespace: sponge
 def: "Nonflagellated cells arranged in tetraradial fashion in the amphiblastula of Calcaronea" [http://www.portol.org/thesaurus]
 comment: Reproduction
 is_a: PORO:0000929 ! multicellular anatomical structure
-relationship: BFO:0000050 PORO:0000115 ! part_of amphiblastula
+relationship: BFO:0000050 PORO:0000115 ! part of amphiblastula
 
 [Term]
 id: PORO:0000187
@@ -1642,8 +1642,9 @@ def: "Point of union of the three rays of a triactine or of a basal triradiate s
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 synonym: "center" BROAD []
 synonym: "centrum" RELATED []
+is_a: BFO:0000004 ! independent continuant
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000017 ! part_of spicule
+relationship: BFO:0000050 PORO:0000017 ! part of spicule
 relationship: RO:0002220 PORO:0000045 {cardinality="3"} ! adjacent to spicule ray
 
 [Term]
@@ -1653,7 +1654,7 @@ namespace: sponge
 def: "Single cell located at the apopyle of choanocyte chambers" [http://www.portol.org/thesaurus]
 comment: Cytology
 is_a: PORO:0000000 ! sponge cell
-relationship: BFO:0000050 PORO:0000046 ! part_of apopyle
+relationship: BFO:0000050 PORO:0000046 ! part of apopyle
 
 [Term]
 id: PORO:0000190
@@ -1863,9 +1864,10 @@ is_a: PORO:0000192 ! chela
 [Term]
 id: PORO:0000216
 name: clone
-namespace: sponge
+namespace: unclassified
 def: "Ray-like arm that is entirely anaxial." [http://www.portol.org/thesaurus]
 comment: Spicule Types of "Lithistids"
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000217
@@ -1898,8 +1900,8 @@ name: collagen fascicle
 namespace: sponge
 def: "A dense band of intercellular collagen fibrils, which has a skeletal role in some sponges (e.g., genus Chondrosia)" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: composed_of PORO:0000904 ! collagen fibril
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: RO:0002473 PORO:0000904 ! composed primarily of collagen fibril
 
 [Term]
 id: PORO:0000221
@@ -1907,6 +1909,7 @@ name: collar body
 namespace: sponge
 def: "Anucleate choanocyte in hexactinellids." [http://www.portol.org/thesaurus]
 comment: Editor note: consider using 'anucleate cell' from CL
+is_a: CARO:0000003 ! anatomical structure
 is_a: PORO:0000003 ! choanocyte
 relationship: RO:0002202 PORO:0000196 ! develops from choanoblast
 
@@ -2057,13 +2060,14 @@ is_a: PATO:0000051 ! morphology
 [Term]
 id: PORO:0000239
 name: crepis
-namespace: sponge
+namespace: unclassified
 def: "The fundamental, inceptional body of a desma before it is modified by deposition of multiple layers of silica. A monocrepid desma develops from a monaxon spicule that is recognized by a straight, undivided axial thread (canal); a tetracrepid desma is based on a tetraxon spicule with a four-rayed axial thread (a small calthrops; see bottom of figure); an acrepid desma is based on a polyaxon fundamental structure lacking axial threads." [http://www.portol.org/thesaurus]
 comment: Spicule Types of "Lithistids"
 synonym: "acrepis" RELATED []
 synonym: "monocrepid" RELATED []
 synonym: "tetracrepid" RELATED []
-relationship: BFO:0000050 PORO:0000253 ! part_of desma
+is_a: CARO:0000006 ! material anatomical entity
+relationship: BFO:0000050 PORO:0000253 ! part of desma
 
 [Term]
 id: PORO:0000240
@@ -2087,7 +2091,7 @@ name: crypt tissue
 namespace: sponge
 def: "Masses of thesocyte-like cells lodged within the basal crypts (chambers) of the calcareous skeleton (see ct in figure)." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-is_a: CARO:0000043 ! portion of tissue
+is_a: UBERON:0000479 ! tissue
 relationship: BFO:0000051 PORO:0000931 ! has part crypt cell
 
 [Term]
@@ -2096,7 +2100,7 @@ name: crystal ultrastructure
 namespace: sponge
 def: "Organization of the skeletal crystals observed after special preparation showing the relationship between organic and mineral phases." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-is_a: CARO:0000054 ! anatomical group
+is_a: UBERON:0000480 ! anatomical group
 
 [Term]
 id: PORO:0000244
@@ -2112,9 +2116,9 @@ name: cuticle
 namespace: sponge
 def: "A spongin layer covering the surface or a part of the surface of a sponge." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000905 ! part_of sponge surface
-relationship: composed_of PORO:0000029 ! spongin
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000905 ! part of sponge surface
+relationship: RO:0002473 PORO:0000029 ! composed primarily of spongin
 
 [Term]
 id: PORO:0000246
@@ -2186,10 +2190,11 @@ is_a: PORO:0000098 ! megasclere
 [Term]
 id: PORO:0000254
 name: deuteroclad
-namespace: sponge
+namespace: unclassified
 def: "An actinal branch or a distal, branched portion of a ray. See DICHOTRIAENE." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
-relationship: BFO:0000050 PORO:0000045 ! part_of spicule ray
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000045 ! part of spicule ray
 
 [Term]
 id: PORO:0000255
@@ -2377,9 +2382,10 @@ is_a: PORO:0000097 ! microsclere
 [Term]
 id: PORO:0000276
 name: discotriaene
-namespace: sponge
+namespace: unclassified
 def: "A triaene with a disc-shaped cladome. The single clads may be distinguished by the presence of short axial canals (genus Discodermia)" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+is_a: PORO:0000601 ! triaene
 
 [Term]
 id: PORO:0000277
@@ -2400,10 +2406,11 @@ is_a: PORO:0000098 ! megasclere
 [Term]
 id: PORO:0000279
 name: ectochrote
-namespace: sponge
+namespace: unclassified
 def: "Outer layer of the cortex" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-relationship: BFO:0000050 PORO:0000235 ! part_of cortex
+is_a: CARO:0000006 ! material anatomical entity
+relationship: BFO:0000050 PORO:0000235 ! part of cortex
 
 [Term]
 id: PORO:0000280
@@ -2509,10 +2516,11 @@ is_a: PORO:0000039 ! canal
 [Term]
 id: PORO:0000292
 name: epitheca
-namespace: sponge
+namespace: unclassified
 def: "A thin, wrinkled, calcareous layer, different in structure from the normal skeleton, covering the dead basal part of a rigid calcareous skeleton" [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-relationship: BFO:0000050 PORO:0000920 ! part_of calcareous skeleton
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000920 ! part of calcareous skeleton
 
 [Term]
 id: PORO:0000293
@@ -2573,7 +2581,7 @@ name: exhalant system
 namespace: sponge
 def: "Part of the aquiferous system between the apopyle and oscule" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: CARO:0000011 ! anatomical system
+is_a: UBERON:0000467 ! anatomical system
 
 [Term]
 id: PORO:0000300
@@ -2606,7 +2614,7 @@ namespace: sponge
 def: "The plane passing through tips of the three rays of a triactine or of a basal triradiate system of a tetractine." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 is_a: PORO:0000019 ! immaterial anatomical entity
-relationship: BFO:0000050 PORO:0000017 ! part_of spicule
+relationship: BFO:0000050 PORO:0000017 ! part of spicule
 
 [Term]
 id: PORO:0000304
@@ -2626,9 +2634,9 @@ namespace: sponge
 def: "A column (strand, thread) of spongin forming a reticulate or dendritic skeleton, with or without indige nous spicules or foreign material." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 synonym: "fibre" EXACT []
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000499 ! part_of reticulate skeleton
-relationship: composed_of PORO:0000029 ! spongin
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000499 ! part of reticulate skeleton
+relationship: RO:0002473 PORO:0000029 ! composed primarily of spongin
 
 [Term]
 id: PORO:0000306
@@ -2666,9 +2674,10 @@ is_a: PORO:0000524 ! secondary calcareous skeleton
 [Term]
 id: PORO:0000310
 name: fimbria
-namespace: sponge
+namespace: unclassified
 def: "Narrow structure, similar to an ala, flanking the shaft of an anchorate chela" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+is_a: CARO:0000006 ! material anatomical entity
 
 [Term]
 id: PORO:0000311
@@ -2756,6 +2765,7 @@ name: follicle cell
 namespace: sponge
 def: "Cell in a group surrounding an oocyte" [http://www.portol.org/thesaurus]
 comment: Reproduction
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000000 ! sponge cell
 relationship: RO:0002220 CL:0000023 ! adjacent to oocyte
 
@@ -2833,8 +2843,8 @@ def: "All spicules that line the main exhalant cavity. See AUTOGASTRALIA, HYPOGA
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: BFO:0000050 PORO:0000298 ! part_of exhalant canal
-relationship: BFO:0000050 PORO:0000298 ! part_of exhalant canal
+intersection_of: BFO:0000050 PORO:0000298 ! part of exhalant canal
+relationship: BFO:0000050 PORO:0000298 ! part of exhalant canal
 
 [Term]
 id: PORO:0000330
@@ -2843,7 +2853,7 @@ namespace: sponge
 def: "A resistant asexual reproductive body, composed of a mass of archaeocytes charged with reserves and enclosed in a noncellular protective envelope or coat" [http://www.portol.org/thesaurus]
 comment: Reproduction
 is_a: PORO:0000900 ! reproductive body
-relationship: composed_of PORO:0000016 ! archaeocyte
+relationship: RO:0002473 PORO:0000016 ! composed primarily of archaeocyte
 
 [Term]
 id: PORO:0000331
@@ -3060,7 +3070,7 @@ name: inhalant system
 namespace: sponge
 def: "Part of the aquiferous system between ostia and prosopyle." [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
-is_a: CARO:0000011 ! anatomical system
+is_a: UBERON:0000467 ! anatomical system
 
 [Term]
 id: PORO:0000357
@@ -3094,7 +3104,8 @@ name: irciniid filament
 namespace: sponge
 def: "Long, slender (0.5-15 urn thick) spongin element, terminally knobbed; intertwined or free in the sponge body" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-relationship: composed_of PORO:0000029 ! spongin
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: RO:0002473 PORO:0000029 ! composed primarily of spongin
 
 [Term]
 id: PORO:0000361
@@ -3185,7 +3196,7 @@ namespace: sponge
 def: "Aquiferous system in which the choanocytes are restricted to discrete choanocyte chambers, which are dispersed in the mesohyl." [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
 is_a: PORO:0000143 ! aquiferous system
-relationship: BFO:0000050 PORO:0000028 ! part_of leuconoid sponge
+relationship: BFO:0000050 PORO:0000028 ! part of leuconoid sponge
 
 [Term]
 id: PORO:0000372
@@ -3234,7 +3245,7 @@ namespace: sponge
 def: "Main skeleton consisting of an interlocked assemblage of desmas" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000532 ! skeleton
-relationship: composed_of PORO:0000253 ! desma
+relationship: RO:0002473 PORO:0000253 ! composed primarily of desma
 
 [Term]
 id: PORO:0000378
@@ -3282,6 +3293,7 @@ name: lychnisca
 namespace: sponge
 def: "Dictyonal hexactin framework formed by lychnises" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+is_a: UBERON:0000476 ! acellular anatomical structure
 relationship: BFO:0000051 PORO:0000384 ! has part lychnisc
 
 [Term]
@@ -3291,7 +3303,7 @@ namespace: sponge
 def: "Spicular framework formed by the juxtaposition and interlacing of elongate rays of hexactins" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
 is_a: PORO:0000095 ! arrangement of spicules
-relationship: composed_of PORO:0000341 ! hexactin
+relationship: RO:0002473 PORO:0000341 ! composed primarily of hexactin
 
 [Term]
 id: PORO:0000387
@@ -3299,7 +3311,8 @@ name: mamelon
 namespace: sponge
 def: "Rounded regular or irregular elevation of the skeleton surface; may or may not show correlation with astrorhizae" [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-relationship: BFO:0000050 PORO:0000532 ! part_of skeleton
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000532 ! part of skeleton
 
 [Term]
 id: PORO:0000388
@@ -3339,7 +3352,7 @@ name: mesolamella
 namespace: sponge
 def: "Sheet of collagen separating the choanochambers of hexactinellids." [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000394
@@ -3379,7 +3392,8 @@ name: microanchor
 namespace: sponge
 def: "A small tetractine anchor (described only from the atrial skeleton)." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
-relationship: BFO:0000050 PORO:0000587 ! part_of tetractine
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000587 ! part of tetractine
 
 [Term]
 id: PORO:0000399
@@ -3444,9 +3458,8 @@ name: micropyle
 namespace: sponge
 def: "Opening in the gemmule coat through which cells leave a hatching gemmule (mp in figure)." [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000019 ! immaterial anatomical entity
-relationship: BFO:0000050 PORO:0000330 ! part_of gemmule
+relationship: BFO:0000050 PORO:0000330 ! part of gemmule
 
 [Term]
 id: PORO:0000407
@@ -3462,8 +3475,8 @@ name: microstructure
 namespace: sponge
 def: "The arrangement of crystals that form the skeletal components, as seen without special preparations." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-is_a: CARO:0000054 ! anatomical group
-relationship: composed_of PORO:0000094 ! crystal
+is_a: UBERON:0000480 ! anatomical group
+relationship: RO:0002473 PORO:0000094 ! composed primarily of crystal
 
 [Term]
 id: PORO:0000410
@@ -3471,7 +3484,6 @@ name: microsymbiont
 namespace: sponge
 def: "Prokaryotic or more rarely eukaryotic microorganism living inside a sponge. May be unicellular or multicellular filamentous, with or without pigments, and may occur intra- or intercellularly" [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: CARO:0000003 ! anatomical structure
 is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
@@ -3531,6 +3543,7 @@ name: node
 namespace: sponge
 def: "Junction of spicule tips cemented by spongin." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
+is_a: UBERON:0000476 ! acellular anatomical structure
 relationship: BFO:0000051 PORO:0000029 ! has part spongin
 
 [Term]
@@ -3540,7 +3553,7 @@ namespace: sponge
 def: "Cells that are incorporated in developing oocytes to provide nutrient material for further growth" [http://www.portol.org/thesaurus]
 comment: Reproduction
 is_a: PORO:0000000 ! sponge cell
-relationship: BFO:0000050 UBERON:0000990 ! part_of reproductive system
+relationship: BFO:0000050 UBERON:0000990 ! part of reproductive system
 
 [Term]
 id: PORO:0000418
@@ -3549,7 +3562,7 @@ namespace: sponge
 def: "Spicule with eight rays, generally six in one plane, the other two perpendicular to them." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
 is_a: PORO:0000017 ! spicule
-relationship: composed_of PORO:0000045 {cardinality="8"} ! spicule ray
+relationship: RO:0002473 PORO:0000045 {cardinality="8"} ! composed primarily of spicule ray
 
 [Term]
 id: PORO:0000419
@@ -3565,7 +3578,7 @@ name: olynthus stage
 namespace: sponge
 def: "Earliest developmental stage with a functional aquiferous system, with a single choanocyte chamber opening directly into the osculum; typical of some calcareous sponges" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: PORO:0000916 ! life cycle stage
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000421
@@ -3592,7 +3605,7 @@ namespace: sponge
 def: "The crystallographic trigonal axis of the calcite spicule." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
 is_a: PORO:0000909 ! ray axis
-relationship: BFO:0000050 PORO:0000030 ! part_of calcareous spicule
+relationship: BFO:0000050 PORO:0000030 ! part of calcareous spicule
 
 [Term]
 id: PORO:0000424
@@ -3669,7 +3682,7 @@ synonym: "oral" RELATED DEPRECATED [http://www.portol.org/thesaurus]
 synonym: "oral/oscular ray" RELATED []
 synonym: "oscular" RELATED DEPRECATED [http://www.portol.org/thesaurus]
 is_a: PORO:0000106 ! actine ray
-relationship: BFO:0000050 PORO:0000513 ! part_of sagittal spicule
+relationship: BFO:0000050 PORO:0000513 ! part of sagittal spicule
 
 [Term]
 id: PORO:0000435
@@ -3678,7 +3691,7 @@ namespace: sponge
 def: "Perpendicular arrangement of ectosomal spicules, with points directed outward" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000095 ! arrangement of spicules
-relationship: composed_of PORO:0000911 ! ectosomal spicule
+relationship: RO:0002473 PORO:0000911 ! composed primarily of ectosomal spicule
 
 [Term]
 id: PORO:0000436
@@ -3765,7 +3778,7 @@ namespace: sponge
 def: "All spicules in the choanosome" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
 is_a: PORO:0000095 ! arrangement of spicules
-relationship: BFO:0000050 PORO:0000203 ! part_of choanosome
+relationship: BFO:0000050 PORO:0000203 ! part of choanosome
 
 [Term]
 id: PORO:0000446
@@ -3821,7 +3834,7 @@ namespace: sponge
 def: "Radial skeletal component, relatively short compared with COLUMN" [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
 is_a: PORO:0000998 ! skeletal element of sponge
-relationship: BFO:0000050 PORO:0000532 ! part_of skeleton
+relationship: BFO:0000050 PORO:0000532 ! part of skeleton
 
 [Term]
 id: PORO:0000454
@@ -3845,8 +3858,8 @@ name: pith
 namespace: sponge
 def: "Central area of a fiber made up of more or less diffuse wisps of collagen or of a coarsely granular collagen material. See PITHED FIBER." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: CARO:0000040 ! acellular anatomical structure
-relationship: BFO:0000050 PORO:0000305 ! part_of fiber
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000305 ! part of fiber
 
 [Term]
 id: PORO:0000457
@@ -3855,7 +3868,7 @@ namespace: sponge
 def: "A fiber in which pith is easily distinguished from the surrounding bark." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000305 ! fiber
-relationship: composed_of PORO:0000456 ! pith
+relationship: RO:0002473 PORO:0000456 ! composed primarily of pith
 
 [Term]
 id: PORO:0000458
@@ -3945,7 +3958,7 @@ namespace: sponge
 def: "A furrow in the ectosome where the ostia are located" [http://www.portol.org/thesaurus]
 comment: Anatomy and Aquiferous System
 is_a: PORO:0000917 ! groove, pit or depression
-relationship: BFO:0000050 PORO:0000281 ! part_of ectosome
+relationship: BFO:0000050 PORO:0000281 ! part of ectosome
 
 [Term]
 id: PORO:0000469
@@ -3957,7 +3970,7 @@ synonym: "chone (uniporal chone" RELATED []
 synonym: "crible" RELATED []
 synonym: "cribriporal chone)" RELATED []
 is_a: PORO:0000917 ! groove, pit or depression
-relationship: BFO:0000050 PORO:0000281 ! part_of ectosome
+relationship: BFO:0000050 PORO:0000281 ! part of ectosome
 relationship: BFO:0000051 PORO:0000631 ! has part vestibule
 
 [Term]
@@ -4017,7 +4030,7 @@ namespace: sponge
 def: "Framework of spicules around which a cement is deposited" [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
 is_a: PORO:0000096 ! arrangement of megascleres
-relationship: composed_of PORO:0000476 ! primary spicule
+relationship: RO:0002473 PORO:0000476 ! composed primarily of primary spicule
 
 [Term]
 id: PORO:0000478
@@ -4050,7 +4063,7 @@ namespace: sponge
 def: "Endopinacocyte lining the inhalant canals." [http://www.portol.org/thesaurus]
 comment: Cytology
 is_a: PORO:0000285 ! endopinacocyte
-relationship: BFO:0000050 PORO:0000355 ! part_of inhalant canal
+relationship: BFO:0000050 PORO:0000355 ! part of inhalant canal
 
 [Term]
 id: PORO:0000482
@@ -4077,7 +4090,8 @@ name: protoclad
 namespace: sponge
 def: "The proximal, unbranched portion of a branched ray. See DICHOTRIAENE." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
-relationship: BFO:0000050 PORO:0000106 ! part_of actine ray
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000106 ! part of actine ray
 
 [Term]
 id: PORO:0000486
@@ -4085,6 +4099,7 @@ name: protorhabd
 namespace: sponge
 def: "The original simple shaft of ornamented monaxons and of triaenes." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000487
@@ -4110,7 +4125,7 @@ namespace: sponge
 def: "Accumulation of gemmular archaeocytes (crypt cells, tract cells) in basal cavities of a solid calcareous skeleton" [http://www.portol.org/thesaurus]
 comment: Reproduction
 is_a: PORO:0000929 ! multicellular anatomical structure
-relationship: BFO:0000050 PORO:0000920 ! part_of calcareous skeleton
+relationship: BFO:0000050 PORO:0000920 ! part of calcareous skeleton
 
 [Term]
 id: PORO:0000490
@@ -4159,6 +4174,7 @@ name: reduction body
 namespace: sponge
 def: "A multicellular mass resulting from the disorganization of a sponge and presumably capable of reorganizing into a new functional sponge." [http://www.portol.org/thesaurus]
 comment: Reproduction
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000929 ! multicellular anatomical structure
 relationship: RO:0002215 GO:0022414 ! capable of reproductive process
 
@@ -4203,7 +4219,7 @@ def: "A collective term for a monaxonic megasclere, later applied to the one ray
 comment: Spicules of Demospongiae
 synonym: "rhabdome" RELATED []
 is_a: PORO:0000045 ! spicule ray
-relationship: BFO:0000050 PORO:0000601 ! part_of triaene
+relationship: BFO:0000050 PORO:0000601 ! part of triaene
 
 [Term]
 id: PORO:0000502
@@ -4235,7 +4251,7 @@ name: rhagon stage
 namespace: sponge
 def: "Earliest functional stage with multiple choanocyte chambers and aquiferous canals, typical for Demospongiae" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: PORO:0000916 ! life cycle stage
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000506
@@ -4349,7 +4365,7 @@ name: schizorhysis
 namespace: sponge
 def: "In fossil sponges, continuous system of interconected canal spaces (Tretodictyidae)." [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
-is_a: CARO:0000011 ! anatomical system
+is_a: UBERON:0000467 ! anatomical system
 
 [Term]
 id: PORO:0000521
@@ -4647,6 +4663,7 @@ name: stipitate
 namespace: sponge
 def: "Supported by a long stalk (Stylocordyla stipitata)" [http://www.portol.org/thesaurus]
 comment: Macroscopical Features: Habit, Surface Characteristics, and Consistency
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000560
@@ -4662,7 +4679,7 @@ name: stomoblastula stage
 namespace: sponge
 def: "Developmental stage of amphiblastulas that precedes the reversion stage and is characterized by internal flagella and a large opening through which the eversion occurs" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: PORO:0000916 ! life cycle stage
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000562
@@ -4678,6 +4695,7 @@ name: strobiloplumicome
 namespace: sponge
 def: "Plumicome with numerous slender terminal rays arranged in two concentric circles" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000564
@@ -4755,7 +4773,7 @@ namespace: sponge
 def: "Skeleton consisting of a loose assemblage of desmas" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
 is_a: PORO:0000532 ! skeleton
-relationship: composed_of PORO:0000253 ! desma
+relationship: RO:0002473 PORO:0000253 ! composed primarily of desma
 
 [Term]
 id: PORO:0000573
@@ -4805,6 +4823,7 @@ name: synapticule
 namespace: sponge
 def: "Bridges composed of siliceous cement joining spicules" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton and Spicules of Hexactinellida
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000579
@@ -4913,7 +4932,7 @@ namespace: sponge
 def: "Vitelline-rich archaeocyte in a sponge gemmule (th in figure)." [http://www.portol.org/thesaurus]
 comment: Cytology
 is_a: PORO:0000016 ! archaeocyte
-relationship: BFO:0000050 PORO:0000330 ! part_of gemmule
+relationship: BFO:0000050 PORO:0000330 ! part of gemmule
 
 [Term]
 id: PORO:0000592
@@ -4961,7 +4980,7 @@ name: trabecular tissue
 namespace: sponge
 def: "Syncytia in hexactinellids occurring around the choanochambers." [http://www.portol.org/thesaurus]
 comment: Cytology
-is_a: CARO:0000043 ! portion of tissue
+is_a: UBERON:0000479 ! tissue
 
 [Term]
 id: PORO:0000598
@@ -5040,7 +5059,7 @@ def: "A bundle of raphids." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 synonym: "dragma" RELATED []
 is_a: PORO:0000095 ! arrangement of spicules
-relationship: composed_of PORO:0000494 ! raphide
+relationship: RO:0002473 PORO:0000494 ! composed primarily of raphide
 
 [Term]
 id: PORO:0000606
@@ -5148,7 +5167,7 @@ namespace: sponge
 def: "Any rounded swelling or knob in a spicule (c in figure)." [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000017 ! part_of spicule
+relationship: BFO:0000050 PORO:0000017 ! part of spicule
 
 [Term]
 id: PORO:0000619
@@ -5285,8 +5304,10 @@ name: zygome
 namespace: sponge
 def: "Part of a desma that interlocks with another spicule." [http://www.portol.org/thesaurus]
 comment: Spicule Types of "Lithistids"
-relationship: BFO:0000050 PORO:0000253 ! part_of desma
-relationship: continuous_with PORO:0000017 ! spicule
+is_a: BFO:0000004 ! independent continuant
+is_a: UBERON:0000476 ! acellular anatomical structure
+relationship: BFO:0000050 PORO:0000253 ! part of desma
+relationship: RO:0002150 PORO:0000017 ! continuous with spicule
 
 [Term]
 id: PORO:0000635
@@ -5294,11 +5315,12 @@ name: zygosis
 namespace: sponge
 def: "Mode of junction between siliceous and calcareous tetraradiates characterized by the interlocking of their terminal or lateral expansions; cement, if present, is secondary." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000700
 name: body layer
-is_a: CARO:0000043 ! portion of tissue
+is_a: UBERON:0000479 ! tissue
 
 [Term]
 id: PORO:0000701
@@ -5353,8 +5375,8 @@ relationship: lined_by PORO:0000300 ! exopinacocyte
 [Term]
 id: PORO:0000900
 name: reproductive body
-is_a: UBERON:0005156 ! reproductive structure
-relationship: BFO:0000050 UBERON:0000990 ! part_of reproductive system
+is_a: UBERON:0000061 ! anatomical structure
+relationship: BFO:0000050 UBERON:0000990 ! part of reproductive system
 
 [Term]
 id: PORO:0000901
@@ -5371,7 +5393,7 @@ is_a: PORO:0000097 ! microsclere
 id: PORO:0000904
 name: collagen fibril
 comment: Editor note: use GO or PRO
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000905
@@ -5382,11 +5404,12 @@ is_a: UBERON:0000061 ! anatomical structure
 id: PORO:0000906
 name: surface protruberance
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000905 ! part_of sponge surface
+relationship: BFO:0000050 PORO:0000905 ! part of sponge surface
 
 [Term]
 id: PORO:0000907
 name: mode of reproduction
+is_a: PATO:0000001 ! quality
 
 [Term]
 id: PORO:0000908
@@ -5408,32 +5431,27 @@ id: PORO:0000911
 name: ectosomal spicule
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: BFO:0000050 PORO:0000281 ! part_of ectosome
-relationship: BFO:0000050 PORO:0000281 ! part_of ectosome
+intersection_of: BFO:0000050 PORO:0000281 ! part of ectosome
+relationship: BFO:0000050 PORO:0000281 ! part of ectosome
 
 [Term]
 id: PORO:0000912
 name: pole of larva
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 UBERON:0002548 ! part_of larva
+relationship: BFO:0000050 UBERON:0002548 ! part of larva
 
 [Term]
 id: PORO:0000914
 name: flagellated cell
 is_a: PORO:0000000 ! sponge cell
-intersection_of: CARO:0000013 ! cell
-intersection_of: BFO:0000051 GO:0019861 ! has part
-relationship: BFO:0000051 GO:0019861 ! has part
+intersection_of: GO:0005623 ! cell
+intersection_of: BFO:0000051 GO:0005929 ! has part cilium
+relationship: BFO:0000051 GO:0005929 ! has part cilium
 
 [Term]
 id: PORO:0000915
 name: chamber
 is_a: UBERON:0000061 ! anatomical structure
-
-[Term]
-id: PORO:0000916
-name: life cycle stage
-comment: Replace with uberon class
 
 [Term]
 id: PORO:0000917
@@ -5445,16 +5463,16 @@ id: PORO:0000918
 name: hilum of sterraster
 is_a: PORO:0000344 ! hilum
 intersection_of: PORO:0000344 ! hilum
-intersection_of: BFO:0000050 PORO:0000557 ! part_of sterraster
-relationship: BFO:0000050 PORO:0000557 ! part_of sterraster
+intersection_of: BFO:0000050 PORO:0000557 ! part of sterraster
+relationship: BFO:0000050 PORO:0000557 ! part of sterraster
 
 [Term]
 id: PORO:0000919
 name: hilum of aspidaster
 is_a: PORO:0000344 ! hilum
 intersection_of: PORO:0000344 ! hilum
-intersection_of: BFO:0000050 PORO:0000150 ! part_of aspidaster
-relationship: BFO:0000050 PORO:0000150 ! part_of aspidaster
+intersection_of: BFO:0000050 PORO:0000150 ! part of aspidaster
+relationship: BFO:0000050 PORO:0000150 ! part of aspidaster
 
 [Term]
 id: PORO:0000920
@@ -5469,12 +5487,12 @@ is_a: PORO:0002035 ! growth_form
 [Term]
 id: PORO:0000922
 name: substrate
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0000923
 name: cell component
-is_a: CARO:0000006 ! material anatomical entity
+is_a: UBERON:0000465 ! material anatomical entity
 
 [Term]
 id: PORO:0000924
@@ -5486,8 +5504,8 @@ id: PORO:0000926
 name: sponge larva
 is_a: UBERON:0002548 ! larva
 intersection_of: UBERON:0002548 ! larva
-intersection_of: BFO:0000050 PORO:0000001 ! part_of sponge
-relationship: BFO:0000050 PORO:0000001 ! part_of sponge
+intersection_of: BFO:0000050 PORO:0000001 ! part of sponge
+relationship: BFO:0000050 PORO:0000001 ! part of sponge
 
 [Term]
 id: PORO:0000927
@@ -5497,7 +5515,8 @@ is_a: PATO:0000001 ! quality
 [Term]
 id: PORO:0000928
 name: gemmule coat
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: BFO:0000004 ! independent continuant
+is_a: UBERON:0000476 ! acellular anatomical structure
 relationship: RO:0002221 PORO:0000330 ! surrounds gemmule
 
 [Term]
@@ -5509,7 +5528,7 @@ is_a: UBERON:0000061 ! anatomical structure
 id: PORO:0000930
 name: envelope of flagellated cells
 is_a: PORO:0000929 ! multicellular anatomical structure
-relationship: composed_of PORO:0000914 ! flagellated cell
+relationship: RO:0002473 PORO:0000914 ! composed primarily of flagellated cell
 
 [Term]
 id: PORO:0000931
@@ -5527,8 +5546,8 @@ name: flagellated endopinacocyte
 is_a: PORO:0000285 ! endopinacocyte
 is_a: PORO:0000914 ! flagellated cell
 intersection_of: PORO:0000285 ! endopinacocyte
-intersection_of: BFO:0000051 GO:0019861 ! has part
-relationship: BFO:0000051 GO:0019861 ! has part
+intersection_of: BFO:0000051 GO:0005929 ! has part cilium
+relationship: BFO:0000051 GO:0005929 ! has part cilium
 
 [Term]
 id: PORO:0000934
@@ -5536,8 +5555,8 @@ name: flagellated exopinacocyte
 is_a: PORO:0000300 ! exopinacocyte
 is_a: PORO:0000914 ! flagellated cell
 intersection_of: PORO:0000300 ! exopinacocyte
-intersection_of: BFO:0000051 GO:0019861 ! has part
-relationship: BFO:0000051 GO:0019861 ! has part
+intersection_of: BFO:0000051 GO:0005929 ! has part cilium
+relationship: BFO:0000051 GO:0005929 ! has part cilium
 
 [Term]
 id: PORO:0000935
@@ -5564,8 +5583,8 @@ id: PORO:0000940
 name: triaene clad
 is_a: PORO:0000207 ! cladome
 intersection_of: PORO:0000206 ! clad
-intersection_of: BFO:0000050 PORO:0000601 ! part_of triaene
-relationship: BFO:0000050 PORO:0000601 ! part_of triaene
+intersection_of: BFO:0000050 PORO:0000601 ! part of triaene
+relationship: BFO:0000050 PORO:0000601 ! part of triaene
 
 [Term]
 id: PORO:0000941
@@ -5603,8 +5622,8 @@ id: PORO:0000951
 name: choanosomal spicule
 is_a: PORO:0000017 ! spicule
 intersection_of: PORO:0000017 ! spicule
-intersection_of: BFO:0000050 PORO:0000203 ! part_of choanosome
-relationship: BFO:0000050 PORO:0000203 ! part_of choanosome
+intersection_of: BFO:0000050 PORO:0000203 ! part of choanosome
+relationship: BFO:0000050 PORO:0000203 ! part of choanosome
 
 [Term]
 id: PORO:0000954
@@ -5639,11 +5658,12 @@ is_a: PORO:0000959 ! protein
 id: PORO:0000963
 name: spiculogenesis
 is_a: GO:0008150 ! biological_process
-relationship: PORO:0000964 PORO:0000017 ! results in formation of spicule
+relationship: results_in_formation_of PORO:0000017 ! spicule
 
 [Term]
 id: PORO:0000991
 name: cavity of canal
+is_a: BFO:0000004 ! independent continuant
 is_a: PORO:0000019 ! immaterial anatomical entity
 relationship: RO:0002219 PORO:0000039 ! surrounded by canal
 
@@ -5651,13 +5671,13 @@ relationship: RO:0002219 PORO:0000039 ! surrounded by canal
 id: PORO:0000997
 name: arm of trider
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000609 ! part_of trider
+relationship: BFO:0000050 PORO:0000609 ! part of trider
 
 [Term]
 id: PORO:0000998
 name: skeletal element of sponge
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 PORO:0000532 ! part_of skeleton
+relationship: BFO:0000050 PORO:0000532 ! part of skeleton
 
 [Term]
 id: PORO:0001000
@@ -5683,7 +5703,7 @@ relationship: BFO:0000051 PORO:0002004 ! has part spine
 [Term]
 id: PORO:0002004
 name: spine
-is_a: CARO:0000040 ! acellular anatomical structure
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0002005
@@ -5705,6 +5725,7 @@ is_a: PORO:0000126 ! anisochela
 id: PORO:0002035
 name: growth_form
 synonym: "habit" BROAD []
+is_a: PATO:0000001 ! quality
 property_value: http://purl.org/dc/elements/1.1/description "shape of body form; habit" xsd:string
 
 [Term]
@@ -5743,8 +5764,8 @@ is_obsolete: true
 [Term]
 id: PORO:0002042
 name: mineral skeleton
-is_a: CARO:0000040 ! acellular anatomical structure
 is_a: PORO:0000532 ! skeleton
+is_a: UBERON:0000476 ! acellular anatomical structure
 
 [Term]
 id: PORO:0002043
@@ -5771,11 +5792,24 @@ synonym: "PORO:0000025" EXACT []
 is_obsolete: true
 
 [Term]
+id: UBERON:0000000
+name: processual entity
+def: "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." []
+
+[Term]
 id: UBERON:0000061
 name: anatomical structure
 def: "Material anatomical entity that has inherent 3D shape and is generated by coordinated expression of the organism's own genome." []
 synonym: "biological structure" EXACT []
 is_a: UBERON:0000465 ! material anatomical entity
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+def: "A spatiotemporal region encompassing some part of the life cycle of an organism." []
+synonym: "developmental stage" NARROW []
+synonym: "stage" NARROW []
+is_a: UBERON:0000000 ! processual entity
 
 [Term]
 id: UBERON:0000465
@@ -5791,18 +5825,24 @@ synonym: "body system" EXACT []
 synonym: "organ system" EXACT []
 synonym: "system" BROAD []
 is_a: UBERON:0000480 ! anatomical group
-relationship: BFO:0000050 UBERON:0000468 ! part_of multi-cellular organism
 
 [Term]
 id: UBERON:0000468
-name: multi-cellular organism
+name: multicellular organism
 def: "Anatomical structure that is an individual member of a species and consists of more than one cell." []
 synonym: "animal" NARROW []
 synonym: "body" RELATED []
 synonym: "Koerper" RELATED []
+synonym: "multi-cellular organism" EXACT []
 synonym: "organism" EXACT []
 synonym: "whole body" RELATED []
 synonym: "whole organism" EXACT []
+is_a: UBERON:0010000 ! multicellular anatomical structure
+
+[Term]
+id: UBERON:0000476
+name: acellular anatomical structure
+def: "Anatomical structure that consists of cell parts and cell substances and together does not constitute a cell or a tissue." []
 is_a: UBERON:0000061 ! anatomical structure
 
 [Term]
@@ -5813,65 +5853,57 @@ synonym: "portion of tissue" EXACT []
 synonym: "simple tissue" NARROW []
 synonym: "tissue portion" EXACT []
 is_a: UBERON:0010000 ! multicellular anatomical structure
-relationship: BFO:0000050 UBERON:0000468 ! part_of multi-cellular organism
 
 [Term]
 id: UBERON:0000480
 name: anatomical group
 def: "Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue." []
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 UBERON:0000468 ! part_of multi-cellular organism
 
 [Term]
 id: UBERON:0000922
 name: embryo
-def: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." []
 synonym: "developing organism" RELATED []
 synonym: "developmental tissue" RELATED []
 synonym: "embryonic organism" EXACT []
-is_a: UBERON:0000468 ! multi-cellular organism
+is_a: UBERON:0000468 ! multicellular organism
 
 [Term]
 id: UBERON:0000923
 name: germ layer
-def: "A layer of cells produced during the process of gastrulation during the early development of the animal embryo, which is distinct from other such layers of cells, as an early step of cell differentiation. The three types of germ layers are the endoderm, ectoderm, and mesoderm." []
 synonym: "embryonic germ layer" RELATED []
 synonym: "embryonic germ layers" RELATED []
 synonym: "embryonic tissue" BROAD []
 synonym: "germinal layer" EXACT []
 synonym: "primary germ layer" NARROW []
 is_a: UBERON:0010316 ! germ layer / neural crest
-relationship: BFO:0000050 UBERON:0000922 ! part_of embryo
-relationship: RO:0002202 UBERON:0002532 ! develops from epiblast (generic)
 
 [Term]
 id: UBERON:0000926
 name: mesoderm
-def: "The middle germ layer of the embryo, between the endoderm and ectoderm." []
 synonym: "embryonic mesoderm" RELATED []
 synonym: "entire mesoderm" RELATED []
 synonym: "mesodermal mantle" RELATED []
 is_a: UBERON:0000923 ! germ layer
-relationship: RO:0002202 UBERON:0006603 ! develops from presumptive mesoderm
 
 [Term]
 id: UBERON:0000990
 name: reproductive system
 namespace: uberon
 alt_id: UBERON:FBbt_00004857-FMA_7160-MA_0000326-MIAA_0000305-WBbt_0005747-XAO_0000142-ZFA_0000632
-def: "Anatomical system that has as its parts the organs concerned with reproduction." []
 def: "Anatomical system that has as its parts the organs concerned with reproduction." [Wikipedia:Reproductive_system]
+def: "Anatomical system that has as its parts the organs concerned with reproduction." []
 synonym: "animal reproductive system" RELATED []
 synonym: "genital system" RELATED []
+synonym: "genital tract" RELATED []
 synonym: "genitalia" RELATED []
 synonym: "Geschlechtsorgan" RELATED []
 synonym: "organa genitalia" RELATED []
 synonym: "reproductive tissue" RELATED []
+synonym: "reproductive tract" RELATED []
 synonym: "systemata genitalia" RELATED []
-is_a: CARO:0000011 ! anatomical system
 is_a: UBERON:0000467 ! anatomical system
 is_a: UBERON:0004120 ! mesoderm-derived structure
-relationship: RO:0002202 UBERON:0000926 ! develops from mesoderm
 
 [Term]
 id: UBERON:0001062
@@ -5881,21 +5913,16 @@ def: "Biological entity that is either an individual member of a biological spec
 [Term]
 id: UBERON:0002050
 name: embryonic structure
-def: "Anatomical structure that is part of an embryo." []
 synonym: "developing embryonic structure" EXACT []
 synonym: "developing structure" RELATED []
 synonym: "embryonale Struktur" RELATED []
 synonym: "embryonic anatomical structure" EXACT []
 is_a: UBERON:0000061 ! anatomical structure
 is_a: UBERON:0005423 ! developing anatomical structure
-intersection_of: UBERON:0000061 ! anatomical structure
-intersection_of: BFO:0000050 UBERON:0000922 ! part_of embryo
-relationship: BFO:0000050 UBERON:0000922 ! part_of embryo
 
 [Term]
 id: UBERON:0002532
 name: epiblast (generic)
-def: "In amniote animal embryology, the epiblast is a tissue type derived either from the inner cell mass in mammals or the blastodisc in birds and reptiles. It lies above the hypoblast. In mammalian embryogenesis, the columnar cells of the epiblast are adjacent to the trophoblast, while the cuboidal cells of the hypoblast are closer to the blastocoele. The epiblast, whilst referred to as the primary ectoderm, differentiates to form all three layers of the trilaminar germ disc in a process called gastrulation[WP]. The outer of the two layers of the blastoderm that form during gastrulation, corresponding to primitive ectoderm during gastrulation and to the definitive ectoderm after gastrulation[ZFA]" []
 synonym: "blastocyst" RELATED []
 synonym: "ectoblast" RELATED []
 synonym: "epiblast" EXACT []
@@ -5907,7 +5934,7 @@ is_a: UBERON:0002050 ! embryonic structure
 id: UBERON:0002548
 name: larva
 namespace: sponge
-def: "a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." []
+def: "A distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." []
 def: "a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." [Wikipedia:Larva]
 synonym: "ammocoete" NARROW []
 synonym: "bipinnaria" NARROW []
@@ -5925,40 +5952,27 @@ synonym: "trochophore" NARROW []
 synonym: "veliger" NARROW []
 synonym: "wriggler" NARROW []
 synonym: "zoea" NARROW []
-is_a: CARO:0000012 ! multi-cellular organism
-is_a: UBERON:0000468 ! multi-cellular organism
+is_a: UBERON:0000468 ! multicellular organism
 
 [Term]
 id: UBERON:0004120
 name: mesoderm-derived structure
 def: "An anatomical structure that develops (entirely or partially) from the mesoderm." []
 is_a: UBERON:0000061 ! anatomical structure
-intersection_of: UBERON:0000061 ! anatomical structure
-intersection_of: RO:0002202 UBERON:0000926 ! develops from mesoderm
-relationship: RO:0002202 UBERON:0000926 ! develops from mesoderm
 
 [Term]
 id: UBERON:0005156
 name: reproductive structure
-def: "An anatomical structure that is part of the reproductive system." []
 synonym: "reproductive system structure" EXACT []
 is_a: UBERON:0004120 ! mesoderm-derived structure
-intersection_of: UBERON:0000061 ! anatomical structure
-intersection_of: BFO:0000050 UBERON:0000990 ! part_of reproductive system
-relationship: BFO:0000050 UBERON:0000990 ! part_of reproductive system
 
 [Term]
 id: UBERON:0005291
 name: embryonic tissue
-def: "A portion of tissue that is part of an embryo." []
 synonym: "developing tissue" RELATED []
 synonym: "portion of embryonic tissue" EXACT []
 is_a: UBERON:0000479 ! tissue
 is_a: UBERON:0002050 ! embryonic structure
-intersection_of: UBERON:0000479 ! tissue
-intersection_of: BFO:0000050 UBERON:0000922 ! part_of embryo
-relationship: BFO:0000050 UBERON:0000922 ! part_of embryo
-relationship: BFO:0000050 UBERON:0002050 ! part_of embryonic structure
 
 [Term]
 id: UBERON:0005423
@@ -5969,67 +5983,138 @@ synonym: "developmental tissue" RELATED []
 is_a: UBERON:0000465 ! material anatomical entity
 
 [Term]
-id: UBERON:0006598
-name: presumptive structure
-synonym: "presumptive structures" EXACT []
-is_a: UBERON:0005423 ! developing anatomical structure
-relationship: BFO:0000050 UBERON:0000922 ! part_of embryo
-
-[Term]
-id: UBERON:0006603
-name: presumptive mesoderm
-is_a: UBERON:0006598 ! presumptive structure
-
-[Term]
 id: UBERON:0010000
 name: multicellular anatomical structure
 def: "An anatomical structure that has more than one cell as a part." []
 synonym: "multicellular structure" EXACT []
 is_a: UBERON:0000061 ! anatomical structure
-relationship: BFO:0000050 UBERON:0000468 ! part_of multi-cellular organism
 
 [Term]
 id: UBERON:0010316
 name: germ layer / neural crest
 is_a: UBERON:0005291 ! embryonic tissue
-relationship: RO:0002202 UBERON:0002532 ! develops from epiblast (generic)
 
 [Typedef]
 id: BFO:0000050
 name: part of
-name: part_of
+def: "a core relation that holds between a part and its whole" []
 property_value: IAO:0000111 "is part of" xsd:string
-property_value: IAO:0000116 "Ambiguous between continuant-parthood and occurrent-parthood" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
 is_transitive: true
+is_a: RO:0002131 ! overlaps
 inverse_of: BFO:0000051 ! has part
 
 [Typedef]
 id: BFO:0000051
 name: has part
-name: has_part
+def: "a core relation that holds between a whole and its part" []
 property_value: IAO:0000111 "has part" xsd:string
-property_value: IAO:0000116 "Ambiguous between continuant-parthood and occurrent-parthood" xsd:string
+property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
 property_value: IAO:0000118 "has_part" xsd:string
 property_value: RO:0001900 RO:0001901
 is_transitive: true
+is_a: RO:0002131 ! overlaps
 
 [Typedef]
 id: PORO:0000946
 name: variant of
 
 [Typedef]
-id: PORO:0000964
-name: results in formation of
+id: RO:0000056
+name: participates in
+def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
+property_value: IAO:0000111 "participates in" xsd:string
+property_value: IAO:0000112 "this blood clot participates in this blood coagulation" xsd:string
+property_value: IAO:0000112 "this input material (or this output material) participates in this process" xsd:string
+property_value: IAO:0000112 "this investigator participates in this investigation" xsd:string
+property_value: IAO:0000118 "participates_in" xsd:string
+domain: BFO:0000002 ! continuant
+range: BFO:0000003 ! occurrent
+
+[Typedef]
+id: RO:0000057
+name: has participant
+def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
+property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:has_participant xsd:string
+property_value: IAO:0000111 "has participant" xsd:string
+property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
+property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
+property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
+property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
+property_value: IAO:0000118 "has_participant" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000002 ! continuant
+holds_over_chain: BFO:0000051 RO:0000057
+inverse_of: RO:0000056 ! participates in
+
+[Typedef]
+id: RO:0002131
+name: overlaps
+def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
+subset: ro-eco
+property_value: IAO:0000114 IAO:0000125
+property_value: RO:0001900 RO:0001901
+holds_over_chain: BFO:0000050 BFO:0000050
+holds_over_chain: BFO:0000051 BFO:0000050
+holds_over_chain: BFO:0000051 RO:0002131
+is_a: RO:0002323 ! mereotopologically related to
+expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
+
+[Typedef]
+id: RO:0002150
+name: continuous with
+def: "X continuous_with Y if and only if X and Y share a fiat boundary." []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "connected to" xsd:string
+property_value: IAO:0000232 "The label for this relation was previously connected to. I relabeled this to \"continuous with\". The standard notion of connectedness does not imply shared boundaries - e.g. Glasgow connected_to Edinburgh via M8; my patella connected_to my femur (via patellar-femoral joint)" xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso FMA:85972 xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000004 ! independent continuant
+is_a: RO:0002323 ! mereotopologically related to
+
+[Typedef]
+id: RO:0002163
+name: spatially disjoint from
+def: "A is spatially_disjoint_from B if and only if they have no parts in common" []
+subset: ro-eco
+property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Part-disjointness-Design-Pattern xsd:anyURI
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. " xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
+property_value: IAO:0000232 "Note that it would be possible to use the relation to label the relationship between a near infinite number of structures - between the rings of saturn and my left earlobe. The intent is that this is used for parsiomoniously for disambiguation purposes - for example, between siblings in a jointly exhaustive pairwise disjointness hierarchy" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: RO:0002323 ! mereotopologically related to
+expand_expression_to: "BFO_0000051 exactly 0 (BFO_0000050 some ?Y)" []
 
 [Typedef]
 id: RO:0002180
 name: has component
-comment: For use in recording has_part with a cardinality constraint.
+def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
+property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
+is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0002202
@@ -6045,76 +6130,282 @@ domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
 holds_over_chain: BFO:0000050 RO:0002202
 is_transitive: true
-transitive_over: BFO:0000050 ! part_of
+is_a: RO:0002258 ! developmentally preceded by
+transitive_over: BFO:0000050 ! part of
+
+[Typedef]
+id: RO:0002203
+name: develops into
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000117 "Terry Meehan" xsd:string
+is_transitive: true
+is_a: RO:0002286 ! developmentally succeeded by
+is_a: RO:0002387 ! has potential to develop into
+is_a: RO:0002388 ! has potential to directly develop into
+inverse_of: RO:0002202 ! develops from
 
 [Typedef]
 id: RO:0002215
 name: capable of
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
+subset: ro-eco
 property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
 property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "has function realized in" xsd:string
-property_value: IAO:0000119 PMID:20123131 xsd:string
-property_value: IAO:0000119 PMID:21208450 xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
 property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000015 ! process
+is_a: RO:0002328 ! functionally related to
 expand_expression_to: "RO_0000053 some (RO_0000054 only ?Y)" []
+
+[Typedef]
+id: RO:0002216
+name: capable of part of
+def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "has function in" xsd:string
+holds_over_chain: RO:0002215 BFO:0000050
+is_a: RO:0002328 ! functionally related to
+expand_expression_to: "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))" []
 
 [Typedef]
 id: RO:0002219
 name: surrounded by
-def: "x surrounded_by y if and only if x is adjacent to y and for every region r that is adjacent to x, r overlaps y" []
+def: "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x" []
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0001900 RO:0001901
+is_a: RO:0002220 ! adjacent to
 
 [Typedef]
 id: RO:0002220
 name: adjacent to
 def: "x adjacent to y if and only if x and y share a boundary" []
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "This relation acts as a join point with BSPO" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0001900 RO:0001901
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000004 ! independent continuant
+is_a: RO:0002163 ! spatially disjoint from
 
 [Typedef]
 id: RO:0002221
 name: surrounds
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: RO:0001900 RO:0001901
+is_a: RO:0002220 ! adjacent to
+inverse_of: RO:0002219 ! surrounded by
+
+[Typedef]
+id: RO:0002234
+name: has output
+def: "p has direct input c iff c is a participant in p, c is present at the end of p, and c is not present at the beginning of c." []
+subset: ro-eco
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "produces" xsd:string
+is_a: RO:0000057 ! has participant
+
+[Typedef]
+id: RO:0002254
+name: has developmental contribution from
+def: "x has developmental contribution from y iff x has some part z such that z develops from y" []
+property_value: IAO:0000112 "Mammalian thymus has developmental contribution from some pharyngeal pouch 3; Mammalian thymus has developmental contribution from some pharyngeal pouch 4 [Kardong]" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+domain: CARO:0000003 ! anatomical structure
+range: CARO:0000003 ! anatomical structure
+holds_over_chain: BFO:0000051 RO:0002202
+is_a: RO:0002258 ! developmentally preceded by
+
+[Typedef]
+id: RO:0002255
+name: developmentally contributes to
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+holds_over_chain: RO:0002203 BFO:0000050
+is_a: RO:0002286 ! developmentally succeeded by
+is_a: RO:0002385 ! has potential to developmentally contribute to
+inverse_of: RO:0002254 ! has developmental contribution from
+
+[Typedef]
+id: RO:0002258
+name: developmentally preceded by
+def: "Candidate definition: x developmentally related to y if and only if there exists some developmental process (GO:0032502) p such that x and y both participates in p, and x is the output of p and y is the input of p" []
+comment: This relation groups together various other developmental relations. It is fairly generic, encompassing induction, developmental contribution and direct and transitive develops from
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "false" xsd:boolean
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "In general you should not use this relation to make assertions - use one of the more specific relations below this one" xsd:string
+is_a: RO:0002324 ! developmentally related to
+
+[Typedef]
+id: RO:0002286
+name: developmentally succeeded by
+def: "Inverse of developmentally preceded by" []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002384 ! has developmental potential involving
+inverse_of: RO:0002258 ! developmentally preceded by
+
+[Typedef]
+id: RO:0002323
+name: mereotopologically related to
+def: "A mereological relationship or a topological relationship" []
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
+property_value: RO:0001900 RO:0001901
+
+[Typedef]
+id: RO:0002324
+name: developmentally related to
+def: "A relationship that holds between entities participating in some developmental process (GO:0032502)" []
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving organismal development" xsd:string
+
+[Typedef]
+id: RO:0002328
+name: functionally related to
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000232 "This is a grouping relation that collects relations used for the purpose of connecting structure and function" xsd:string
+
+[Typedef]
+id: RO:0002329
+name: part of structure that is capable of
+def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "false" xsd:boolean
+holds_over_chain: BFO:0000050 RO:0002215
+is_a: RO:0002328 ! functionally related to
+
+[Typedef]
+id: RO:0002353
+name: output of
+subset: ro-eco
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0000056 ! participates in
+is_a: RO:0002328 ! functionally related to
+inverse_of: RO:0002234 ! has output
+
+[Typedef]
+id: RO:0002354
+name: formed as result of
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002353 ! output of
+inverse_of: results_in_formation_of ! results in formation of
+
+[Typedef]
+id: RO:0002384
+name: has developmental potential involving
+def: "x has developmental potential involving y iff x is capable of a developmental process with output y. y may be the successor of x, or may be a different structure in the vicinity (as for example in the case of developmental induction)." []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002324 ! developmentally related to
+
+[Typedef]
+id: RO:0002385
+name: has potential to developmentally contribute to
+def: "x has potential to developmentrally contribute to y iff x developmentally contributes to y or x is capable of developmentally contributing to y" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002384 ! has developmental potential involving
+
+[Typedef]
+id: RO:0002387
+name: has potential to develop into
+def: "x has the potential to develop into y iff x develops into y or if x is capable of developing into y" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002384 ! has developmental potential involving
+
+[Typedef]
+id: RO:0002388
+name: has potential to directly develop into
+def: "x has potential to directly develop into y iff x directly develops into y or x is capable of directly developing into y" []
+property_value: IAO:0000114 IAO:0000428
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+is_a: RO:0002387 ! has potential to develop into
+
+[Typedef]
+id: RO:0002473
+name: composed primarily of
+namespace: sponge
+def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
+subset: ro-eco
+property_value: IAO:0000112 "'otolith organ' SubClassOf 'composed primarily of' some 'calcium carbonate'" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000051 ! has part
+
+[Typedef]
+id: RO:0002584
+name: has part structure that is capable of
+def: "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p" []
+property_value: IAO:0000112 "gland SubClassOf 'has part structure that is capable of' some 'secretion by cell'" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+holds_over_chain: BFO:0000051 RO:0002215
+is_a: RO:0002328 ! functionally related to
 
 [Typedef]
 id: RO:0003000
 name: produces
 def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
 comment: Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue.
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Melissa Haendel" xsd:string
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
+inverse_of: RO:0003001 ! produced by
 
 [Typedef]
 id: RO:0003001
 name: produced by
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Melissa Haendel" xsd:string
-
-[Typedef]
-id: composed_of
-name: composed_of
-namespace: sponge
-is_a: BFO:0000051 ! has part
-
-[Typedef]
-id: continuous_with
-name: continuous_with
-namespace: sponge
-created_by: cjm
-creation_date: 2011-04-22T07:30:35Z
+domain: BFO:0000040 ! material entity
+range: BFO:0000040 ! material entity
 
 [Typedef]
 id: echinates
 name: echinates
-namespace: sponge
 synonym: "protrudes from" RELATED []
 
 [Typedef]
 id: lined_by
 is_a: BFO:0000051 ! has part
+
+[Typedef]
+id: results_in_developmental_progression_of
+name: results in developmental progression of
+def: "p results in the developmental progression of s iff p is a developmental process and s is an anatomical structure and p causes s to undergo a change in state at some point along its natural developmental cycle (this cycle starts with its formation, through the mature structure, and ends with its loss)." []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "This property and its subproperties are being used primarily for the definition of GO developmental processes. The property hierarchy mirrors the core GO hierarchy. In future we may be able to make do with a more minimal set of properties, but due to the way GO is currently structured we require highly specific relations to avoid incorrect entailments. To avoid this, the corresponding genus terms in GO should be declared mutually disjoint." xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: seeAlso Ontology:extensions
+domain: GO:0008150 ! biological_process
+range: CARO:0000003 ! anatomical structure
+is_a: RO:0002324 ! developmentally related to
+
+[Typedef]
+id: results_in_formation_of
+name: results in formation of
+property_value: IAO:0000112 "an annotation of gene X to anatomical structure formation with results_in_formation_of UBERON:0000007 (pituitary gland) means that at the beginning of the process a pituitary gland does not exist and at the end of the process a pituitary gland exists." xsd:string
+property_value: IAO:0000112 "every \"endocardial cushion formation\" (GO:0003272) results_in_formation_of some \"endocardial cushion\" (UBERON:0002062)" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000119 GOC:mtg_berkeley_2013 xsd:string
+is_a: results_in_developmental_progression_of ! results in developmental progression of
+is_a: RO:0002234 ! has output
 

@@ -11,20 +11,18 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/poro.owl">
-        <oboInOwl:remark rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-07-17</oboInOwl:remark>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An ontology describing the anatomical structures and characteristics of Porifera (sponges)</dc:description>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob Thacker</dc:creator>
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris Mungall</dc:creator>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porifera (sponge) ontology</dc:title>
-        <oboInOwl:remark rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porifera Ontology</oboInOwl:remark>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://code.google.com/p/porifera-ontology/</foaf:homepage>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/caro_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/cl_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/go_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/pato_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/ro_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl"/>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/poro/releases/2015-03-11/poro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/poro/releases/2015-03-15/poro.owl"/>
     </owl:Ontology>
     
 
@@ -94,12 +92,6 @@
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synonym_type_property</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#auto-generated-by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#auto-generated-by"/>
     
 
 
@@ -280,89 +272,26 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PORO_0000964 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PORO_0000964">
-        <rdfs:label xml:lang="en">results in formation of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002180 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002180"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
         </owl:propertyChainAxiom>
     </rdf:Description>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+    <!-- http://purl.obolibrary.org/obo/RO_0002473 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002219 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002219"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002220"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002221"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0003000 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003000"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0003001 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0003001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sponge#composed_of -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/sponge#composed_of">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composed_of</rdfs:label>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002473">
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sponge#continuous_with -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/sponge#continuous_with">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">continuous_with</rdfs:label>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:30:35Z</oboInOwl:creation_date>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
-    </owl:ObjectProperty>
+    </rdf:Description>
     
 
 
@@ -371,7 +300,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/sponge#echinates">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">echinates</rdfs:label>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protrudes from</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:ObjectProperty>
     
 
@@ -401,17 +329,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0019861 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0019861"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PORO_0000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000000">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000013"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005623"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -429,7 +351,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T06:42:26Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sponge bodies consist of jelly-like mesohyl sandwiched between two thin layers of cells. While all animals have unspecialized cells that can transform into specialized cells, sponges are unique in having some specialized cells that can transform into other types, often migrating between the main cell layers and the mesohyl in the process. Sponges do not have nervous, digestive or circulatory systems. Instead, most rely on maintaining a constant water flow through their bodies to obtain food and oxygen and to remove wastes, and the shapes of their bodies are adapted to maximize the efficiency of the water flow. All are sessile aquatic animals and, although there are freshwater species, the great majority are marine (salt water) species, ranging from tidal zones to depths exceeding 8,800 metres (5.5 mi)</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
@@ -448,6 +370,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000002">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesohyl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000700"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -555,6 +478,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000011">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sclerocyte</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -599,6 +523,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000013">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spongocyte</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -622,13 +547,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000143"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000002"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000143"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T06:56:33Z</oboInOwl:creation_date>
@@ -659,6 +584,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000016">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">archaeocyte</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -685,7 +611,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000017">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spicule</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -726,10 +653,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000018">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">osculum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#continuous_with"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -751,7 +679,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000019">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial anatomical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:04:50Z</oboInOwl:creation_date>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -814,6 +742,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000022">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spongocoel lining</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -857,10 +786,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000024">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prosopyle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#continuous_with"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -955,7 +885,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000029">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spongin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -993,7 +924,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000017"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1002,14 +933,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46719"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46719"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/PORO_0000031"/>
@@ -1059,7 +990,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000017"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1068,7 +999,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1088,17 +1019,17 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000532"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000532"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1113,7 +1044,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000034">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trab</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:25:52Z</oboInOwl:creation_date>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A trab is structural element within a sponge formed by the fusion of dendroclones. In the Anthaspidellidae, when spicules (usually dendroclones) connect at their tips to form a ladder-like structure, trabs may be formed.[1] Oxeas are sometimes employed in the central rod.[1][2] Trabs have a feather-like structure, or may form rods.[1][3] Trabs are usually regularly spaced, usually at sub-millimetric intervals.[1] Further dendroclones may interconnect adjacent trabs, forming ladder-like structures</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
@@ -1144,10 +1075,11 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000038">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dermal pore</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#continuous_with"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000355"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1163,7 +1095,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000039">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:31:48Z</oboInOwl:creation_date>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cjm</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -1255,17 +1187,18 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000044">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">porocyte</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000000"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-04-22T07:38:18Z</oboInOwl:creation_date>
@@ -1287,7 +1220,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000045">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spicule ray</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1329,7 +1262,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000094">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crystal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1350,18 +1283,18 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000054"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000480"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000480"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1377,9 +1310,9 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000054"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000480"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000098"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1388,7 +1321,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000095"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000098"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1626,7 +1559,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000109">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ala</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1836,16 +1769,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracts, lines, or fibers are interconnected</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reticulate</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tracts, lines, or fibers are interconnected</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000119"/>
     </owl:Axiom>
     
 
@@ -2270,6 +2203,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2312,7 +2246,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000143">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aquiferous system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomy and Aquiferous System</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The entire water-conducting system between the ostia and the oscula, which comprises the inhalant system, choanocyte chambers, and the exhalant system</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -2520,15 +2454,10 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral spicule/skeleton</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule/skeleton</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -2545,10 +2474,15 @@
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gastral spicule/skeleton</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">atrial spicule/skeleton</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000155"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
@@ -2594,6 +2528,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000159">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">axial filament</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -2671,10 +2606,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000163">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bark</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000480"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2720,6 +2655,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000165">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal triradiate system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -3135,18 +3071,19 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000188">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spicule center</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002220"/>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000045"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcareous Spicules and Calcareous Spicule Skeleton</rdfs:comment>
@@ -3660,16 +3597,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clavidisc</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000213"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A ring-shaped microsclere (genus Merlia).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000213"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clavidisc</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000213"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -3714,9 +3651,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000216">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">clone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ray-like arm that is entirely anaxial.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicule Types of &quot;Lithistids&quot;</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ray-like arm that is entirely anaxial.</owl:annotatedTarget>
@@ -3756,17 +3694,17 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hollow larva composed of an envelope of morphologically similar equipotent cells, to which a few larger nonflagellated cells may be added at the posterior pole.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000218"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blastula</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000218"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hollow larva composed of an envelope of morphologically similar equipotent cells, to which a few larger nonflagellated cells may be added at the posterior pole.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000218"/>
     </owl:Axiom>
     
 
@@ -3793,10 +3731,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000220">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collagen fascicle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000904"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3817,13 +3755,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000221">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">collar body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000003"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000196"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:complementOf>
@@ -3833,6 +3766,12 @@
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000196"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anucleate choanocyte in hexactinellids.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -4013,13 +3952,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000230"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abruptly pointed</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conical</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000230"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conical</owl:annotatedTarget>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">abruptly pointed</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000230"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
@@ -4184,6 +4123,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000239">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crepis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4194,8 +4134,8 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fundamental, inceptional body of a desma before it is modified by deposition of multiple layers of silica. A monocrepid desma develops from a monaxon spicule that is recognized by a straight, undivided axial thread (canal); a tetracrepid desma is based on a tetraxon spicule with a four-rayed axial thread (a small calthrops; see bottom of figure); an acrepid desma is based on a polyaxon fundamental structure lacking axial threads.</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acrepis</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monocrepid</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tetracrepid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fundamental, inceptional body of a desma before it is modified by deposition of multiple layers of silica. A monocrepid desma develops from a monaxon spicule that is recognized by a straight, undivided axial thread (canal); a tetracrepid desma is based on a tetraxon spicule with a four-rayed axial thread (a small calthrops; see bottom of figure); an acrepid desma is based on a polyaxon fundamental structure lacking axial threads.</owl:annotatedTarget>
@@ -4246,7 +4186,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000242">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crypt tissue</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -4270,7 +4210,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000243">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crystal ultrastructure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000480"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcareous Rigid Skeleton</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organization of the skeletal crystals observed after special preparation showing the relationship between organic and mineral phases.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -4306,10 +4246,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000245">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cuticle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4483,6 +4423,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000254">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deuteroclad</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -4491,7 +4432,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An actinal branch or a distal, branched portion of a ray. See DICHOTRIAENE.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An actinal branch or a distal, branched portion of a ray. See DICHOTRIAENE.</owl:annotatedTarget>
@@ -4733,7 +4674,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000264">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dictyonalia</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002202"/>
@@ -4957,9 +4899,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000276">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">discotriaene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A triaene with a disc-shaped cladome. The single clads may be distinguished by the presence of short axial canals (genus Discodermia)</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A triaene with a disc-shaped cladome. The single clads may be distinguished by the presence of short axial canals (genus Discodermia)</owl:annotatedTarget>
@@ -5010,6 +4953,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000279">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ectochrote</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5018,7 +4962,7 @@
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture of the Skeleton of Demospongiae</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the cortex</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Outer layer of the cortex</owl:annotatedTarget>
@@ -5276,6 +5220,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000292">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epitheca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -5284,7 +5229,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thin, wrinkled, calcareous layer, different in structure from the normal skeleton, covering the dead basal part of a rigid calcareous skeleton</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcareous Rigid Skeleton</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A thin, wrinkled, calcareous layer, different in structure from the normal skeleton, covering the dead basal part of a rigid calcareous skeleton</owl:annotatedTarget>
@@ -5418,7 +5363,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000299">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exhalant system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomy and Aquiferous System</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part of the aquiferous system between the apopyle and oscule</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -5535,17 +5480,17 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000305">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fiber</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000499"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A column (strand, thread) of spongin forming a reticulate or dendritic skeleton, with or without indige nous spicules or foreign material.</obo:IAO_0000115>
@@ -5639,9 +5584,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000310">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fimbria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow structure, similar to an ala, flanking the shaft of an anchorate chela</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unclassified</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Narrow structure, similar to an ala, flanking the shaft of an anchorate chela</owl:annotatedTarget>
@@ -5695,7 +5641,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000003"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000312"/>
@@ -5703,7 +5649,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -5840,6 +5786,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000320">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">follicle cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -6048,7 +5995,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000900"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000016"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6549,7 +6496,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000356">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhalant system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomy and Aquiferous System</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Part of the aquiferous system between ostia and prosopyle.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -6623,9 +6570,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000360">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">irciniid filament</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000029"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6816,7 +6764,7 @@
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000598"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000305"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -6826,7 +6774,7 @@
                 <owl:complementOf>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000305"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000598"/>
                     </owl:Restriction>
                 </owl:complementOf>
             </owl:Class>
@@ -6965,7 +6913,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000532"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000253"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7076,6 +7024,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000385">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lychnisca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -7102,7 +7051,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000095"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000341"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7123,6 +7072,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000387">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mamelon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -7218,7 +7168,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000393">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mesolamella</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytology</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheet of collagen separating the choanochambers of hexactinellids.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -7308,6 +7258,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000398">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microanchor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -7458,7 +7409,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000406">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">micropyle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -7501,10 +7451,10 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000409">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microstructure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000054"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000480"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7525,12 +7475,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000410">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microsymbiont</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000012"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000013"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005623"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000468"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -7620,16 +7570,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the nipple-like point of a megasclere. See OXEA.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000413"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mucronate</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000413"/>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the nipple-like point of a megasclere. See OXEA.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000413"/>
     </owl:Axiom>
     
 
@@ -7685,6 +7635,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000416">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">node</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -7735,7 +7686,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000045"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">8</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -7775,7 +7726,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000420">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">olynthus stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000916"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earliest developmental stage with a functional aquiferous system, with a single choanocyte chamber opening directly into the osculum; typical of some calcareous sponges</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproduction</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -8044,7 +7995,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000095"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000911"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8372,16 +8323,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentact</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000449"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Five-rayed spicule.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000449"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pentact</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000449"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -8476,7 +8427,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000456">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pith</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -8503,7 +8454,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000305"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8693,16 +8644,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polytylote</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000467"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Megasclere with several annular swelling along its shaft</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000467"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polytylote</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000467"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -8738,14 +8689,14 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000917"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000631"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000281"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000281"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000631"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A specialized area of the ectosome with a cluster of ostia and an underlying inhalant cavity called the vestibule</obo:IAO_0000115>
@@ -8881,7 +8832,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000476"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -9033,6 +8984,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000485">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protoclad</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -9056,6 +9008,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000486">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protorhabd</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The original simple shaft of ornamented monaxons and of triaenes.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -9225,6 +9178,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000495">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reduction body</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000929"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -9401,7 +9355,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000505">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rhagon stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000916"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Earliest functional stage with multiple choanocyte chambers and aquiferous canals, typical for Demospongiae</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproduction</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -9666,7 +9620,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000519">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schizorhysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture of the Skeleton and Spicules of Hexactinellida</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In fossil sponges, continuous system of interconected canal spaces (Tretodictyidae).</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -9753,6 +9707,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000920"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -10345,6 +10300,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000559">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stipitate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Macroscopical Features: Habit, Surface Characteristics, and Consistency</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supported by a long stalk (Stylocordyla stipitata)</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -10380,7 +10336,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000561">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stomoblastula stage</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000916"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Developmental stage of amphiblastulas that precedes the reversion stage and is characterized by internal flagella and a large opening through which the eversion occurs</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reproduction</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -10416,6 +10372,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000563">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">strobiloplumicome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture of the Skeleton and Spicules of Hexactinellida</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plumicome with numerous slender terminal rays arranged in two concentric circles</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -10605,7 +10562,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000532"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000253"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10724,6 +10681,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000578">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">synapticule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Architecture of the Skeleton and Spicules of Hexactinellida</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bridges composed of siliceous cement joining spicules</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -11097,7 +11055,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000597">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trabecular tissue</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytology</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syncytia in hexactinellids occurring around the choanochambers.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -11193,6 +11151,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000045"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:qualifiedCardinality>
             </owl:Restriction>
@@ -11204,13 +11169,6 @@
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/PORO_0000206"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General term for a tetractinal megasclere having one unequal ray (termed rhabd) that is commonly much longer than the other three (termed clads, forming the cladome).</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spicules of Demospongiae</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -11218,16 +11176,16 @@
         <oboInOwl:hasExactSynonym>triaene megasclere</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triaene</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General term for a tetractinal megasclere having one unequal ray (termed rhabd) that is commonly much longer than the other three (termed clads, forming the cladome).</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">triaene</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000601"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -11313,7 +11271,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000095"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000494"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11568,7 +11526,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000618">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tyle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -11662,16 +11620,16 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unequal</oboInOwl:hasRelatedSynonym>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unequal</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000622"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adjective referring to the extremities of megascleres. See also ANISO-.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000622"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unequal</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000622"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#TRAIT"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -11724,16 +11682,16 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal actine (ray)</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
-        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In sagittal spicules, the ray of a triactine or of a triradiate basal system of a tetractine lying in the plane of bilateral symmetry.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.portol.org/thesaurus</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">basal actine (ray)</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000625"/>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/sponge#DEPRECATED"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -11888,6 +11846,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000634">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -11896,7 +11856,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#continuous_with"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002150"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -11917,6 +11877,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000635">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zygosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calcareous Rigid Skeleton</rdfs:comment>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mode of junction between siliceous and calcareous tetraradiates characterized by the interlocking of their terminal or lateral expansions; cement, if present, is secondary.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
@@ -11934,7 +11895,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000700">
         <rdfs:label xml:lang="en">body layer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000043"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000479"/>
     </owl:Class>
     
 
@@ -12048,7 +12009,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000900">
         <rdfs:label xml:lang="en">reproductive body</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12082,7 +12043,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000904">
         <rdfs:label xml:lang="en">collagen fibril</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:comment>Editor note: use GO or PRO</rdfs:comment>
     </owl:Class>
     
@@ -12092,7 +12053,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000905">
         <rdfs:label xml:lang="en">sponge surface</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12101,7 +12062,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000906">
         <rdfs:label xml:lang="en">surface protruberance</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12116,6 +12077,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000907">
         <rdfs:label xml:lang="en">mode of reproduction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
     </owl:Class>
     
 
@@ -12133,7 +12095,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000909">
         <rdfs:label xml:lang="en">ray axis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12142,7 +12104,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000910">
         <rdfs:label xml:lang="en">plate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12177,7 +12139,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000912">
         <rdfs:label xml:lang="en">pole of larva</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12195,10 +12157,10 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CARO_0000013"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/GO_0005623"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12207,7 +12169,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -12218,16 +12180,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000915">
         <rdfs:label xml:lang="en">chamber</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/PORO_0000916 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000916">
-        <rdfs:label xml:lang="en">life cycle stage</rdfs:label>
-        <rdfs:comment>Replace with uberon class</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12236,7 +12189,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000917">
         <rdfs:label xml:lang="en">groove, pit or depression</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12315,7 +12268,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000922">
         <rdfs:label xml:lang="en">substrate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
     </owl:Class>
     
 
@@ -12324,7 +12277,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000923">
         <rdfs:label xml:lang="en">cell component</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
     </owl:Class>
     
 
@@ -12377,7 +12330,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000928">
         <rdfs:label xml:lang="en">gemmule coat</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002221"/>
@@ -12392,7 +12346,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000929">
         <rdfs:label xml:lang="en">multicellular anatomical structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12404,7 +12358,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000929"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/sponge#composed_of"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002473"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000914"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -12440,7 +12394,7 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000285"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12450,7 +12404,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -12467,7 +12421,7 @@
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PORO_0000300"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12477,7 +12431,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0019861"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/GO_0005929"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -12515,7 +12469,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000938">
         <rdfs:label xml:lang="en">organism subdivision</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
     </owl:Class>
     
 
@@ -12664,8 +12618,8 @@
         <obo:IAO_0000115>enzyme which catalyzes the formation of silicate polymers</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicatein</oboInOwl:hasDbXref>
         <owl:annotatedTarget>enzyme which catalyzes the formation of silicate polymers</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicatein</oboInOwl:hasDbXref>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000960"/>
     </owl:Axiom>
@@ -12680,8 +12634,8 @@
         <obo:IAO_0000115>enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen</owl:annotatedTarget>
         <oboInOwl:hasDbXref>http://palaeos.com/metazoa/glossary/glossaryO.html#silicase</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>enzyme in sponges, proposed to be involved in silica restructuring and maintenance. The proposed mechanism involves bound zinc acting as a Lewis acid catalyst to break the silicate ester bond between silicon and oxygen</owl:annotatedTarget>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/PORO_0000961"/>
     </owl:Axiom>
@@ -12695,7 +12649,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/PORO_0000964"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002297"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -12707,6 +12661,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000991">
         <rdfs:label xml:lang="en">cavity of canal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12722,7 +12677,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000997">
         <rdfs:label xml:lang="en">arm of trider</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12737,7 +12692,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0000998">
         <rdfs:label xml:lang="en">skeletal element of sponge</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -12799,7 +12754,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0002004">
         <rdfs:label xml:lang="en">spine</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
     </owl:Class>
     
 
@@ -12836,6 +12791,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0002035">
         <rdfs:label xml:lang="en">growth_form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000001"/>
         <dc:description>shape of body form; habit</dc:description>
         <oboInOwl:hasBroadSynonym>habit</oboInOwl:hasBroadSynonym>
     </owl:Class>
@@ -12904,8 +12860,8 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PORO_0002042">
         <rdfs:label xml:lang="en">mineral skeleton</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000040"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PORO_0000532"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000476"/>
     </owl:Class>
     
 
@@ -12952,13 +12908,13 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000990 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000990">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000990">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive system</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000467"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that has as its parts the organs concerned with reproduction.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:FBbt_00004857-FMA_7160-MA_0000326-MIAA_0000305-WBbt_0005747-XAO_0000142-ZFA_0000632</oboInOwl:hasAlternativeId>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
-    </owl:Class>
+    </rdf:Description>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical system that has as its parts the organs concerned with reproduction.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Reproductive_system</oboInOwl:hasDbXref>
@@ -12970,12 +12926,12 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0002548 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002548">
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0002548">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">larva</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000468"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sponge</oboInOwl:hasOBONamespace>
-    </owl:Class>
+    </rdf:Description>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Larva</oboInOwl:hasDbXref>
         <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle.</owl:annotatedTarget>
@@ -13034,16 +12990,6 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -13054,11 +13000,21 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
         <owl:disjointWith>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000200"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
             </owl:Restriction>
         </owl:disjointWith>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000002"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
     </owl:Restriction>
     <owl:Restriction>
         <owl:disjointWith>
@@ -13068,7 +13024,7 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
             </owl:Restriction>
         </owl:disjointWith>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000002"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
     </owl:Restriction>
     <owl:Class>
         <owl:equivalentClass>
@@ -13096,7 +13052,7 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
         <owl:disjointWith>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000043"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000200"/>
             </owl:Restriction>
         </owl:disjointWith>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
