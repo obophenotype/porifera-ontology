@@ -1,5 +1,6 @@
 format-version: 1.2
-ontology: poro/imports/imports/chebi_import
+ontology: poro/imports/chebi_import
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/chebi.owl
 
 [Term]
 id: CHEBI:22985
@@ -132,12 +133,6 @@ is_a: CHEBI:23016 ! carbonates
 id: CHEBI:50860
 name: organic molecular entity
 is_a: CHEBI:33582 ! carbon group molecular entity
-
-[Term]
-id: CHEBI:52239
-name: aragonite
-is_a: CHEBI:3311 ! calcium carbonate
-is_a: CHEBI:46720 ! carbonate mineral
 
 [Term]
 id: CHEBI:59999
