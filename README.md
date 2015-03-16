@@ -1,6 +1,6 @@
 An ontology covering the anatomy of Porifera (sponges)
 
-![fig1](http://www.jbiomedsem.com/content/5/1/39/figure/F1?highres=y)
+![fig1](http://www.jbiomedsem.com/content/figures/2041-1480-5-39-1.jpg)
 (figure from Boury-Esnault N, Rützler K: Thesaurus of Sponge Morphology. Washington: Smithsonian Institution Press; 1997)
 
 ## Citing ##
