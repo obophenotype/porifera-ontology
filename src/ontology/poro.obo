@@ -639,7 +639,7 @@ creation_date: 2011-04-22T07:07:50Z
 id: PORO:0000022
 name: spongocoel lining
 namespace: sponge
-is_a: CARO:0000006 ! material anatomical entity
+is_a: UBERON:0000465 ! material anatomical entity
 relationship: BFO:0000050 PORO:0000020 ! part of spongeocoel
 created_by: cjm
 creation_date: 2011-04-22T07:09:08Z
@@ -2066,7 +2066,7 @@ comment: Spicule Types of "Lithistids"
 synonym: "acrepis" RELATED []
 synonym: "monocrepid" RELATED []
 synonym: "tetracrepid" RELATED []
-is_a: CARO:0000006 ! material anatomical entity
+is_a: UBERON:0000465 ! material anatomical entity
 relationship: BFO:0000050 PORO:0000253 ! part of desma
 
 [Term]
@@ -2409,7 +2409,7 @@ name: ectochrote
 namespace: unclassified
 def: "Outer layer of the cortex" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: CARO:0000006 ! material anatomical entity
+is_a: UBERON:0000465 ! material anatomical entity
 relationship: BFO:0000050 PORO:0000235 ! part of cortex
 
 [Term]
@@ -2677,7 +2677,7 @@ name: fimbria
 namespace: unclassified
 def: "Narrow structure, similar to an ala, flanking the shaft of an anchorate chela" [http://www.portol.org/thesaurus]
 comment: Spicules of Demospongiae
-is_a: CARO:0000006 ! material anatomical entity
+is_a: UBERON:0000465 ! material anatomical entity
 
 [Term]
 id: PORO:0000311

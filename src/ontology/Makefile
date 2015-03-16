@@ -18,7 +18,7 @@ USECAT= --use-catalog
 
 # all release files are derived from the editors version.
 # we use the default Oort setup (hermit as reasoner)
-build/poro.owl: poro-edit.ofn
+build/poro.owl: poro-edit.owl
 	ontology-release-runner --catalog-xml catalog-v001.xml $< --allow-overwrite --asserted --simple --outdir build
 
 build/%: build/poro.owl
