@@ -4,8 +4,15 @@
 #
 # To make a release, type 'make release' in this directory
 
+OBO = http://purl.obolibrary.org/obo/
+RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
+
 build: poro.obo poro.owl minidiff
 release: poro.obo diff
+
+TARGETS = poro.obo poro.owl imports diffs
+copy-release:
+	cp -pr $(TARGETS) ../.. && cd ../.. && git add imports/*
 
 USECAT= --use-catalog
 

@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_22985 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_22985">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33299"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23016">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36963"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_24866 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24866">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37577"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_25806 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_25806">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxygen molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33304"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3311">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium carbonate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35156"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46721"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64708"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33285">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heteroorganic entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33299">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkaline earth molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33674"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33304">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chalcogen molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33675"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33579 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33579">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">main group molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33582 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33582">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbon group molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33675"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33674">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">s-block molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33675 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33675">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p-block molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33579"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_35156 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_35156">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcium salt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22985"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36364"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36357">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polyatomic entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36364">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alkaline earth salt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24866"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33299"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36962 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36962">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organochalcogen compound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33285"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33304"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_36963 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36963">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organooxygen compound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25806"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36962"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_37577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_37577">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heteroatomic molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36357"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46662 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46662">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mineral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_60004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46719 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46719">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3311"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46720"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46720 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46720">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonate mineral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46721"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_46721 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46721">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbonate salt</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50860 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50860">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organic molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_59999 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59999">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical substance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_60004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_60004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mixture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64389 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64389">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biogenic silica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64391"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64393"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64391 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64391">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biogenic mineral</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_64392"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64392 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64392">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biogenic substance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_59999"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64393 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64393">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydrated silica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_64708 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_64708">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">one-carbon compound</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50860"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.2.2-SNAPSHOT) http://owlapi.sourceforge.net -->
+

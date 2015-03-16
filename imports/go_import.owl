@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/poro/imports/go_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/poro/imports/go_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/poro/imports/go_import.owl">
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005623 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005623">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005929 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005929">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cilium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0042995"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006810 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006810">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051234"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006897 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006897">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endocytosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0016192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006909 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0006909">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phagocytosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006897"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044765"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0016192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0016192">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vesicle-mediated transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006810"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0022414 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0022414">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reproductive process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042995 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0042995">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell projection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044464"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043226">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044464">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044699">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044765 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0044765">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0006810"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044699"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_1902578"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051179">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">localization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0051234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0051234">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">establishment of localization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902578 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_1902578">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">single-organism localization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0044699"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0051179"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.2.2-SNAPSHOT) http://owlapi.sourceforge.net -->
+

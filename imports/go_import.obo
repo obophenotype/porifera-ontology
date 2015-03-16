@@ -1,0 +1,92 @@
+format-version: 1.2
+ontology: poro/imports/go_import
+property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0005575
+name: cellular_component
+
+[Term]
+id: GO:0005623
+name: cell
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0005929
+name: cilium
+is_a: GO:0042995 ! cell projection
+is_a: GO:0043226 ! organelle
+
+[Term]
+id: GO:0006810
+name: transport
+is_a: GO:0051234 ! establishment of localization
+
+[Term]
+id: GO:0006897
+name: endocytosis
+is_a: GO:0016192 ! vesicle-mediated transport
+
+[Term]
+id: GO:0006909
+name: phagocytosis
+is_a: GO:0006897 ! endocytosis
+is_a: GO:0044765 ! single-organism transport
+
+[Term]
+id: GO:0008150
+name: biological_process
+
+[Term]
+id: GO:0016192
+name: vesicle-mediated transport
+is_a: GO:0006810 ! transport
+
+[Term]
+id: GO:0022414
+name: reproductive process
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0042995
+name: cell projection
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0043226
+name: organelle
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0044464
+name: cell part
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0044699
+name: single-organism process
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0044765
+name: single-organism transport
+is_a: GO:0006810 ! transport
+is_a: GO:0044699 ! single-organism process
+is_a: GO:1902578 ! single-organism localization
+
+[Term]
+id: GO:0051179
+name: localization
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0051234
+name: establishment of localization
+is_a: GO:0051179 ! localization
+
+[Term]
+id: GO:1902578
+name: single-organism localization
+is_a: GO:0044699 ! single-organism process
+is_a: GO:0051179 ! localization
+
