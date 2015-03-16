@@ -17,10 +17,10 @@ $(ONT)-combined-diff.txt: $(ONT)-def-diff.html $(ONT)-obo-diff.html
 	cat $(ONT)-def-diff.txt $(ONT)-obo-diff.txt > $@
 
 $(ONT)-lastbuild.obo: $(SRC)
-	wget $(LAST) -O $@
+	wget --no-check-certificate $(LAST) -O $@
 
 $(ONT)-lastbuild.owl: $(SRC)
-	wget $(OWLLAST) -O $@ && touch $@
+	wget --no-check-certificate $(OWLLAST) -O $@ && touch $@
 
 $(ONT)-diff.md: $(ONT)-lastbuild.owl $(OWLSRC)
 	owljs-diff -C ../catalog-v001.xml -o $@ $< $(OWLSRC) 
