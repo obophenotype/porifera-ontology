@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/13996/obophenotype/porifera-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/porifera-ontology)
+
 An ontology covering the anatomy of Porifera (sponges)
 
 ![fig1](http://www.jbiomedsem.com/content/figures/2041-1480-5-39-1.jpg)
