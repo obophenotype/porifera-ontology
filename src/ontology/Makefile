@@ -8,7 +8,7 @@ OBO = http://purl.obolibrary.org/obo/
 RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 
 build: poro.obo poro.owl minidiff
-release: poro.obo diff
+release: poro.obo diff copy-release
 
 TARGETS = poro.obo poro.owl imports diffs
 copy-release:
