@@ -10,6 +10,8 @@ RELEASE = $(OBO)/ceph/releases/`date +%Y-%m-%d`
 build: poro.obo poro.owl minidiff
 release: poro.obo diff copy-release
 
+test: poro.obo
+
 TARGETS = poro.obo poro.owl imports diffs
 copy-release:
 	cp -pr $(TARGETS) ../.. && cd ../.. && git add imports/*

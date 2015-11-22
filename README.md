@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/obophenotype/porifera-ontology.svg?branch=master)](https://travis-ci.org/obophenotype/porifera-ontology)
 [![DOI](https://zenodo.org/badge/13996/obophenotype/porifera-ontology.svg)](https://zenodo.org/badge/latestdoi/13996/obophenotype/porifera-ontology)
 
 An ontology covering the anatomy of Porifera (sponges)
