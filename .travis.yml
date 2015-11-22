@@ -3,10 +3,12 @@ jdk:
   - openjdk7
 
 before_script:
-  - export PATH=$PATH:$PWD
-  - wget http://build.berkeleybop.org/userContent/owltools/owltools -O owltools
-  - wget http://build.berkeleybop.org/userContent/owltools/ontology-release-runner -O ontology-release-runner
-  - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O owltools-runner-all.jar
+  - mkdir -p bin
+  - export PATH=$PATH:$PWD/bin
+  - wget http://build.berkeleybop.org/userContent/owltools/owltools -O bin/owltools
+  - wget http://build.berkeleybop.org/userContent/owltools/ontology-release-runner -O bin/ontology-release-runner
+  - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O bin/owltools-runner-all.jar
+  - chmod +x bin/*
 
 # command to run tests
 script: cd src/ontology && make test
