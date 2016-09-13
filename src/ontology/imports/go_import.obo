@@ -1,92 +1,380 @@
 format-version: 1.2
 ontology: poro/imports/go_import
-property_value: http://purl.org/dc/elements/1.1/source http://purl.obolibrary.org/obo/go.owl
+
+[Term]
+id: GO:0000003
+name: reproduction
+def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." []
+synonym: "reproductive physiological process" EXACT []
+is_a: GO:0008150 ! biological_process
 
 [Term]
 id: GO:0005575
 name: cellular_component
+def: "The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together." []
+synonym: "cell or subcellular entity" EXACT []
+synonym: "cellular component" EXACT []
+synonym: "subcellular entity" RELATED []
 
 [Term]
 id: GO:0005623
 name: cell
+def: "The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope." []
 is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0005886
+name: plasma membrane
+def: "The membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins." []
+synonym: "bacterial inner membrane" NARROW []
+synonym: "cell membrane" EXACT []
+synonym: "cellular membrane" EXACT []
+synonym: "cytoplasmic membrane" EXACT []
+synonym: "inner endospore membrane" NARROW []
+synonym: "juxtamembrane" BROAD []
+synonym: "plasma membrane lipid bilayer" NARROW []
+synonym: "plasmalemma" EXACT []
+is_a: GO:0016020 ! membrane
+is_a: GO:0044464 ! cell part
+relationship: BFO:0000050 GO:0071944 ! part of cell periphery
 
 [Term]
 id: GO:0005929
 name: cilium
+def: "A specialized eukaryotic organelle that consists of a filiform extrusion of the cell surface and of some cytoplasmic parts. Each cilium is largely bounded by an extrusion of the cytoplasmic (plasma) membrane, and contains a regular longitudinal array of microtubules, anchored to a basal body." []
+synonym: "eukaryotic flagellum" EXACT []
+synonym: "flagellum" RELATED []
+synonym: "microtubule-based flagellum" EXACT []
 is_a: GO:0042995 ! cell projection
 is_a: GO:0043226 ! organelle
+relationship: BFO:0000051 GO:0030990 ! has_part intraciliary transport particle
 
 [Term]
 id: GO:0006810
 name: transport
+def: "The directed movement of substances (such as macromolecules, small molecules, ions) or cellular components (such as complexes and organelles) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter, pore or motor protein." []
+synonym: "auxiliary transport protein activity" RELATED []
+synonym: "small molecule transport" NARROW []
+synonym: "solute:solute exchange" NARROW []
+synonym: "transport accessory protein activity" RELATED []
 is_a: GO:0051234 ! establishment of localization
 
 [Term]
 id: GO:0006897
 name: endocytosis
+def: "A vesicle-mediated transport process in which cells take up external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle." []
+synonym: "nonselective vesicle endocytosis" RELATED []
+synonym: "plasma membrane invagination" EXACT []
+synonym: "vesicle endocytosis" EXACT []
 is_a: GO:0016192 ! vesicle-mediated transport
+relationship: BFO:0000051 GO:0006900 ! has_part membrane budding
+relationship: BFO:0000051 GO:0010324 ! has_part membrane invagination
+
+[Term]
+id: GO:0006900
+name: membrane budding
+def: "The evagination of a membrane, resulting in formation of a vesicle." []
+synonym: "membrane evagination" EXACT []
+synonym: "nonselective vesicle assembly" RELATED []
+synonym: "vesicle biosynthesis" EXACT []
+synonym: "vesicle budding" RELATED []
+synonym: "vesicle formation" EXACT []
+is_a: GO:0016050 ! vesicle organization
+is_a: GO:0061024 ! membrane organization
+relationship: BFO:0000050 GO:0016192 ! part of vesicle-mediated transport
 
 [Term]
 id: GO:0006909
 name: phagocytosis
+def: "An endocytosis process that results in the engulfment of external particulate material by phagocytes. The particles are initially contained within phagocytic vacuoles (phagosomes), which then fuse with primary lysosomes to effect digestion of the particles." []
 is_a: GO:0006897 ! endocytosis
 is_a: GO:0044765 ! single-organism transport
 
 [Term]
+id: GO:0006996
+name: organelle organization
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of an organelle within a cell. An organelle is an organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." []
+synonym: "organelle organisation" EXACT []
+synonym: "organelle organization and biogenesis" RELATED []
+is_a: GO:0016043 ! cellular component organization
+
+[Term]
 id: GO:0008150
 name: biological_process
+def: "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end." []
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+
+[Term]
+id: GO:0009987
+name: cellular process
+def: "Any process that is carried out at the cellular level, but not necessarily restricted to a single cell. For example, cell communication occurs among more than one cell, but occurs at the cellular level." []
+synonym: "cell growth and/or maintenance" NARROW []
+synonym: "cell physiology" EXACT []
+synonym: "cellular physiological process" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0010324
+name: membrane invagination
+def: "The infolding of a membrane." []
+is_a: GO:0061024 ! membrane organization
+
+[Term]
+id: GO:0016020
+name: membrane
+def: "A lipid bilayer along with all the proteins and protein complexes embedded in it an attached to it." []
+is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0016043
+name: cellular component organization
+def: "A process that results in the assembly, arrangement of constituent parts, or disassembly of a cellular component." []
+synonym: "cell organisation" EXACT []
+synonym: "cell organization and biogenesis" RELATED []
+synonym: "cellular component organisation at cellular level" EXACT []
+synonym: "cellular component organisation in other organism" EXACT []
+synonym: "cellular component organization at cellular level" EXACT []
+synonym: "cellular component organization in other organism" EXACT []
+is_a: GO:0009987 ! cellular process
+is_a: GO:0071840 ! cellular component organization or biogenesis
+
+[Term]
+id: GO:0016050
+name: vesicle organization
+def: "A process that is carried out at the cellular level which results in the assembly, arrangement of constituent parts, or disassembly of a vesicle." []
+synonym: "vesicle organisation" EXACT []
+synonym: "vesicle organization and biogenesis" RELATED []
+is_a: GO:0006996 ! organelle organization
 
 [Term]
 id: GO:0016192
 name: vesicle-mediated transport
+def: "A cellular transport process in which transported substances are moved in membrane-bounded vesicles; transported substances are enclosed in the vesicle lumen or located in the vesicle membrane. The process begins with a step that directs a substance to the forming vesicle, and includes vesicle budding and coating. Vesicles are then targeted to, and fuse with, an acceptor membrane." []
+synonym: "nonselective vesicle transport" NARROW []
+synonym: "protein sorting along secretory pathway" RELATED []
+synonym: "vesicle trafficking" RELATED []
+synonym: "vesicle transport" EXACT []
+synonym: "vesicular transport" EXACT []
 is_a: GO:0006810 ! transport
 
 [Term]
 id: GO:0022414
 name: reproductive process
+def: "A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents." []
 is_a: GO:0008150 ! biological_process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: BFO:0000050 GO:0000003 ! part of reproduction
+relationship: BFO:0000050 GO:0000003 ! part of reproduction
+
+[Term]
+id: GO:0030990
+name: intraciliary transport particle
+def: "A nonmembrane-bound oligomeric protein complex that participates in bidirectional transport of molecules (cargo) along axonemal microtubules." []
+synonym: "IFT complex" RELATED []
+synonym: "intraflagellar transport complex" EXACT []
+synonym: "intraflagellar transport particle" EXACT []
+is_a: GO:0043234 ! protein complex
+
+[Term]
+id: GO:0032991
+name: macromolecular complex
+def: "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which the constituent parts function together." []
+synonym: "macromolecule complex" EXACT []
+is_a: GO:0005575 ! cellular_component
 
 [Term]
 id: GO:0042995
 name: cell projection
+def: "A prolongation or process extending from a cell, e.g. a flagellum or axon." []
+synonym: "cell process" BROAD []
+synonym: "cellular process" BROAD []
+synonym: "cellular projection" EXACT []
 is_a: GO:0044464 ! cell part
+relationship: BFO:0000051 GO:0098590 ! has_part plasma membrane region
 
 [Term]
 id: GO:0043226
 name: organelle
+def: "Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane." []
 is_a: GO:0005575 ! cellular_component
+
+[Term]
+id: GO:0043234
+name: protein complex
+def: "A stable macromolecular complex composed (only) of two or more polypeptide subunits along with any covalently attached molecules (such as lipid anchors or oligosaccharide) or non-protein prosthetic groups (such as nucleotides or metal ions). Prosthetic group in this context refers to a tightly bound cofactor. The component polypeptide subunits may be identical." []
+synonym: "protein-protein complex" EXACT []
+is_a: GO:0032991 ! macromolecular complex
+
+[Term]
+id: GO:0044422
+name: organelle part
+def: "Any constituent part of an organelle, an organized structure of distinctive morphology and function. Includes constituent parts of the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, but excludes the plasma membrane." []
+is_a: GO:0005575 ! cellular_component
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0043226 ! part of organelle
+relationship: BFO:0000050 GO:0043226 ! part of organelle
+
+[Term]
+id: GO:0044425
+name: membrane part
+def: "Any constituent part of a membrane, a double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer; also includes associated proteins." []
+is_a: GO:0005575 ! cellular_component
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0016020 ! part of membrane
+relationship: BFO:0000050 GO:0016020 ! part of membrane
+
+[Term]
+id: GO:0044441
+name: ciliary part
+def: "Any constituent part of a cilium, a specialized eukaryotic organelle that consists of a filiform extrusion of the cell surface. Each cilium is bounded by an extrusion of the cytoplasmic (plasma) membrane, and contains a regular longitudinal array of microtubules, anchored basally in a centriole." []
+synonym: "cilial part" EXACT []
+synonym: "cilium part" EXACT []
+synonym: "flagellar part" NARROW []
+synonym: "flagellum component" NARROW []
+synonym: "flagellum part" NARROW []
+synonym: "microtubule-based flagellum part" EXACT []
+is_a: GO:0044422 ! organelle part
+is_a: GO:0044463 ! cell projection part
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0005929 ! part of cilium
+relationship: BFO:0000050 GO:0005929 ! part of cilium
+
+[Term]
+id: GO:0044459
+name: plasma membrane part
+def: "Any constituent part of the plasma membrane, the membrane surrounding a cell that separates the cell from its external environment. It consists of a phospholipid bilayer and associated proteins." []
+is_a: GO:0044425 ! membrane part
+is_a: GO:0044464 ! cell part
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0005886 ! part of plasma membrane
+relationship: BFO:0000050 GO:0005886 ! part of plasma membrane
+
+[Term]
+id: GO:0044463
+name: cell projection part
+def: "Any constituent part of a cell projection, a prolongation or process extending from a cell, e.g. a flagellum or axon." []
+is_a: GO:0044464 ! cell part
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0042995 ! part of cell projection
+relationship: BFO:0000050 GO:0042995 ! part of cell projection
 
 [Term]
 id: GO:0044464
 name: cell part
+def: "Any constituent part of a cell, the basic structural and functional unit of all organisms." []
+synonym: "cellular subcomponent" EXACT []
+synonym: "protoplast" RELATED []
 is_a: GO:0005575 ! cellular_component
+intersection_of: GO:0005575 ! cellular_component
+intersection_of: BFO:0000050 GO:0005623 ! part of cell
+relationship: BFO:0000050 GO:0005623 ! part of cell
 
 [Term]
 id: GO:0044699
 name: single-organism process
+def: "A biological process that involves only one organism." []
+synonym: "single organism process" EXACT []
 is_a: GO:0008150 ! biological_process
 
 [Term]
 id: GO:0044765
 name: single-organism transport
+def: "The directed movement of substances (such as macromolecules, small molecules, ions) into, out of or within a cell, or between cells, or within a multicellular organism by means of some agent such as a transporter or pore, involving a single organism." []
 is_a: GO:0006810 ! transport
-is_a: GO:0044699 ! single-organism process
 is_a: GO:1902578 ! single-organism localization
 
 [Term]
 id: GO:0051179
 name: localization
+def: "Any process in which a cell, a substance, or a cellular entity, such as a protein complex or organelle, is transported, tethered to or otherwise maintained in a specific location. In the case of substances, localization may also be achieved via selective degradation." []
+synonym: "establishment and maintenance of cellular component location" NARROW []
+synonym: "establishment and maintenance of localization" EXACT []
+synonym: "establishment and maintenance of position" EXACT []
+synonym: "establishment and maintenance of substance location" NARROW []
+synonym: "establishment and maintenance of substrate location" NARROW []
+synonym: "localisation" EXACT []
 is_a: GO:0008150 ! biological_process
 
 [Term]
 id: GO:0051234
 name: establishment of localization
+def: "Any process that localizes a substance or cellular component. This may occur via movement, tethering or selective degradation." []
+synonym: "establishment of localisation" EXACT []
 is_a: GO:0051179 ! localization
+
+[Term]
+id: GO:0061024
+name: membrane organization
+def: "A process which results in the assembly, arrangement of constituent parts, or disassembly of a membrane. A membrane is a double layer of lipid molecules that encloses all cells, and, in eukaryotes, many organelles; may be a single or double lipid bilayer; also includes associated proteins." []
+synonym: "cellular membrane organisation" EXACT []
+synonym: "cellular membrane organization" EXACT []
+synonym: "membrane organisation" EXACT []
+synonym: "membrane organization and biogenesis" RELATED []
+is_a: GO:0016043 ! cellular component organization
+
+[Term]
+id: GO:0071840
+name: cellular component organization or biogenesis
+def: "A process that results in the biosynthesis of constituent macromolecules, assembly, arrangement of constituent parts, or disassembly of a cellular component." []
+synonym: "cellular component organisation or biogenesis" EXACT []
+synonym: "cellular component organisation or biogenesis at cellular level" EXACT []
+synonym: "cellular component organization or biogenesis at cellular level" EXACT []
+is_a: GO:0008150 ! biological_process
+
+[Term]
+id: GO:0071944
+name: cell periphery
+def: "The part of a cell encompassing the cell cortex, the plasma membrane, and any external encapsulating structures." []
+is_a: GO:0044464 ! cell part
+
+[Term]
+id: GO:0098590
+name: plasma membrane region
+def: "A membrane that is a (regional) part of the plasma membrane." []
+synonym: "region of plasma membrane" EXACT []
+is_a: GO:0016020 ! membrane
+is_a: GO:0044459 ! plasma membrane part
+intersection_of: GO:0016020 ! membrane
+intersection_of: BFO:0000050 GO:0005886 ! part of plasma membrane
+relationship: BFO:0000050 GO:0005886 ! part of plasma membrane
+
+[Term]
+id: GO:0098796
+name: membrane protein complex
+def: "Any protein complex that is part of a membrane." []
+is_a: GO:0043234 ! protein complex
+is_a: GO:0044425 ! membrane part
+intersection_of: GO:0043234 ! protein complex
+intersection_of: BFO:0000050 GO:0016020 ! part of membrane
+relationship: BFO:0000050 GO:0016020 ! part of membrane
+
+[Term]
+id: GO:0098797
+name: plasma membrane protein complex
+def: "Any protein complex that is part of the plasma membrane." []
+is_a: GO:0044459 ! plasma membrane part
+is_a: GO:0098796 ! membrane protein complex
+intersection_of: GO:0043234 ! protein complex
+intersection_of: BFO:0000050 GO:0005886 ! part of plasma membrane
+relationship: BFO:0000050 GO:0005886 ! part of plasma membrane
 
 [Term]
 id: GO:1902578
 name: single-organism localization
+def: "A localization which involves only one organism." []
+synonym: "single organism localization" EXACT []
 is_a: GO:0044699 ! single-organism process
 is_a: GO:0051179 ! localization
+
+[Typedef]
+id: BFO:0000050
+name: part of
+is_transitive: true
+inverse_of: BFO:0000051 ! has_part
+
+[Typedef]
+id: BFO:0000051
+name: has_part
+is_transitive: true
 

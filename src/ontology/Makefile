@@ -10,6 +10,10 @@ USECAT= --use-catalog
 all: all_imports $(ONT).owl $(ONT).obo
 products: $(ONT).owl $(ONT).obo
 test: products
+phenote-test: test oetest
+
+oetest: poro.obo
+	obo2obo $< -o /dev/null
 
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
@@ -22,7 +26,7 @@ prepare_release: all
 $(ONT).owl: $(SRC)
 	$(ROBOT)  reason -i $< -r ELK relax reduce -r ELK annotate -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl -o $@
 $(ONT).obo: $(ONT).owl
-	$(OWLTOOLS)  $< --merge-imports-closure --add-obo-shorthand-to-properties -o -f obo --no-check $(ONT).tmp.obo && grep -v ^owl-axioms $(ONT).tmp.obo > $@
+	$(OWLTOOLS) $(USECAT)  $< --merge-imports-closure --add-obo-shorthand-to-properties -o -f obo --no-check $(ONT).tmp.obo && grep -v ^owl-axioms $(ONT).tmp.obo > $@
 
 $(ONT)-edit.ttl: $(ONT)-edit.owl
 	$(ROBOT) convert -i $< -o $@
@@ -51,7 +55,7 @@ mirror/%.obo: $(SRC)
 .PRECIOUS: mirror/%.obo
 
 mirror/%.owl: mirror/%.obo
-	$(OWLTOOLS) $< --merge-imports-closure --remove-annotation-assertions -l -s -d -r --remove-dangling-annotations  -o $@
+	$(OWLTOOLS) $< --merge-imports-closure --remove-axiom-annotations --remove-annotation-assertions -l -s -d -r --remove-dangling-annotations  -o $@
 .PRECIOUS: mirror/%.owl
 
 mirror/ro.owl: $(SRC)
