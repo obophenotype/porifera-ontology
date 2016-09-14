@@ -4,19 +4,19 @@ ontology: poro/imports/pato_import
 [Term]
 id: PATO:0000001
 name: quality
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" []
 synonym: "trait" EXACT []
 
 [Term]
 id: PATO:0000051
 name: morphology
-def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
 is_a: PATO:0001241 ! physical object quality
 
 [Term]
 id: PATO:0001241
 name: physical object quality
-def: "A quality which inheres in a continuant." [PATOC:GVG]
+def: "A quality which inheres in a continuant." []
 synonym: "monadic quality of a continuant" EXACT []
 synonym: "monadic quality of an object" NARROW []
 synonym: "monadic quality of continuant" NARROW []
@@ -35,5 +35,5 @@ is_transitive: true
 [Typedef]
 id: BFO:0000051
 name: has_part
-def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." []
 

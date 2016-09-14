@@ -15,6 +15,9 @@ phenote-test: test oetest
 oetest: poro.obo
 	obo2obo $< -o /dev/null
 
+release: $(ONT).owl $(ONT).obo
+	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports
+
 prepare_release: all
 	cp $(ONT).owl $(ONT).obo $(RELEASEDIR) &&\
 	mkdir -p $(RELEASEDIR)/imports &&\
@@ -37,8 +40,8 @@ IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) $(patsubst %, impor
 # Make this target to regenerate ALL
 all_imports: $(IMPORTS_OWL)
 
-imports/seed.txt: $(SRC)
-	arq --data poro-edit.ttl --query sparql/getSeed.rq --out TSV > $@.tmp && sort -u $@.tmp | perl -npe 's@^<@@;s@>$$@@' > $@
+imports/seed.txt: poro-edit.ttl
+	arq --data $< --query sparql/getSeed.rq --out TSV > $@.tmp && sort -u $@.tmp | perl -npe 's@^<@@;s@>$$@@' > $@
 #	$(OWLTOOLS) $(USECAT) $< --export-table $@.tmp && cut -f1 $@.tmp > $@
 
 # Use ROBOT, driven entirely by terms lists NOT from source ontology
@@ -63,5 +66,3 @@ mirror/ro.owl: $(SRC)
 .PRECIOUS: mirror/%.owl
 
 
-release: $(ONT).owl $(ONT).obo
-	cp $^ $(RELEASEDIR) && cp imports/* $(RELEASEDIR)/imports

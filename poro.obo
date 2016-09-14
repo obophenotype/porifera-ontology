@@ -5,9 +5,9 @@ synonymtypedef: TRAIT "synonyms that refers to the corresponding trait"
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl>) VersionIRI(<null>))) [Axioms: 1096 Logical Axioms: 215]
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/cl_import.owl>) VersionIRI(<null>))) [Axioms: 625 Logical Axioms: 228]
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/go_import.owl>) VersionIRI(<null>))) [Axioms: 293 Logical Axioms: 79]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/pato_import.owl>) VersionIRI(<null>))) [Axioms: 34 Logical Axioms: 3]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/pato_import.owl>) VersionIRI(<null>))) [Axioms: 33 Logical Axioms: 3]
 remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/ro_import.owl>) VersionIRI(<null>))) [Axioms: 262 Logical Axioms: 97]
-remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl>) VersionIRI(<null>))) [Axioms: 0 Logical Axioms: 0]
+remark: Includes Ontology(OntologyID(OntologyIRI(<http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl>) VersionIRI(<null>))) [Axioms: 552 Logical Axioms: 158]
 ontology: poro
 property_value: http://purl.org/dc/elements/1.1/creator "Bob Thacker" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Chris Mungall" xsd:string
@@ -2056,21 +2056,21 @@ is_a: GO:0044702 ! single organism reproductive process
 [Term]
 id: PATO:0000001
 name: quality
-def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" [PATOC:GVG]
+def: "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities" []
 synonym: "trait" EXACT []
 is_a: BFO:0000020 ! specifically dependent continuant
 
 [Term]
 id: PATO:0000051
 name: morphology
-def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." []
 is_a: BFO:0000019 ! quality
 is_a: PATO:0001241 ! physical object quality
 
 [Term]
 id: PATO:0001241
 name: physical object quality
-def: "A quality which inheres in a continuant." [PATOC:GVG]
+def: "A quality which inheres in a continuant." []
 synonym: "monadic quality of a continuant" EXACT []
 synonym: "monadic quality of an object" NARROW []
 synonym: "monadic quality of continuant" NARROW []
@@ -2269,17 +2269,10 @@ creation_date: 2011-04-22T06:59:28Z
 id: PORO:0000018
 name: osculum
 def: "an excretory structure in the living sponge, a large opening to the outside through which the current of water exits after passing through the spongocoel. Wastes diffuse into the water and the water exits through the osculum at a velocity of nearly 8.4 cm/second, carrying away with it the sponge's wastes. The size of the osculum is regulated by the myocyte. Its size, in turn, determines the amount of water flowing through the sponge." [Wikipedia:Osculum]
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 relationship: continuous_with PORO:0000020 ! spongeocoel
 created_by: cjm
 creation_date: 2011-04-22T07:03:32Z
-
-[Term]
-id: PORO:0000019
-name: immaterial anatomical entity
-is_a: UBERON:0001062 ! anatomical entity
-created_by: cjm
-creation_date: 2011-04-22T07:04:50Z
 
 [Term]
 id: PORO:0000020
@@ -2290,7 +2283,7 @@ comment: ATRIUM: "Preoscular cavity. This term is used specifically to designate
 synonym: "atrium" RELATED [http://www.portol.org/thesaurus]
 synonym: "cloaca" EXACT [http://www.portol.org/thesaurus]
 synonym: "gastal cavity" EXACT [http://www.portol.org/thesaurus]
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 created_by: cjm
 creation_date: 2011-04-22T07:05:15Z
 
@@ -2432,7 +2425,7 @@ creation_date: 2011-04-22T07:25:52Z
 [Term]
 id: PORO:0000035
 name: pore
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 created_by: cjm
 creation_date: 2011-04-22T07:29:00Z
 
@@ -2530,8 +2523,8 @@ relationship: part_of PORO:0000017 ! spicule
 [Term]
 id: PORO:0000095
 name: arrangement of spicules
-is_a: UBERON:0000480
-intersection_of: UBERON:0000480
+is_a: UBERON:0000480 ! anatomical group
+intersection_of: UBERON:0000480 ! anatomical group
 intersection_of: composed_primarily_of PORO:0000017 ! spicule
 relationship: composed_primarily_of PORO:0000017 ! spicule
 
@@ -2539,7 +2532,7 @@ relationship: composed_primarily_of PORO:0000017 ! spicule
 id: PORO:0000096
 name: arrangement of megascleres
 is_a: PORO:0000095 ! arrangement of spicules
-intersection_of: UBERON:0000480
+intersection_of: UBERON:0000480 ! anatomical group
 intersection_of: composed_primarily_of PORO:0000098 ! megasclere
 relationship: composed_primarily_of PORO:0000098 ! megasclere
 
@@ -3015,7 +3008,7 @@ id: PORO:0000163
 name: bark
 def: "The dense area of compacted spongin surrounding the central zone in pithed fibers" [http://www.portol.org/thesaurus]
 comment: Architecture of the Skeleton of Demospongiae
-is_a: UBERON:0000480
+is_a: UBERON:0000480 ! anatomical group
 relationship: composed_primarily_of PORO:0000029 ! spongin
 relationship: part_of PORO:0000457 ! pithed fiber
 
@@ -3601,7 +3594,7 @@ id: PORO:0000243
 name: crystal ultrastructure
 def: "Organization of the skeletal crystals observed after special preparation showing the relationship between organic and mineral phases." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-is_a: UBERON:0000480
+is_a: UBERON:0000480 ! anatomical group
 
 [Term]
 id: PORO:0000244
@@ -4053,7 +4046,7 @@ id: PORO:0000303
 name: facial plane
 def: "The plane passing through tips of the three rays of a triactine or of a basal triradiate system of a tetractine." [http://www.portol.org/thesaurus]
 comment: Calcareous Spicules and Calcareous Spicule Skeleton
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 relationship: part_of PORO:0000017 ! spicule
 
 [Term]
@@ -4797,7 +4790,7 @@ id: PORO:0000406
 name: micropyle
 def: "Opening in the gemmule coat through which cells leave a hatching gemmule (mp in figure)." [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 relationship: part_of PORO:0000330 ! gemmule
 
 [Term]
@@ -4812,7 +4805,7 @@ id: PORO:0000409
 name: microstructure
 def: "The arrangement of crystals that form the skeletal components, as seen without special preparations." [http://www.portol.org/thesaurus]
 comment: Calcareous Rigid Skeleton
-is_a: UBERON:0000480
+is_a: UBERON:0000480 ! anatomical group
 relationship: composed_primarily_of PORO:0000094 ! crystal
 
 [Term]
@@ -4904,7 +4897,7 @@ id: PORO:0000420
 name: olynthus stage
 def: "Earliest developmental stage with a functional aquiferous system, with a single choanocyte chamber opening directly into the osculum; typical of some calcareous sponges" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: UBERON:0000105
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000421
@@ -5497,7 +5490,7 @@ id: PORO:0000505
 name: rhagon stage
 def: "Earliest functional stage with multiple choanocyte chambers and aquiferous canals, typical for Demospongiae" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: UBERON:0000105
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000506
@@ -5873,7 +5866,7 @@ id: PORO:0000561
 name: stomoblastula stage
 def: "Developmental stage of amphiblastulas that precedes the reversion stage and is characterized by internal flagella and a large opening through which the eversion occurs" [http://www.portol.org/thesaurus]
 comment: Reproduction
-is_a: UBERON:0000105
+is_a: UBERON:0000105 ! life cycle stage
 
 [Term]
 id: PORO:0000562
@@ -6531,7 +6524,7 @@ is_a: PATO:0000001 ! quality
 [Term]
 id: PORO:0000908
 name: anatomical axis
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 
 [Term]
 id: PORO:0000909
@@ -6777,7 +6770,7 @@ relationship: results_in_formation_of PORO:0000017 ! spicule
 [Term]
 id: PORO:0000991
 name: cavity of canal
-is_a: PORO:0000019 ! immaterial anatomical entity
+is_a: UBERON:0000466 ! immaterial anatomical entity
 relationship: surrounded_by PORO:0000039 ! canal
 
 [Term]
@@ -6905,12 +6898,20 @@ synonym: "PORO:0000025" EXACT []
 is_obsolete: true
 
 [Term]
+id: UBERON:0000000
+name: processual entity
+def: "An occurrent [span:Occurrent] that exists in time by occurring or happening, has temporal parts and always involves and depends on some entity." []
+disjoint_from: UBERON:0001062 ! anatomical entity
+
+[Term]
 id: UBERON:0000061
 name: anatomical structure
 def: "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." []
 synonym: "biological structure" EXACT []
 synonym: "connected biological structure" EXACT []
 is_a: UBERON:0000465 ! material anatomical entity
+relationship: existence_ends_during_or_before UBERON:0000071 ! death stage
+relationship: existence_starts_during_or_after UBERON:0000106 ! zygote stage
 
 [Term]
 id: UBERON:0000062
@@ -6920,12 +6921,202 @@ synonym: "anatomical unit" RELATED []
 synonym: "body organ" RELATED []
 synonym: "element" RELATED []
 is_a: UBERON:0010000 ! multicellular anatomical structure
+relationship: has_boundary UBERON:0006984 ! anatomical surface
 relationship: part_of UBERON:0000467 ! anatomical system
+
+[Term]
+id: UBERON:0000066
+name: fully formed stage
+def: "The stage of development at which the animal is fully formed, including immaturity and maturity. Includes both sexually immature stage, and adult stage." []
+synonym: "adult stage" BROAD []
+synonym: "fully formed animal stage" EXACT []
+synonym: "juvenile-adult stage" EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: part_of UBERON:0000092 ! post-embryonic stage
+relationship: preceded_by UBERON:0000111 ! organogenesis stage
+relationship: precedes UBERON:0000071 ! death stage
+
+[Term]
+id: UBERON:0000067
+name: embryo stage part
+def: "A stage that is part of the embryo stage." []
+synonym: "embryonic stage part" EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+intersection_of: UBERON:0000105 ! life cycle stage
+intersection_of: part_of UBERON:0000068 ! embryo stage
+relationship: part_of UBERON:0000068 ! embryo stage
+
+[Term]
+id: UBERON:0000068
+name: embryo stage
+def: "A life cycle stage that starts with fertilization and ends with the fully formed embryo." []
+synonym: "embryogenesis" RELATED []
+synonym: "embryonic stage" EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+disjoint_from: UBERON:0000092 ! post-embryonic stage
+relationship: precedes UBERON:0000066 ! fully formed stage
+relationship: precedes UBERON:0000092 ! post-embryonic stage
+
+[Term]
+id: UBERON:0000069
+name: larval stage
+def: "A distinct juvenile stage many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." []
+synonym: "ammocoete" NARROW []
+synonym: "ammocoete stage" NARROW []
+synonym: "bipinnaria" NARROW []
+synonym: "bipinnaria stage" NARROW []
+synonym: "caterpillar" NARROW []
+synonym: "caterpillar stage" NARROW []
+synonym: "glochidium" NARROW []
+synonym: "glochidium stage" NARROW []
+synonym: "grub" NARROW []
+synonym: "grub stage" NARROW []
+synonym: "larva" RELATED []
+synonym: "larva stage" EXACT []
+synonym: "leptocephalus" NARROW []
+synonym: "leptocephalus stage" NARROW []
+synonym: "maggot" NARROW []
+synonym: "maggot stage" NARROW []
+synonym: "metacestode" NARROW []
+synonym: "naiad, nymph" NARROW []
+synonym: "naiad, nymph stage" NARROW []
+synonym: "nauplius" NARROW []
+synonym: "nauplius stage" NARROW []
+synonym: "nymph" NARROW []
+synonym: "nymph stage" NARROW []
+synonym: "planula" NARROW []
+synonym: "planula stage" NARROW []
+synonym: "tornaria" NARROW []
+synonym: "trochophore" NARROW []
+synonym: "trochophore stage" NARROW []
+synonym: "veliger" NARROW []
+synonym: "veliger stage" NARROW []
+synonym: "wriggler" NARROW []
+synonym: "wriggler stage" NARROW []
+synonym: "zoea" NARROW []
+synonym: "zoea stage" NARROW []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: immediately_preceded_by UBERON:0000068 ! embryo stage
+relationship: part_of UBERON:0000092 ! post-embryonic stage
+
+[Term]
+id: UBERON:0000071
+name: death stage
+def: "End of the life of an organism." []
+synonym: "death" RELATED []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: ends UBERON:0000104 ! life cycle
+
+[Term]
+id: UBERON:0000092
+name: post-embryonic stage
+def: "stage succeeding embryo, including mature structure" []
+synonym: "post-hatching stage" NARROW []
+synonym: "postembryonic" RELATED []
+synonym: "postembryonic stage" EXACT []
+is_a: UBERON:0000105 ! life cycle stage
+relationship: preceded_by UBERON:0000068 ! embryo stage
+
+[Term]
+id: UBERON:0000104
+name: life cycle
+def: "An entire span of an organism's life, commencing with the zygote stage and ending in the death of the organism." []
+synonym: "entire life cycle" EXACT []
+synonym: "entire lifespan" EXACT []
+synonym: "life" EXACT []
+synonym: "lifespan" EXACT []
+is_a: UBERON:0000000 ! processual entity
+relationship: ends_with UBERON:0000071 ! death stage
+relationship: starts_with UBERON:0000106 ! zygote stage
+
+[Term]
+id: UBERON:0000105
+name: life cycle stage
+def: "A spatiotemporal region encompassing some part of the life cycle of an organism." []
+synonym: "developmental stage" NARROW []
+synonym: "stage" NARROW []
+is_a: UBERON:0000000 ! processual entity
+relationship: part_of UBERON:0000104 ! life cycle
+
+[Term]
+id: UBERON:0000106
+name: zygote stage
+def: "A stage at which the organism is a single cell produced by means of sexual reproduction." []
+synonym: "1-cell stage" EXACT []
+synonym: "fertilized egg stage" EXACT []
+synonym: "fertilized egg stage" RELATED []
+synonym: "one cell stage" EXACT []
+synonym: "one-cell stage" RELATED []
+synonym: "zygote" RELATED []
+synonym: "zygotum" RELATED []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: starts UBERON:0000104 ! life cycle
+
+[Term]
+id: UBERON:0000107
+name: cleavage stage
+def: "The first few specialized divisions of an activated animal egg; Stage consisting of division of cells in the early embryo. The zygotes of many species undergo rapid cell cycles with no significant growth, producing a cluster of cells the same size as the original zygote. The different cells derived from cleavage are called blastomeres and form a compact mass called the morula. Cleavage ends with the formation of the blastula." []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: immediately_preceded_by UBERON:0000106 ! zygote stage
+
+[Term]
+id: UBERON:0000108
+name: blastula stage
+def: "An early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence." []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: preceded_by UBERON:0000107 ! cleavage stage
+
+[Term]
+id: UBERON:0000109
+name: gastrula stage
+def: "A stage defined by complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm." []
+synonym: "blastocystis trilaminaris stage" RELATED []
+synonym: "trilaminar blastocyst stage" RELATED []
+synonym: "trilaminar blastoderm stage" RELATED []
+synonym: "trilaminar disk stage" RELATED []
+synonym: "trilaminar germ stage" RELATED []
+synonym: "trilaminar stage" RELATED []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: preceded_by UBERON:0000108 ! blastula stage
+
+[Term]
+id: UBERON:0000110
+name: neurula stage
+def: "Staged defined by the formation of a tube from the flat layer of ectodermal cells known as the neural plate. This will give rise to the central nervous system." []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: preceded_by UBERON:0000109 ! gastrula stage
+
+[Term]
+id: UBERON:0000111
+name: organogenesis stage
+def: "A stage at which the ectoderm, endoderm, and mesoderm develop into the internal organs of the organism." []
+synonym: "segmentation stage" RELATED []
+is_a: UBERON:0000067 ! embryo stage part
+relationship: preceded_by UBERON:0000110 ! neurula stage
+
+[Term]
+id: UBERON:0000307
+name: blastula
+def: "Organism at the blastula stage - an early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence." []
+synonym: "blastosphere" RELATED []
+synonym: "blastula embryo" EXACT []
+is_a: UBERON:0000922 ! embryo
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_starts_and_ends_during UBERON:0000108 ! blastula stage
+relationship: develops_from UBERON:0007010 ! cleaving embryo
+relationship: existence_starts_and_ends_during UBERON:0000108 ! blastula stage
 
 [Term]
 id: UBERON:0000465
 name: material anatomical entity
 def: "Anatomical entity that has mass." []
+is_a: UBERON:0001062 ! anatomical entity
+
+[Term]
+id: UBERON:0000466
+name: immaterial anatomical entity
+def: "Anatomical entity that has no mass." []
+synonym: "immaterial physical anatomical entity" EXACT []
 is_a: UBERON:0001062 ! anatomical entity
 
 [Term]
@@ -6938,6 +7129,7 @@ synonym: "connected anatomical system" EXACT []
 synonym: "organ system" EXACT []
 synonym: "system" BROAD []
 is_a: UBERON:0000061 ! anatomical structure
+relationship: existence_starts_during_or_after UBERON:0000111 ! organogenesis stage
 relationship: has_part UBERON:0000062 ! organ
 relationship: part_of UBERON:0000468 ! multicellular organism
 
@@ -6973,6 +7165,27 @@ is_a: UBERON:0010000 ! multicellular anatomical structure
 relationship: part_of UBERON:0000468 ! multicellular organism
 
 [Term]
+id: UBERON:0000480
+name: anatomical group
+def: "Anatomical structure consisting of at least two non-overlapping organs, multi-tissue aggregates or portion of tissues or cells of different types that does not constitute an organism, organ, multi-tissue aggregate, or portion of tissue." []
+is_a: UBERON:0000061 ! anatomical structure
+relationship: part_of UBERON:0000468 ! multicellular organism
+
+[Term]
+id: UBERON:0000922
+name: embryo
+def: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant." []
+synonym: "developing organism" RELATED []
+synonym: "developmental tissue" RELATED []
+synonym: "embryonic organism" EXACT []
+is_a: UBERON:0000468 ! multicellular organism
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_ends_with UBERON:0000068 ! embryo stage
+intersection_of: existence_starts_with UBERON:0000068 ! embryo stage
+relationship: existence_ends_with UBERON:0000068 ! embryo stage
+relationship: existence_starts_with UBERON:0000068 ! embryo stage
+
+[Term]
 id: UBERON:0000990
 name: reproductive system
 alt_id: UBERON:FBbt_00004857-FMA_7160-MA_0000326-MIAA_0000305-WBbt_0005747-XAO_0000142-ZFA_0000632
@@ -6989,6 +7202,7 @@ synonym: "reproductive tract" RELATED []
 synonym: "systemata genitalia" RELATED []
 is_a: CARO:0000003 ! anatomical structure
 is_a: UBERON:0000467 ! anatomical system
+relationship: existence_ends_during UBERON:0000066 ! fully formed stage
 relationship: has_part UBERON:0000991 ! gonad
 
 [Term]
@@ -7020,10 +7234,45 @@ name: anatomical entity
 def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
 
 [Term]
+id: UBERON:0002050
+name: embryonic structure
+def: "Anatomical structure that is part of an embryo." []
+synonym: "developing embryonic structure" EXACT []
+synonym: "developing structure" RELATED []
+synonym: "embryonale Struktur" RELATED []
+synonym: "embryonic anatomical structure" EXACT []
+synonym: "embryonic structures" RELATED []
+is_a: UBERON:0000061 ! anatomical structure
+is_a: UBERON:0005423 ! developing anatomical structure
+intersection_of: UBERON:0000061 ! anatomical structure
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0000922 ! embryo
+
+[Term]
 id: UBERON:0002548
 name: larva
+def: "A distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." []
 def: "a distinct juvenile form many animals undergo before metamorphosis into adults. Animals with indirect development such as insects, amphibians, or cnidarians typically have a larval phase of their life cycle." [Wikipedia:Larva]
+synonym: "ammocoete" NARROW []
+synonym: "bipinnaria" NARROW []
+synonym: "caterpillar" NARROW []
+synonym: "glochidium" NARROW []
+synonym: "grub" NARROW []
+synonym: "larval organism" EXACT []
+synonym: "leptocephalus" NARROW []
+synonym: "maggot" NARROW []
+synonym: "naiad" NARROW []
+synonym: "nymph" NARROW []
+synonym: "planula" NARROW []
+synonym: "tadpole" NARROW []
+synonym: "trochophore" NARROW []
+synonym: "veliger" NARROW []
+synonym: "wriggler" NARROW []
+synonym: "zoea" NARROW []
 is_a: UBERON:0000468 ! multicellular organism
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_starts_and_ends_during UBERON:0000069 ! larval stage
+relationship: existence_starts_and_ends_during UBERON:0000069 ! larval stage
 
 [Term]
 id: UBERON:0003133
@@ -7038,6 +7287,36 @@ is_a: UBERON:0005156 ! reproductive structure
 relationship: part_of UBERON:0000990 ! reproductive system
 
 [Term]
+id: UBERON:0004455
+name: neurula embryo
+def: "An embryo at the neurula stage." []
+synonym: "neurula" EXACT []
+is_a: UBERON:0000922 ! embryo
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_starts_and_ends_during UBERON:0000110 ! neurula stage
+relationship: develops_from UBERON:0004734 ! gastrula
+relationship: existence_starts_and_ends_during UBERON:0000110 ! neurula stage
+
+[Term]
+id: UBERON:0004734
+name: gastrula
+def: "Organism at the gastrula stage." []
+synonym: "blastocystis trilaminaris" RELATED []
+synonym: "gastrula embryo" EXACT []
+synonym: "tri-laminar disc" RELATED []
+synonym: "tri-laminar disk" RELATED []
+synonym: "trilaminar blastocyst" RELATED []
+synonym: "trilaminar blastoderm" RELATED []
+synonym: "trilaminar disc" RELATED []
+synonym: "trilaminar disk" RELATED []
+synonym: "trilaminar germ" RELATED []
+is_a: UBERON:0000922 ! embryo
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_starts_and_ends_during UBERON:0000109 ! gastrula stage
+relationship: develops_from UBERON:0000307 ! blastula
+relationship: existence_starts_and_ends_during UBERON:0000109 ! gastrula stage
+
+[Term]
 id: UBERON:0005156
 name: reproductive structure
 def: "Any anatomical structure that is part of the reproductive system." []
@@ -7047,6 +7326,18 @@ is_a: UBERON:0000061 ! anatomical structure
 intersection_of: UBERON:0000061 ! anatomical structure
 intersection_of: part_of UBERON:0000990 ! reproductive system
 relationship: part_of UBERON:0000990 ! reproductive system
+
+[Term]
+id: UBERON:0005291
+name: embryonic tissue
+def: "A portion of tissue that is part of an embryo." []
+synonym: "developing tissue" RELATED []
+synonym: "portion of embryonic tissue" EXACT []
+is_a: UBERON:0000479 ! tissue
+is_a: UBERON:0002050 ! embryonic structure
+intersection_of: UBERON:0000479 ! tissue
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0002050 ! embryonic structure
 
 [Term]
 id: UBERON:0005423
@@ -7066,7 +7357,52 @@ synonym: "immature gonad" RELATED []
 synonym: "primitive gonad" EXACT []
 synonym: "undifferentiated gonad" EXACT []
 is_a: UBERON:0001048 ! primordium
+relationship: has_potential_to_develop_into UBERON:0000991 ! gonad
 relationship: part_of UBERON:0000990 ! reproductive system
+
+[Term]
+id: UBERON:0006598
+name: presumptive structure
+def: "Portion of embryonic tissue determined by fate mapping to become a structure." []
+synonym: "future structure" EXACT []
+synonym: "presumptive structures" EXACT []
+is_a: UBERON:0005423 ! developing anatomical structure
+intersection_of: UBERON:0005423 ! developing anatomical structure
+intersection_of: has_potential_to_develop_into UBERON:0000061 ! anatomical structure
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: has_potential_to_develop_into UBERON:0000061 ! anatomical structure
+relationship: part_of UBERON:0000922 ! embryo
+
+[Term]
+id: UBERON:0006984
+name: anatomical surface
+def: "A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment. Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.n" []
+is_a: UBERON:0000466 ! immaterial anatomical entity
+
+[Term]
+id: UBERON:0007010
+name: cleaving embryo
+def: "Organism at the cleavage stage." []
+is_a: UBERON:0000922 ! embryo
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_ends_with UBERON:0000107 ! cleavage stage
+intersection_of: existence_starts_with UBERON:0000107 ! cleavage stage
+relationship: existence_ends_with UBERON:0000107 ! cleavage stage
+relationship: existence_starts_with UBERON:0000107 ! cleavage stage
+
+[Term]
+id: UBERON:0009953
+name: post-embryonic organism
+def: "A multicellular organism that existence_starts_with a post-embryonic stage." []
+synonym: "post-hatching organism" NARROW []
+synonym: "post-natal organism" NARROW []
+synonym: "postnatal mouse" NARROW []
+synonym: "postnatal organism" EXACT []
+synonym: "TS28 mouse" NARROW []
+is_a: UBERON:0000468 ! multicellular organism
+intersection_of: UBERON:0000468 ! multicellular organism
+intersection_of: existence_starts_with UBERON:0000092 ! post-embryonic stage
+relationship: existence_starts_with UBERON:0000092 ! post-embryonic stage
 
 [Term]
 id: UBERON:0010000
@@ -7078,11 +7414,14 @@ is_a: UBERON:0000061 ! anatomical structure
 [Typedef]
 id: adjacent_to
 name: adjacent to
+name: adjacent_to
 def: "x adjacent to y if and only if x and y share a boundary" []
 def: "x adjacent to y if and only if x and y share a boundary." []
+def: "x adjacent_to y iff: x and y share a boundary" []
 xref: RO:0002220
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
+is_symmetric: true
 is_a: spatially_disjoint_from ! spatially disjoint from
 
 [Typedef]
@@ -7100,14 +7439,15 @@ xref: RO:0002215
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000015 ! process
 is_a: capable_of_part_of ! capable of part of
+is_a: functionally_related_to ! functionally related to
 
 [Typedef]
 id: capable_of_part_of
 name: capable of part of
 def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
 xref: RO:0002216
-holds_over_chain: capable_of part_of
 holds_over_chain: capable_of part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: capable_of part_of
 is_a: causal_agent_in ! causal agent in
 is_a: functionally_related_to ! functionally related to
 
@@ -7139,16 +7479,19 @@ is_a: related_via_dependence_to ! related via dependence to
 id: composed_primarily_of
 name: composed primarily of
 def: "x composed_primarily_of y if and only if more than half of the mass of x is made from y or units of the same type as y." []
+def: "x composed_primarily_of y iff: more than half of the mass of x is made from parts of y" []
 xref: RO:0002473
 is_a: has_part ! has part
 
 [Typedef]
 id: continuous_with
 name: continuous with
+name: continuous_with
 def: "X continuous_with Y if and only if X and Y share a fiat boundary." []
 xref: RO:0002150
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000004 ! independent continuant
+is_symmetric: true
 is_a: mereotopologically_related_to ! mereotopologically related to
 
 [Typedef]
@@ -7159,6 +7502,7 @@ xref: RO:0002502
 [Typedef]
 id: developmentally_contributes_to
 name: developmentally contributes to
+name: developmentally_contributes_to
 def: "inverse of has developmental contribution from" []
 xref: RO:0002255
 holds_over_chain: develops_into part_of
@@ -7189,6 +7533,7 @@ is_a: has_developmental_potential_involving ! has developmental potential involv
 [Typedef]
 id: develops_from
 name: develops from
+name: develops_from
 def: "x develops from y if and only if either (a) x directly develops from y or (b) there exists some z such that x directly develops from z and z develops from y" []
 xref: RO:0002202
 domain: BFO:0000004 ! independent continuant
@@ -7196,12 +7541,14 @@ range: BFO:0000004 ! independent continuant
 holds_over_chain: part_of develops_from
 is_transitive: true
 is_a: developmentally_preceded_by ! developmentally preceded by
+is_a: has_developmental_contribution_from ! has developmental contribution from
 inverse_of: develops_into ! develops into
 transitive_over: part_of ! part_of
 
 [Typedef]
 id: develops_into
 name: develops into
+name: develops_into
 def: "inverse of develops from" []
 xref: RO:0002203
 is_transitive: true
@@ -7216,6 +7563,76 @@ synonym: "protrudes from" RELATED []
 xref: echinates
 
 [Typedef]
+id: ends
+name: ends
+def: "Relation between occurrents, shares an end boundary with." []
+synonym: "finishes" EXACT []
+xref: RO:0002229
+is_a: part_of ! part_of
+
+[Typedef]
+id: ends_with
+name: ends with
+xref: RO:0002230
+is_transitive: true
+is_a: has_part ! has part
+
+[Typedef]
+id: existence_ends_during
+name: existence ends during
+def: "Relation between continuant c and occurrent s, such that every instance of c ceases to exist during some s, if it does not die prematurely." []
+synonym: "ceases_to_exist_during" EXACT []
+xref: RO:0002492
+is_a: existence_ends_during_or_before ! existence ends during or before
+transitive_over: part_of ! part_of
+
+[Typedef]
+id: existence_ends_during_or_before
+name: existence ends during or before
+xref: RO:0002497
+holds_over_chain: part_of existence_ends_during_or_before
+transitive_over: part_of ! part_of
+transitive_over: precedes ! precedes
+
+[Typedef]
+id: existence_ends_with
+name: existence ends with
+def: "Relation between continuant and occurrent, such that c ceases to exist at the end of p." []
+xref: RO:0002493
+is_a: existence_ends_during ! existence ends during
+
+[Typedef]
+id: existence_starts_and_ends_during
+name: existence starts and ends during
+xref: existence_starts_and_ends_during
+is_a: existence_ends_during ! existence ends during
+is_a: existence_starts_during ! existence starts during
+
+[Typedef]
+id: existence_starts_during
+name: existence starts during
+def: "Relation between continuant c and occurrent s, such that every instance of c comes into existing during some s." []
+synonym: "begins_to_exist_during" EXACT []
+xref: RO:0002488
+is_a: existence_starts_during_or_after ! existence starts during or after
+transitive_over: part_of ! part_of
+
+[Typedef]
+id: existence_starts_during_or_after
+name: existence starts during or after
+xref: RO:0002496
+holds_over_chain: part_of existence_starts_during_or_after
+transitive_over: part_of ! part_of
+transitive_over: preceded_by ! preceded_by
+
+[Typedef]
+id: existence_starts_with
+name: existence starts with
+def: "Relation between continuant and occurrent, such that c comes into existence at the start of p." []
+xref: RO:0002489
+is_a: existence_starts_during ! existence starts during
+
+[Typedef]
 id: formed_as_result_of
 name: formed as result of
 xref: RO:0002354
@@ -7225,6 +7642,11 @@ is_a: output_of ! output of
 id: functionally_related_to
 name: functionally related to
 xref: RO:0002328
+
+[Typedef]
+id: has_boundary
+name: has boundary
+xref: RO:0002002
 
 [Typedef]
 id: has_causal_agent
@@ -7248,6 +7670,7 @@ xref: RO:0002254
 domain: CARO:0000003 ! anatomical structure
 range: CARO:0000003 ! anatomical structure
 holds_over_chain: has_part develops_from
+is_transitive: true
 is_a: developmentally_preceded_by ! developmentally preceded by
 inverse_of: developmentally_contributes_to ! developmentally contributes to
 
@@ -7276,7 +7699,7 @@ id: has_part
 name: has part
 name: has_part
 def: "a core relation that holds between a whole and its part" []
-def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." [PATOC:CJM]
+def: "Q1 has_part Q2 if and only if: every instance of Q1 is a quality_of an entity that has_quality some Q2." []
 xref: BFO:0000051
 xref: BFO_0000051
 is_transitive: true
@@ -7332,6 +7755,17 @@ id: http://xmlns.com/foaf/0.1/depicts
 xref: http://xmlns.com/foaf/0.1/depicts
 
 [Typedef]
+id: immediately_preceded_by
+name: immediately_preceded_by
+def: "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)" []
+synonym: "directly preceded by" EXACT []
+synonym: "is directly preceded by" EXACT []
+synonym: "is immediately preceded by" EXACT []
+synonym: "starts_at_end_of" EXACT []
+xref: RO:0002087
+is_a: preceded_by ! preceded_by
+
+[Typedef]
 id: inheres_in
 name: inheres in
 def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
@@ -7383,8 +7817,8 @@ name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
 xref: RO:0002131
 holds_over_chain: has_part overlaps
-holds_over_chain: has_part part_of
 holds_over_chain: has_part part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
+holds_over_chain: has_part part_of
 holds_over_chain: part_of part_of
 is_a: mereotopologically_related_to ! mereotopologically related to
 
@@ -7417,8 +7851,24 @@ range: BFO:0000003 ! occurrent
 inverse_of: has_participant ! has participant
 
 [Typedef]
+id: preceded_by
+name: preceded_by
+def: "X preceded_by Y iff: end(Y) before_or_simultaneous_with start(X)" []
+synonym: "is preceded by" EXACT []
+synonym: "takes place after" EXACT []
+xref: BFO:0000062
+is_transitive: true
+
+[Typedef]
+id: precedes
+name: precedes
+xref: BFO:0000063
+is_transitive: true
+
+[Typedef]
 id: produced_by
 name: produced by
+name: produced_by
 def: "a produced_by b iff some process that occurs_in b has_output a." []
 xref: RO:0003001
 domain: BFO:0000040 ! material entity
@@ -7464,19 +7914,37 @@ xref: RO:0002163
 is_a: mereotopologically_related_to ! mereotopologically related to
 
 [Typedef]
+id: starts
+name: starts
+def: "Relation between occurrents, shares a start boundary with." []
+xref: RO:0002223
+is_a: part_of ! part_of
+inverse_of: starts_with ! starts with
+
+[Typedef]
+id: starts_with
+name: starts with
+xref: RO:0002224
+is_transitive: true
+is_a: has_part ! has part
+
+[Typedef]
 id: surrounded_by
 name: surrounded by
+name: surrounded_by
 def: "x surrounded_by y if and only if (1) x is adjacent to y and for every region r that is adjacent to x, r overlaps y (2) the shared boundary between x and y occupies the majority of the outermost boundary of x" []
+def: "x surrounded_by y iff: x is adjacent to y and for every region r adjacent to x, r overlaps y" []
 xref: RO:0002219
-is_a: adjacent_to ! adjacent to
+is_a: adjacent_to ! adjacent_to
 inverse_of: surrounds ! surrounds
 
 [Typedef]
 id: surrounds
 name: surrounds
 def: "inverse of surrounded by" []
+def: "inverse of surrounded_by" []
 xref: RO:0002221
-is_a: adjacent_to ! adjacent to
+is_a: adjacent_to ! adjacent_to
 
 [Typedef]
 id: variant_of
