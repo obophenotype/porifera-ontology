@@ -19,6 +19,19 @@ Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology describing
 Annotation(<http://purl.org/dc/elements/1.1/title> "Porifera (sponge) ontology"^^xsd:string)
 Annotation(<http://xmlns.com/foaf/0.1/homepage> "https://github.com/obophenotype/porifera-ontology"^^xsd:anyURI)
 
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002048>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002050>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002051>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002052>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002053>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002054>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002055>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002056>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002057>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002058>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002059>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002060>))
+Declaration(Class(<http://purl.obolibrary.org/PORO_0002061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0000002>))
@@ -805,6 +818,75 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/sponge#lined_by> <http://pur
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/PORO_0002048> (spherical sterraster)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/PORO_0002048> "globular sterraster"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002048> "spherical sterraster"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002048> <http://purl.obolibrary.org/obo/PORO_0000557>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002050> (flattened sterraster)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002050> "definition goes here"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002050> "flattened sterraster"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002050> <http://purl.obolibrary.org/obo/PORO_0000557>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002051> (small streptaster)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002051> "small streptaster"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002051> <http://purl.obolibrary.org/obo/PORO_0000562>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002052> (large streptaster)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002052> "large streptaster"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002052> <http://purl.obolibrary.org/obo/PORO_0000562>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002053> (microxea)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002053> "put definition here"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002053> "microxea"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002053> <http://purl.obolibrary.org/PORO_0002061>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002054> (arrangement of microscleres)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002054> "arrangement of microscleres"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002054> <http://purl.obolibrary.org/obo/UBERON_0000480>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002055> (microxeas in choanosome)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002055> "microxeas in choanosome"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002055> <http://purl.obolibrary.org/PORO_0002054>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002056> (amphiaster with recurved spines)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002056> "amphiaster with recurved spines at each end; found in Thrombus; need to expand this definition"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002056> "amphiaster with recurved spines"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002056> <http://purl.obolibrary.org/obo/PORO_0000114>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002057> (short-shafted triaene)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002057> "short-shafted triaene"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002057> <http://purl.obolibrary.org/obo/PORO_0000601>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002058> (long-shafted triaene)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002058> "long-shafted triaene"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002058> <http://purl.obolibrary.org/obo/PORO_0000601>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002059> (calthrop with reduced actine)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002059> "calthrop with reduced actine"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002059> <http://purl.obolibrary.org/obo/PORO_0000180>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002060> (monaxonic spicule)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002060> "monaxonic spicule"@en)
+SubClassOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000017>)
+
+# Class: <http://purl.obolibrary.org/PORO_0002061> (monaxonic microsclere)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002061> "monaxonic microsclere"@en)
+EquivalentClasses(<http://purl.obolibrary.org/PORO_0002061> ObjectIntersectionOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000097>))
+
 # Class: <http://purl.obolibrary.org/obo/PORO_0000000> (sponge cell)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/PORO_0000000> "cjm"^^xsd:string)
@@ -1361,7 +1443,7 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PORO_0000113>
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://www.portol.org/thesaurus"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0000114> "A microsclere with microspined rays radiating from both ends of a shaft; the rays are shorter than the shaft"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PORO_0000114> "Spicules of Demospongiae"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000114> "amphiaster"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000114> <http://purl.obolibrary.org/obo/PORO_0000097>)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000114> <http://purl.obolibrary.org/obo/PORO_0000557>)
 
 # Class: <http://purl.obolibrary.org/obo/PORO_0000115> (amphiblastula)
 
@@ -3530,7 +3612,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PORO_0000412> "monaxon")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PORO_0000412> "Spicules of Demospongiae"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000412> "monaxonic megasclere"^^xsd:string)
-SubClassOf(<http://purl.obolibrary.org/obo/PORO_0000412> <http://purl.obolibrary.org/obo/PORO_0000098>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000412> ObjectIntersectionOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000098>))
 
 # Class: <http://purl.obolibrary.org/obo/PORO_0000413> (mucronate megasclere)
 
