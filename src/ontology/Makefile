@@ -54,6 +54,7 @@ imports/%_import.obo: imports/%_import.owl
 
 # clone remote ontology locally, perfoming some excision of relations and annotations
 mirror/%.obo: $(SRC)
+	mkdir -p mirror &&\
 	wget --no-check-certificate $(OBO)/$*.obo -O $@ && touch $@
 .PRECIOUS: mirror/%.obo
 

@@ -1,0 +1,6 @@
+SELECT ?y
+WHERE {
+  ?x ?r ?y
+  FILTER (isIRI(?y)) 
+  FILTER (!isBlank(?y)) 
+}
