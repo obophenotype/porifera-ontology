@@ -1457,6 +1457,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical entity that has no mass.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial physical anatomical entity</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immaterial anatomical entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0000467 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000467">

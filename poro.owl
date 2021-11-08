@@ -12,7 +12,7 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/poro.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/poro/releases/2016-09-13/poro.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/poro/releases/2016-10-06/poro.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/cl_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/poro/imports/go_import.owl"/>
@@ -262,21 +262,6 @@
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PORO_0000946">
         <rdfs:label xml:lang="en">variant of</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
-
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202">
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002202"/>
-            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        </owl:propertyChainAxiom>
-    </rdf:Description>
     
 
 
@@ -14350,9 +14335,9 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
 
     <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </rdf:Description>
     
 
 
@@ -14563,16 +14548,6 @@ A texture quality inhering in a bearer by virtue of the bearer&apos;s posessing 
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
-        <rdfs:subClassOf rdf:nodeID="_:genid887"/>
-    </owl:Restriction>
-    <owl:Restriction>
-        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
-        <rdfs:subClassOf rdf:nodeID="_:genid888"/>
-    </owl:Restriction>
     <owl:Restriction>
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PORO_0000002"/>

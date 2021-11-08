@@ -634,7 +634,6 @@ http://purl.obolibrary.org/obo/UBERON_0000476
 http://purl.obolibrary.org/obo/UBERON_0000479
 http://purl.obolibrary.org/obo/UBERON_0000480
 http://purl.obolibrary.org/obo/UBERON_0000990
-http://purl.obolibrary.org/obo/UBERON_0001062
 http://purl.obolibrary.org/obo/UBERON_0002548
 http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl
 http://purl.obolibrary.org/obo/poro/imports/cl_import.owl

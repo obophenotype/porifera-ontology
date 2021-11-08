@@ -45,6 +45,7 @@ def: "A specialized eukaryotic organelle that consists of a filiform extrusion o
 synonym: "eukaryotic flagellum" EXACT []
 synonym: "flagellum" RELATED []
 synonym: "microtubule-based flagellum" EXACT []
+synonym: "primary cilium" NARROW []
 is_a: GO:0042995 ! cell projection
 is_a: GO:0043226 ! organelle
 relationship: BFO:0000051 GO:0030990 ! has_part intraciliary transport particle
@@ -179,8 +180,9 @@ is_a: GO:0043234 ! protein complex
 [Term]
 id: GO:0032991
 name: macromolecular complex
-def: "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which the constituent parts function together." []
+def: "A stable assembly of two or more macromolecules, i.e. proteins, nucleic acids, carbohydrates or lipids, in which at least one component is a protein and the constituent parts function together." []
 synonym: "macromolecule complex" EXACT []
+synonym: "protein containing complex" EXACT []
 is_a: GO:0005575 ! cellular_component
 
 [Term]
