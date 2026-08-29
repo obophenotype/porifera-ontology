@@ -7,12 +7,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/poro.owl>
-Import(<http://purl.obolibrary.org/obo/poro/imports/chebi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/poro/imports/cl_import.owl>)
-Import(<http://purl.obolibrary.org/obo/poro/imports/go_import.owl>)
-Import(<http://purl.obolibrary.org/obo/poro/imports/pato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/poro/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/poro/imports/uberon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/poro/imports/merged_import.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/creator> "Bob Thacker")
 Annotation(<http://purl.org/dc/elements/1.1/creator> "Chris Mungall")
 Annotation(<http://purl.org/dc/elements/1.1/description> "An ontology describing the anatomical structures and characteristics of Porifera (sponges)")
