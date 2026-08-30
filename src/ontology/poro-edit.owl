@@ -673,6 +673,19 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002043>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002044>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002045>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PORO_0002061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000105>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000480>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0002548>))
@@ -816,74 +829,83 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/sponge#lined_by> <http://pur
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/PORO_0002048> (spherical sterraster)
+# Class: <http://purl.obolibrary.org/PORO_0002048> (obsolete spherical sterraster)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/PORO_0002048> "globular sterraster")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002048> "spherical sterraster"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002048> <http://purl.obolibrary.org/obo/PORO_0000557>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002048> <http://purl.obolibrary.org/obo/PORO_0002048>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002048> "obsolete spherical sterraster"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002048> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002050> (flattened sterraster)
+# Class: <http://purl.obolibrary.org/PORO_0002050> (obsolete flattened sterraster)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002050> "definition goes here")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002050> "flattened sterraster"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002050> <http://purl.obolibrary.org/obo/PORO_0000557>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002050> <http://purl.obolibrary.org/obo/PORO_0002050>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002050> "obsolete flattened sterraster"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002050> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002051> (small streptaster)
+# Class: <http://purl.obolibrary.org/PORO_0002051> (obsolete small streptaster)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002051> "small streptaster"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002051> <http://purl.obolibrary.org/obo/PORO_0000562>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002051> <http://purl.obolibrary.org/obo/PORO_0002051>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002051> "obsolete small streptaster"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002051> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002052> (large streptaster)
+# Class: <http://purl.obolibrary.org/PORO_0002052> (obsolete large streptaster)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002052> "large streptaster"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002052> <http://purl.obolibrary.org/obo/PORO_0000562>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002052> <http://purl.obolibrary.org/obo/PORO_0002052>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002052> "obsolete large streptaster"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002052> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002053> (microxea)
+# Class: <http://purl.obolibrary.org/PORO_0002053> (obsolete microxea)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002053> "put definition here")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002053> "microxea"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002053> <http://purl.obolibrary.org/PORO_0002061>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002053> <http://purl.obolibrary.org/obo/PORO_0002053>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002053> "obsolete microxea"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002053> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002054> (arrangement of microscleres)
+# Class: <http://purl.obolibrary.org/PORO_0002054> (obsolete arrangement of microscleres)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002054> "arrangement of microscleres"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002054> <http://purl.obolibrary.org/obo/UBERON_0000480>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002054> <http://purl.obolibrary.org/obo/PORO_0002054>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002054> "obsolete arrangement of microscleres"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002054> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002055> (microxeas in choanosome)
+# Class: <http://purl.obolibrary.org/PORO_0002055> (obsolete microxeas in choanosome)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002055> "microxeas in choanosome"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002055> <http://purl.obolibrary.org/PORO_0002054>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002055> <http://purl.obolibrary.org/obo/PORO_0002055>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002055> "obsolete microxeas in choanosome"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002055> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002056> (amphiaster with recurved spines)
+# Class: <http://purl.obolibrary.org/PORO_0002056> (obsolete amphiaster with recurved spines)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/PORO_0002056> "amphiaster with recurved spines at each end; found in Thrombus; need to expand this definition")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002056> "amphiaster with recurved spines"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002056> <http://purl.obolibrary.org/obo/PORO_0000114>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002056> <http://purl.obolibrary.org/obo/PORO_0002056>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002056> "obsolete amphiaster with recurved spines"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002056> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002057> (short-shafted triaene)
+# Class: <http://purl.obolibrary.org/PORO_0002057> (obsolete short-shafted triaene)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002057> "short-shafted triaene"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002057> <http://purl.obolibrary.org/obo/PORO_0000601>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002057> <http://purl.obolibrary.org/obo/PORO_0002057>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002057> "obsolete short-shafted triaene"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002057> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002058> (long-shafted triaene)
+# Class: <http://purl.obolibrary.org/PORO_0002058> (obsolete long-shafted triaene)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002058> "long-shafted triaene"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002058> <http://purl.obolibrary.org/obo/PORO_0000601>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002058> <http://purl.obolibrary.org/obo/PORO_0002058>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002058> "obsolete long-shafted triaene"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002058> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002059> (calthrop with reduced actine)
+# Class: <http://purl.obolibrary.org/PORO_0002059> (obsolete calthrop with reduced actine)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002059> "calthrop with reduced actine"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002059> <http://purl.obolibrary.org/obo/PORO_0000180>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002059> <http://purl.obolibrary.org/obo/PORO_0002059>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002059> "obsolete calthrop with reduced actine"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002059> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002060> (monaxonic spicule)
+# Class: <http://purl.obolibrary.org/PORO_0002060> (obsolete monaxonic spicule)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002060> "monaxonic spicule"@en)
-SubClassOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000017>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0002060>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002060> "obsolete monaxonic spicule"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002060> "true"^^xsd:boolean)
 
-# Class: <http://purl.obolibrary.org/PORO_0002061> (monaxonic microsclere)
+# Class: <http://purl.obolibrary.org/PORO_0002061> (obsolete monaxonic microsclere)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002061> "monaxonic microsclere"@en)
-EquivalentClasses(<http://purl.obolibrary.org/PORO_0002061> ObjectIntersectionOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000097>))
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0100001> <http://purl.obolibrary.org/PORO_0002061> <http://purl.obolibrary.org/obo/PORO_0002061>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/PORO_0002061> "obsolete monaxonic microsclere"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/PORO_0002061> "true"^^xsd:boolean)
 
 # Class: <http://purl.obolibrary.org/obo/PORO_0000000> (sponge cell)
 
@@ -3610,7 +3632,7 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/PORO_0000412> "monaxon")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PORO_0000412> "Spicules of Demospongiae")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0000412> "monaxonic megasclere")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000412> ObjectIntersectionOf(<http://purl.obolibrary.org/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000098>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0000412> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PORO_0000098> <http://purl.obolibrary.org/obo/PORO_0002060>))
 
 # Class: <http://purl.obolibrary.org/obo/PORO_0000413> (mucronate megasclere)
 
@@ -5663,6 +5685,73 @@ AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PORO_0002045>
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PORO_0002046> <http://purl.obolibrary.org/obo/PORO_0000025>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002046> "obsolete choanocyte chamber")
 AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/PORO_0002046> "true"^^xsd:boolean)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002048> (spherical sterraster)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PORO_0002048> "globular sterraster")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002048> "spherical sterraster"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002048> <http://purl.obolibrary.org/obo/PORO_0000557>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002050> (flattened sterraster)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002050> "flattened sterraster"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002050> <http://purl.obolibrary.org/obo/PORO_0000557>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002051> (small streptaster)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002051> "small streptaster"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002051> <http://purl.obolibrary.org/obo/PORO_0000562>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002052> (large streptaster)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002052> "large streptaster"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002052> <http://purl.obolibrary.org/obo/PORO_0000562>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002053> (microxea)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002053> "microxea"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002053> <http://purl.obolibrary.org/obo/PORO_0002061>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002054> (arrangement of microscleres)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002054> "arrangement of microscleres"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002054> <http://purl.obolibrary.org/obo/UBERON_0000480>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002055> (microxeas in choanosome)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002055> "microxeas in choanosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002055> <http://purl.obolibrary.org/obo/PORO_0002054>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002056> (amphiaster)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PORO_0002056> "amphiaster with recurved spines at each end; found in Thrombus; need to expand this definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002056> "amphiaster"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002056> <http://purl.obolibrary.org/obo/PORO_0000114>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002057> (short-shafted triaene)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002057> "short-shafted triaene"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002057> <http://purl.obolibrary.org/obo/PORO_0000601>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002058> (long-shafted triaene)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002058> "long-shafted triaene"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002058> <http://purl.obolibrary.org/obo/PORO_0000601>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002059> (calthrop with reduced actine)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002059> "calthrop with reduced actine"@em)
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002059> <http://purl.obolibrary.org/obo/PORO_0000180>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002060> (monoaxonic spicule)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002060> "monoaxonic spicule")
+SubClassOf(<http://purl.obolibrary.org/obo/PORO_0002060> <http://purl.obolibrary.org/obo/PORO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/PORO_0002061> (monoaxonic microsclere)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PORO_0002061> "monoaxonic microsclere"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/PORO_0002061> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PORO_0000097> <http://purl.obolibrary.org/obo/PORO_0002060>))
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000990> (reproductive system)
 
