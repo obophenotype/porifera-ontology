@@ -1,0 +1,34 @@
+id: poro
+title: "Porifera Anatomy Ontology"
+github_org: obophenotype
+repo: porifera-ontology
+git_main_branch: master
+edit_format: owl
+export_formats:
+  - owl
+  - obo
+release_artefacts:
+  - base
+  - full
+import_group:
+  use_base_merging: true
+  products:
+    - id: bfo
+    - id: chebi
+      mirror_from: http://purl.obolibrary.org/obo/upheno/chebi_slim.owl
+    - id: cl
+      use_base: true
+    - id: cob
+      mirror_from: http://purl.obolibrary.org/obo/cob/cob-root.owl
+    - id: go
+      use_base: true
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+    - id: pato
+      use_base: true
+    - id: ro
+      use_base: true
+    - id: uberon
+      use_base: true
+workflows:
+  - qc
