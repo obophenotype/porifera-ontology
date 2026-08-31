@@ -1,33 +1,59 @@
-Prefix: idrange:=<http://purl.obolibrary.org/obo/ro/idrange/>
-Prefix: allocatedto:=<http://purl.obolibrary.org/obo/IAO_0000597>
-Prefix: iddigits:=<http://purl.obolibrary.org/obo/IAO_0000596>
-Prefix: idprefix:=<http://purl.obolibrary.org/obo/IAO_0000599>
-Prefix: idsfor:=<http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: idrange: <http://purl.obolibrary.org/obo/poro/idrange/>
+Prefix: allocatedto: <http://purl.obolibrary.org/obo/IAO_0000597>
+Prefix: iddigits: <http://purl.obolibrary.org/obo/IAO_0000596>
+Prefix: idprefix: <http://purl.obolibrary.org/obo/IAO_0000599>
+Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: comment: <http://www.w3.org/2000/01/rdf-schema#comment>
 
 Ontology: <http://purl.obolibrary.org/obo/poro/poro-idranges.owl>
-  Annotations: idprefix: "http://purl.obolibrary.org/obo/PORO_", iddigits: 7, idsfor: "PORO"
 
-annotationproperty: allocatedto:
+Annotations:
+    idprefix: "http://purl.obolibrary.org/obo/PORO_",
+    iddigits: 7,
+    idsfor: "PORO"
+
+AnnotationProperty: allocatedto:
+
 AnnotationProperty: idprefix:
-AnnotationProperty: iddigits: 
-AnnotationProperty: idsfor: 
+
+AnnotationProperty: iddigits:
+
+AnnotationProperty: idsfor:
+
+AnnotationProperty: comment:
 
 Datatype: idrange:1
-Annotations: allocatedto: "Chris Mungall"
-EquivalentTo: xsd:integer[> 1 , <= 2000]
+    Annotations:
+        allocatedto: "Chris Mungall"
+    EquivalentTo:
+        xsd:integer[>= 2, < 2001]
 
 Datatype: idrange:2
-Annotations: allocatedto: "Bob Thacker"
-EquivalentTo: xsd:integer[> 2001 , <= 4000]
+    Annotations:
+        allocatedto: "Bob Thacker"
+    EquivalentTo:
+        xsd:integer[>= 2002, < 4001]
 
 Datatype: idrange:3
-Annotations: allocatedto: "Melissa Haendel"
-EquivalentTo: xsd:integer[> 4001 , <= 6000]
+    Annotations:
+        allocatedto: "Melissa Haendel"
+    EquivalentTo:
+        xsd:integer[>= 4002, < 6001]
 
 Datatype: idrange:4
-Annotations: allocatedto: "Erik Segedel"
-EquivalentTo: xsd:integer[> 6001 , <= 8000]
+    Annotations:
+        allocatedto: "Erik Segerdell"
+    EquivalentTo:
+        xsd:integer[>= 6002, < 8001]
 
 Datatype: idrange:5
-Annotations: allocatedto: "Cristina Diaz"
-EquivalentTo: xsd:integer[> 8001 , <= 10000]
+    Annotations:
+        allocatedto: "Cristina Diaz"
+    EquivalentTo:
+        xsd:integer[>= 8002, < 10001]
+
+Datatype: idrange:6
+    Annotations:
+        allocatedto: "Sara Carsanaro"
+    EquivalentTo:
+        xsd:integer[>= 10001, < 12000]
