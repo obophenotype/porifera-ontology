@@ -42,7 +42,7 @@ Datatype: idrange:3
 
 Datatype: idrange:4
     Annotations:
-        allocatedto: "Erik Segedel"
+        allocatedto: "Erik Segerdell"
     EquivalentTo:
         xsd:integer[>= 6002, < 8001]
 
